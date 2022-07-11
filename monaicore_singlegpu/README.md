@@ -1,4 +1,4 @@
-# Step-by-step Tutorial: use MONAI Core by running a singularity container on a single GPU at HiperGator AI partition
+# Step-by-step Tutorial: use MONAI Core by running a singularity container on a single GPU at HiperGator
 ## **Why use container?**
 1. clean developing environment: easy to maintain dependencies of specific version, easy to debug.
 2. portable(reproducible).
@@ -6,8 +6,9 @@
 4. MONAI Core containers are based on [NGC (NVIDIA GPU CLOUD) PyTorch containers](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch): optimized performance on NVIDIA GPUs, keep updating.
 
 ## **Note**
-1. In all following commands, change “hju” to your HiperGator username; change the path to files according to your settings on HiperGator. 
-2. In all following SLURM job scripts, alter the “#SBATCH” settings for your needs.
+1. This tutorial assumes you have downloaded the repository monai_uf_tutorials following [this section](../README.md/#download-this-repository-on-hipergator).
+2. In all following commands, change “hju” to your HiperGator username; change the path to files according to your settings on HiperGator. 
+3. In all following SLURM job scripts, alter the “#SBATCH” settings for your needs.
 
 
 ## **Major steps**
@@ -16,7 +17,7 @@
 3. [Run tutorial scripts within the container.](#step-3-run-tutorial-scripts-within-the-container)
 
 ## **step 1. Download MONAI Core tutorial repository**
-Log in to HiperGator, change “hju” to your username
+Log in to HiperGator, change `hju` to your username
 
 ```bash
 ssh hju@hpg.rc.ufl.edu
@@ -28,7 +29,7 @@ Go to your home directory
 cd ~
 ```
 
-Download MONAI Core tutorial repository into a local directory. The default name of the directory is “tutorials”. 
+Download MONAI Core tutorial repository into a local directory. The default name of the directory is `tutorials`. 
 
 ```bash
 git clone https://github.com/Project-MONAI/tutorials.git
@@ -58,11 +59,22 @@ cat SLURM_output_file
 Tutorial scripts are in 2 formats, python scripts (.py) and jupyter notebooks (.ipynb). How to run each script format is shown separately below. 
 
 ### **1) Run python script .py in interactive mode**
-Request resources for an interactive session and start a bash shell (learn more about [interactive session on HiperGator](https://help.rc.ufl.edu/doc/Development_and_Testing), learn more about [GPU access on HiperGator](https://help.rc.ufl.edu/doc/GPU_Access)). You will see output similar to the screenshot below. 
+Request resources for an interactive session and start a bash shell (learn more about [interactive session on HiperGator](https://help.rc.ufl.edu/doc/Development_and_Testing), learn more about [GPU access on HiperGator](https://help.rc.ufl.edu/doc/GPU_Access)). 
+
+To request an A100 GPU:
 
 ```bash
-srun --nodes=1 --ntasks=1 --partition=hpg-ai --gpus=a100:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
+srun --nodes=1 --ntasks=1 --partition=gpu --gpus=a100:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
 ```
+
+To request a GeForce GPU:
+
+```bash
+srun --nodes=1 --ntasks=1 --partition=gpu --gpus=geforce:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
+```
+
+You will see output similar to the screenshot below. 
+
 
 Load singularity
 ```bash
