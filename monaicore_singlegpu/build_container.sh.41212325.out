@@ -1,0 +1,380 @@
+[hju@login5 debug]$ cat build_container.sh.41212325.out
+Tue Jul  5 18:27:55 EDT 2022
+c21b-s7.ufhpc
+/home/hju/run_monaicore/basics/debug
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:f3ef4ff62e0da0ef761ec1c8a578f3035bef51043e53ae1b13a20b3e03726d17
+Copying blob sha256:0a5a58fe9f80bdf8d873a90df8f25b0c45521493c683962ead7045416ed044e0
+Copying blob sha256:ffe911d7d638437aab9d53b4010ccf19c716c99b564b6422b44569118ed19e80
+Copying blob sha256:b6ca3d91503f31b907ea0f082f73942b6cf116b4a6ba79a767afeec6d3ff7929
+Copying blob sha256:2153f05ef7a84e6c9cba0a8bd645e729fa2f9410f9b8c5d783a404ca3352f640
+Copying blob sha256:960ad9fc339d74f9c9d97da11fabef63bf91c8df2998fca9964e2e1e55db7dca
+Copying blob sha256:423cea99f7d205805222abffe128a11b14d90320c8000aa568bc6953e3cdb833
+Copying blob sha256:ea4474a67b49659bf6a4c9f352d77216781a357cfc8dfcf1d5fd1410c6ca28f2
+Copying blob sha256:b397fb86b3bce85b096c00152e4e199e553b7d298a78486895c8a71fe0094124
+Copying blob sha256:927627363759dc4a4a799184cdd59b07c100f7e21b788be85cea7bf7a058fb33
+Copying blob sha256:312d920fedccedbb19babb2d7f5d3f438ecf789ce747924dd32a677a4cdb6b31
+Copying blob sha256:7a50c2cfea6bdb37dd2fcecf1b34f9b8b97f57735244717944dd12082de7cf77
+Copying blob sha256:06daa3d0f46c9d3ed6a1b945ef5aad249863addcf91de2aa53f18854539b0367
+Copying blob sha256:aec116761f981c14c18ada8b6160151292b94d8ddc0bb86ca1136c259c6745e7
+Copying blob sha256:2812dcb9b1f104373396e0c59a745948dd050d078be82ad02728da77c97566ed
+Copying blob sha256:0b40e0143bfdfb31fe9de82db1ef5fb25679c469a8295135d77d06e2b06f861d
+Copying blob sha256:0617ebfc4a217d4ee06e336355fd239799c49af5e9a07159a209c7a7467ffa27
+Copying blob sha256:45a7802e347f9ad3c137aac9461230d03e52047014e6f92e47eca5919bea7df2
+Copying blob sha256:9c3aac051d0f30a409d076d6bdef9509f04c94c7f9ad584ddf6c204bb742a22c
+Copying blob sha256:c06cf176a9cac808240f4e20877a39fe67d8cb8520a028fc13b59db3bcf1b008
+Copying blob sha256:6790e5e29cc342d9c75f12826d8946299dadd5b42f7901e21c282de5c98eb5e5
+Copying blob sha256:896ac25d66a98c1ce0334eb7f27484bbdd19897c6e36b46c05cbe73c53462ec9
+Copying blob sha256:7dfa990e7e1717368ecef9fb287025797169d78742743ac70be38bc7f8b5624d
+Copying blob sha256:9c0ad29545c4be69846aaed4d570e67593e6b07258a1432416a297c83a8d23a3
+Copying blob sha256:10c826feeab7cc4f49d1967555f661350f55ef88732bc616680aa75b3ee4f1ae
+Copying blob sha256:7586e32d819735346b24330326aaea584daad95fa89bb02d27e317b5e601365b
+Copying blob sha256:4b15b5b33bf7fee3002ff6be283d3b2967665b82e229bc5944f4bc6c74c8f8a4
+Copying blob sha256:57e6549ecb9d491f63316a5dbf6b47084fe3f894ac5f5192c7ce2d64c08131b4
+Copying blob sha256:6ad6cc7591f45fd3e054ea646fa774a4e9b2c96b3c8335ae7915548a78c62dfb
+Copying blob sha256:42f060f227fbc1ae3d18e3e2ef8904c63a316555b72403566ea23b7a55eebd68
+Copying blob sha256:011b1f6b64000b441fe978aea386ac1b361635b545c36f93df46690036a30bd6
+Copying blob sha256:9e53e4417963341cd88aaa951dd6109de48a17c55572d0bd17145142244622a0
+Copying blob sha256:ca666d4eaa20f41827bb083824cde9c2c41a3d469224a3e83015767841f812f9
+Copying blob sha256:d1f7400b2d3faacb8c652f11245d8fb44904c693cf5403705a183f54e2e5fd6c
+Copying blob sha256:54369ed1d3f1249a788b4dffbc2594f13dca83fd3cdc44235a046ca1f6b0975c
+Copying blob sha256:1c729a9c37b37a7b2f7dd63219a97968ffd5838e2101b2521638423cdb723ab2
+Copying blob sha256:e1578f4858a108a7764fa961732c7d7d4f9edf1996cd671511a21fa88dbadac5
+Copying blob sha256:74181d60a1e29d3b690ec97cf97d4ba0864c09b9f7cb7c2819d867c1f0a00e2f
+Copying blob sha256:50ddcf676259eea0c726d296ef892f473cd6ed14b32311d88dcda4d130a0a445
+Copying blob sha256:21bcddf58d24ffe92114b0634a1a3ffa23428f4f4f18f00549fba80c28c9cbcc
+Copying blob sha256:2bbd488a8a42883a534e6dc22d1737782dabc9496fddf670835c8ee3236adf8e
+Copying blob sha256:908ee1b12e54cda4a3809dcbef140a40f1304aeacd7467a0ee9253814b6fd934
+Copying blob sha256:b47a76672e02445d3443dd7fb51252d73e227bd8a7b13f9ec9f2177fd88d4017
+Copying blob sha256:75b1c4237463cf4a425223667326cca27786080ce0a363ffa46af5d0d9440107
+Copying blob sha256:b04a25f7a06949e8600a642f495bb8f6e867a01a22939fdd4a8e353846eb8822
+Copying blob sha256:f4b2df38716cd2b4a0b483b6cd626964118134ac8408e5012cadfe62871e9b9d
+Copying blob sha256:a0b7791628b2dc92010c4c0f88134b059161c15794683d82b1b2949f529c26c5
+Copying blob sha256:ef76ad566004fbb82a2f55c7f6877a2ec9ccf8cbfad3806f9177ec249becb888
+Copying blob sha256:afe1fa48935179e38397827d5cd78a0eb8fe9fbe98e4c8b5fd16832d8731b9be
+Copying blob sha256:d11180edb78fe2574caf556027b5fb5a046cd5a9c5fbac1717511dc53e2f302a
+Copying blob sha256:8b703351d31b1faaa129b92b9f899ad003796eb556ddbb5e0e22599b3f2d4042
+Copying blob sha256:ae16429c29b3059be9e071386315c27ef993baebc52977d7a8cd2c908f13e4f7
+Copying blob sha256:51065c2f605b391194198027580035cdd5a0c690e87bacd84758e73634b85031
+Copying blob sha256:421dd65d1507ce2c67e654ec443e109280a2b66f32df0bd6c7df2736d489bf7f
+Copying blob sha256:7d08e51a6a51290ffb2e0880b36738a2046c860783d830267f4b85edee9e6b48
+Copying blob sha256:9679d2782302cb392de8835751bec629c88c71887d82e97e5b1a1807f3975132
+Copying blob sha256:6303d941cac0f5508363a5d26a8fcfd808edc69b62ce9f6824d7df34feb0c52c
+Copying blob sha256:39bb17876932a1cbf15d3b50152c4411dddae369d9c341692a53d06b9bd2939f
+Copying blob sha256:ed2556b595785813f8af3af6982a60d7b15bea69279865a4d7de91a36fc8babf
+Copying blob sha256:7f824540bd40bf354ae13ec031b08cf47ffe4025623f9c075aebc9290074bb24
+Copying blob sha256:4c546a06e80af13a04a28c27bed4e303e5524999530a5c301ae44eeff28acb18
+Copying blob sha256:00960a31970b37d65e1f7952cb0fb2e39ea3548a8f2948f9b52da0ff082c5f91
+Copying blob sha256:f4e9a0462bc3fcda1ae1318bc52649d129fdc3d2b4659555751ecda1e8e6bb0b
+Copying blob sha256:e400b6f0c8724b7060fdcac05656a34cfd51559c710a79bc61a16b89bfd4639d
+Copying blob sha256:17e55aef0b92bec1c599d22706a7d5e266e9dd37cea578d692c00103807e6323
+Copying config sha256:c8569701bfe177fc771c13d1d9c5ebc9c6ad4c4e83e48af13d0369f05d6072c1
+Writing manifest to image destination
+Storing signatures
+2022/07/05 18:37:55  info unpack layer: sha256:f3ef4ff62e0da0ef761ec1c8a578f3035bef51043e53ae1b13a20b3e03726d17
+2022/07/05 18:39:19  info unpack layer: sha256:0a5a58fe9f80bdf8d873a90df8f25b0c45521493c683962ead7045416ed044e0
+2022/07/05 18:41:31  info unpack layer: sha256:ffe911d7d638437aab9d53b4010ccf19c716c99b564b6422b44569118ed19e80
+2022/07/05 18:42:00  info unpack layer: sha256:b6ca3d91503f31b907ea0f082f73942b6cf116b4a6ba79a767afeec6d3ff7929
+2022/07/05 18:42:00  info unpack layer: sha256:2153f05ef7a84e6c9cba0a8bd645e729fa2f9410f9b8c5d783a404ca3352f640
+2022/07/05 18:42:01  info unpack layer: sha256:960ad9fc339d74f9c9d97da11fabef63bf91c8df2998fca9964e2e1e55db7dca
+2022/07/05 18:42:01  info unpack layer: sha256:423cea99f7d205805222abffe128a11b14d90320c8000aa568bc6953e3cdb833
+2022/07/05 18:42:01  info unpack layer: sha256:ea4474a67b49659bf6a4c9f352d77216781a357cfc8dfcf1d5fd1410c6ca28f2
+2022/07/05 18:42:01  info unpack layer: sha256:b397fb86b3bce85b096c00152e4e199e553b7d298a78486895c8a71fe0094124
+2022/07/05 18:42:01  info unpack layer: sha256:927627363759dc4a4a799184cdd59b07c100f7e21b788be85cea7bf7a058fb33
+2022/07/05 18:42:01  info unpack layer: sha256:312d920fedccedbb19babb2d7f5d3f438ecf789ce747924dd32a677a4cdb6b31
+2022/07/05 18:42:01  info unpack layer: sha256:7a50c2cfea6bdb37dd2fcecf1b34f9b8b97f57735244717944dd12082de7cf77
+2022/07/05 18:43:32  info unpack layer: sha256:06daa3d0f46c9d3ed6a1b945ef5aad249863addcf91de2aa53f18854539b0367
+2022/07/05 18:43:32  info unpack layer: sha256:aec116761f981c14c18ada8b6160151292b94d8ddc0bb86ca1136c259c6745e7
+2022/07/05 18:43:32  info unpack layer: sha256:2812dcb9b1f104373396e0c59a745948dd050d078be82ad02728da77c97566ed
+2022/07/05 18:43:32  info unpack layer: sha256:0b40e0143bfdfb31fe9de82db1ef5fb25679c469a8295135d77d06e2b06f861d
+2022/07/05 18:43:32  info unpack layer: sha256:0617ebfc4a217d4ee06e336355fd239799c49af5e9a07159a209c7a7467ffa27
+2022/07/05 18:43:33  info unpack layer: sha256:45a7802e347f9ad3c137aac9461230d03e52047014e6f92e47eca5919bea7df2
+2022/07/05 18:43:33  info unpack layer: sha256:9c3aac051d0f30a409d076d6bdef9509f04c94c7f9ad584ddf6c204bb742a22c
+2022/07/05 18:44:50  info unpack layer: sha256:c06cf176a9cac808240f4e20877a39fe67d8cb8520a028fc13b59db3bcf1b008
+2022/07/05 18:45:54  info unpack layer: sha256:6790e5e29cc342d9c75f12826d8946299dadd5b42f7901e21c282de5c98eb5e5
+2022/07/05 18:45:55  info unpack layer: sha256:896ac25d66a98c1ce0334eb7f27484bbdd19897c6e36b46c05cbe73c53462ec9
+2022/07/05 18:46:48  info unpack layer: sha256:7dfa990e7e1717368ecef9fb287025797169d78742743ac70be38bc7f8b5624d
+2022/07/05 18:52:55  info unpack layer: sha256:9c0ad29545c4be69846aaed4d570e67593e6b07258a1432416a297c83a8d23a3
+2022/07/05 18:54:41  info unpack layer: sha256:10c826feeab7cc4f49d1967555f661350f55ef88732bc616680aa75b3ee4f1ae
+2022/07/05 19:13:50  info unpack layer: sha256:7586e32d819735346b24330326aaea584daad95fa89bb02d27e317b5e601365b
+2022/07/05 19:14:00  info unpack layer: sha256:4b15b5b33bf7fee3002ff6be283d3b2967665b82e229bc5944f4bc6c74c8f8a4
+2022/07/05 19:14:01  info unpack layer: sha256:57e6549ecb9d491f63316a5dbf6b47084fe3f894ac5f5192c7ce2d64c08131b4
+2022/07/05 19:23:58  info unpack layer: sha256:6ad6cc7591f45fd3e054ea646fa774a4e9b2c96b3c8335ae7915548a78c62dfb
+2022/07/05 19:24:14  info unpack layer: sha256:42f060f227fbc1ae3d18e3e2ef8904c63a316555b72403566ea23b7a55eebd68
+2022/07/05 19:24:37  info unpack layer: sha256:011b1f6b64000b441fe978aea386ac1b361635b545c36f93df46690036a30bd6
+2022/07/05 19:33:15  info unpack layer: sha256:9e53e4417963341cd88aaa951dd6109de48a17c55572d0bd17145142244622a0
+2022/07/05 19:34:32  info unpack layer: sha256:ca666d4eaa20f41827bb083824cde9c2c41a3d469224a3e83015767841f812f9
+2022/07/05 19:34:32  info unpack layer: sha256:d1f7400b2d3faacb8c652f11245d8fb44904c693cf5403705a183f54e2e5fd6c
+2022/07/05 19:45:59  warn rootless{usr/local/nvm/versions/node/v16.6.1/bin/npm} ignoring (usually) harmless EPERM on setxattr "user.rootlesscontainers"
+2022/07/05 19:45:59  warn rootless{usr/local/nvm/versions/node/v16.6.1/bin/npx} ignoring (usually) harmless EPERM on setxattr "user.rootlesscontainers"
+2022/07/05 19:51:00  info unpack layer: sha256:54369ed1d3f1249a788b4dffbc2594f13dca83fd3cdc44235a046ca1f6b0975c
+2022/07/05 19:51:01  info unpack layer: sha256:1c729a9c37b37a7b2f7dd63219a97968ffd5838e2101b2521638423cdb723ab2
+2022/07/05 19:51:23  info unpack layer: sha256:e1578f4858a108a7764fa961732c7d7d4f9edf1996cd671511a21fa88dbadac5
+2022/07/05 19:53:39  info unpack layer: sha256:74181d60a1e29d3b690ec97cf97d4ba0864c09b9f7cb7c2819d867c1f0a00e2f
+2022/07/05 19:53:46  info unpack layer: sha256:50ddcf676259eea0c726d296ef892f473cd6ed14b32311d88dcda4d130a0a445
+2022/07/05 19:59:43  info unpack layer: sha256:21bcddf58d24ffe92114b0634a1a3ffa23428f4f4f18f00549fba80c28c9cbcc
+2022/07/05 20:01:24  info unpack layer: sha256:2bbd488a8a42883a534e6dc22d1737782dabc9496fddf670835c8ee3236adf8e
+2022/07/05 20:01:56  info unpack layer: sha256:908ee1b12e54cda4a3809dcbef140a40f1304aeacd7467a0ee9253814b6fd934
+2022/07/05 20:01:56  info unpack layer: sha256:b47a76672e02445d3443dd7fb51252d73e227bd8a7b13f9ec9f2177fd88d4017
+2022/07/05 20:01:57  info unpack layer: sha256:75b1c4237463cf4a425223667326cca27786080ce0a363ffa46af5d0d9440107
+2022/07/05 20:12:11  info unpack layer: sha256:b04a25f7a06949e8600a642f495bb8f6e867a01a22939fdd4a8e353846eb8822
+2022/07/05 20:12:15  info unpack layer: sha256:f4b2df38716cd2b4a0b483b6cd626964118134ac8408e5012cadfe62871e9b9d
+2022/07/05 20:12:16  info unpack layer: sha256:a0b7791628b2dc92010c4c0f88134b059161c15794683d82b1b2949f529c26c5
+2022/07/05 20:12:16  info unpack layer: sha256:ef76ad566004fbb82a2f55c7f6877a2ec9ccf8cbfad3806f9177ec249becb888
+2022/07/05 20:12:18  info unpack layer: sha256:afe1fa48935179e38397827d5cd78a0eb8fe9fbe98e4c8b5fd16832d8731b9be
+2022/07/05 20:12:27  info unpack layer: sha256:d11180edb78fe2574caf556027b5fb5a046cd5a9c5fbac1717511dc53e2f302a
+2022/07/05 20:12:40  info unpack layer: sha256:8b703351d31b1faaa129b92b9f899ad003796eb556ddbb5e0e22599b3f2d4042
+2022/07/05 20:12:46  info unpack layer: sha256:ae16429c29b3059be9e071386315c27ef993baebc52977d7a8cd2c908f13e4f7
+2022/07/05 20:13:25  info unpack layer: sha256:51065c2f605b391194198027580035cdd5a0c690e87bacd84758e73634b85031
+2022/07/05 20:24:55  info unpack layer: sha256:421dd65d1507ce2c67e654ec443e109280a2b66f32df0bd6c7df2736d489bf7f
+2022/07/05 20:24:56  info unpack layer: sha256:7d08e51a6a51290ffb2e0880b36738a2046c860783d830267f4b85edee9e6b48
+2022/07/05 20:24:56  info unpack layer: sha256:9679d2782302cb392de8835751bec629c88c71887d82e97e5b1a1807f3975132
+2022/07/05 20:24:56  info unpack layer: sha256:6303d941cac0f5508363a5d26a8fcfd808edc69b62ce9f6824d7df34feb0c52c
+2022/07/05 20:24:57  info unpack layer: sha256:39bb17876932a1cbf15d3b50152c4411dddae369d9c341692a53d06b9bd2939f
+2022/07/05 20:42:46  info unpack layer: sha256:ed2556b595785813f8af3af6982a60d7b15bea69279865a4d7de91a36fc8babf
+2022/07/05 20:42:46  info unpack layer: sha256:7f824540bd40bf354ae13ec031b08cf47ffe4025623f9c075aebc9290074bb24
+2022/07/05 20:43:01  info unpack layer: sha256:4c546a06e80af13a04a28c27bed4e303e5524999530a5c301ae44eeff28acb18
+2022/07/05 20:43:18  info unpack layer: sha256:00960a31970b37d65e1f7952cb0fb2e39ea3548a8f2948f9b52da0ff082c5f91
+2022/07/05 20:43:21  info unpack layer: sha256:f4e9a0462bc3fcda1ae1318bc52649d129fdc3d2b4659555751ecda1e8e6bb0b
+2022/07/05 20:43:21  info unpack layer: sha256:e400b6f0c8724b7060fdcac05656a34cfd51559c710a79bc61a16b89bfd4639d
+2022/07/05 20:43:22  info unpack layer: sha256:17e55aef0b92bec1c599d22706a7d5e266e9dd37cea578d692c00103807e6323
+INFO:    Creating sandbox directory...
+INFO:    Build complete: /blue/vendor-nvidia/hju/monaicore_test_v0.8.1
+WARNING: Skipping mount /scratch/local [binds]: /scratch/local doesn't exist in container
+WARNING: Skipping mount /blue [binds]: /blue doesn't exist in container
+WARNING: Skipping mount /orange [binds]: /orange doesn't exist in container
+WARNING: Skipping mount /bio [binds]: /bio doesn't exist in container
+WARNING: Skipping mount /data [binds]: /data doesn't exist in container
+WARNING: Skipping mount /data/reference [binds]: /data/reference doesn't exist in container
+WARNING: Skipping mount /data/ai [binds]: /data/ai doesn't exist in container
+"uname": executable file not found in $PATH
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: torch>=1.7 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements.txt (line 1)) (1.10.0a0+0aef44c)
+Requirement already satisfied: numpy>=1.17 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements.txt (line 2)) (1.21.2)
+Requirement already satisfied: setuptools!=60.0.0,!=60.6.0,>=50.3.0 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-min.txt (line 3)) (58.2.0)
+Requirement already satisfied: coverage>=5.5 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-min.txt (line 4)) (6.0.1)
+Requirement already satisfied: parameterized in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-min.txt (line 5)) (0.8.1)
+Collecting pytorch-ignite==0.4.9
+  Downloading pytorch_ignite-0.4.9-py3-none-any.whl (259 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 259.5/259.5 KB 4.9 MB/s eta 0:00:00
+Collecting gdown>=4.4.0
+  Downloading gdown-4.5.1.tar.gz (14 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: scipy in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 5)) (1.6.3)
+Requirement already satisfied: itk>=5.2 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: nibabel in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 7)) (3.2.2)
+Requirement already satisfied: pillow!=8.3.0 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 8)) (9.0.1)
+Requirement already satisfied: tensorboard in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (2.6.0)
+Requirement already satisfied: scikit-image>=0.19.0 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 10)) (0.19.1)
+Requirement already satisfied: tqdm>=4.47.0 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 11)) (4.62.3)
+Requirement already satisfied: lmdb in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 12)) (1.2.1)
+Requirement already satisfied: flake8>=3.8.1 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 13)) (4.0.1)
+Collecting flake8-bugbear
+  Downloading flake8_bugbear-22.7.1-py3-none-any.whl (21 kB)
+Collecting flake8-comprehensions
+  Downloading flake8_comprehensions-3.10.0-py3-none-any.whl (7.3 kB)
+Collecting flake8-executable
+  Downloading flake8_executable-2.1.1-py3-none-any.whl (35 kB)
+Collecting flake8-pyi
+  Downloading flake8_pyi-22.5.1-py37-none-any.whl (20 kB)
+Requirement already satisfied: pylint!=2.13 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 18)) (2.12.2)
+Requirement already satisfied: mccabe in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 19)) (0.6.1)
+Requirement already satisfied: pep8-naming in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 20)) (0.12.1)
+Requirement already satisfied: pycodestyle in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 21)) (2.8.0)
+Requirement already satisfied: pyflakes in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 22)) (2.4.0)
+Requirement already satisfied: black in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 23)) (22.1.0)
+Requirement already satisfied: isort in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 24)) (5.10.1)
+Requirement already satisfied: pytype>=2020.6.1 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 25)) (2022.2.8)
+Requirement already satisfied: types-pkg_resources in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 26)) (0.1.3)
+Requirement already satisfied: mypy>=0.790 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 27)) (0.931)
+Requirement already satisfied: ninja in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 28)) (1.10.2.3)
+Requirement already satisfied: torchvision in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 29)) (0.11.0a0)
+Requirement already satisfied: psutil in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 30)) (5.8.0)
+Requirement already satisfied: Sphinx==3.5.3 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (3.5.3)
+Requirement already satisfied: recommonmark==0.6.0 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 32)) (0.6.0)
+Requirement already satisfied: sphinx-autodoc-typehints==1.11.1 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 33)) (1.11.1)
+Requirement already satisfied: sphinx-rtd-theme==0.5.2 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 34)) (0.5.2)
+Collecting cucim==22.2.1
+  Downloading cucim-22.2.1-py3-none-manylinux2014_x86_64.whl (8.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 50.6 MB/s eta 0:00:00
+Requirement already satisfied: openslide-python==1.1.2 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 36)) (1.1.2)
+Requirement already satisfied: imagecodecs in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 37)) (2021.11.20)
+Requirement already satisfied: tifffile in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 38)) (2022.2.9)
+Requirement already satisfied: pandas in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 39)) (1.4.1)
+Requirement already satisfied: requests in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 40)) (2.26.0)
+Requirement already satisfied: einops in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 41)) (0.4.0)
+Requirement already satisfied: transformers in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 42)) (4.16.2)
+Requirement already satisfied: mlflow in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.23.1)
+Requirement already satisfied: matplotlib!=3.5.0 in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 44)) (3.4.3)
+Requirement already satisfied: tensorboardX in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 45)) (2.4.1)
+Collecting types-PyYAML
+  Downloading types_PyYAML-6.0.9-py3-none-any.whl (14 kB)
+Requirement already satisfied: pyyaml in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 47)) (5.4.1)
+Collecting fire
+  Downloading fire-0.4.0.tar.gz (87 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.7/87.7 KB 192.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: jsonschema in /opt/conda/lib/python3.8/site-packages (from -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 49)) (4.0.1)
+Collecting pynrrd
+  Downloading pynrrd-0.4.3-py2.py3-none-any.whl (18 kB)
+Collecting pre-commit
+  Downloading pre_commit-2.19.0-py2.py3-none-any.whl (199 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.3/199.3 KB 218.1 MB/s eta 0:00:00
+Collecting pydicom
+  Downloading pydicom-2.3.0-py3-none-any.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 87.6 MB/s eta 0:00:00
+Requirement already satisfied: packaging in /opt/conda/lib/python3.8/site-packages (from pytorch-ignite==0.4.9->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 3)) (21.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (1.1.5)
+Requirement already satisfied: sphinxcontrib-jsmath in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (1.0.1)
+Requirement already satisfied: snowballstemmer>=1.1 in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (2.1.0)
+Requirement already satisfied: babel>=1.3 in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (2.9.1)
+Requirement already satisfied: sphinxcontrib-htmlhelp in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (2.0.0)
+Requirement already satisfied: Pygments>=2.0 in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (2.10.0)
+Requirement already satisfied: Jinja2>=2.3 in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (3.0.1)
+Requirement already satisfied: sphinxcontrib-devhelp in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (1.0.2)
+Requirement already satisfied: sphinxcontrib-applehelp in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (1.0.2)
+Requirement already satisfied: sphinxcontrib-qthelp in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (1.0.3)
+Requirement already satisfied: docutils>=0.12 in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (0.16)
+Requirement already satisfied: imagesize in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (1.2.0)
+Requirement already satisfied: alabaster<0.8,>=0.7 in /opt/conda/lib/python3.8/site-packages (from Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (0.7.12)
+Requirement already satisfied: commonmark>=0.8.1 in /opt/conda/lib/python3.8/site-packages (from recommonmark==0.6.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 32)) (0.9.1)
+Requirement already satisfied: click in /opt/conda/lib/python3.8/site-packages (from cucim==22.2.1->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 35)) (8.0.1)
+Requirement already satisfied: typing_extensions in /opt/conda/lib/python3.8/site-packages (from torch>=1.7->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements.txt (line 1)) (3.10.0.2)
+Requirement already satisfied: beautifulsoup4 in /opt/conda/lib/python3.8/site-packages (from gdown>=4.4.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 4)) (4.10.0)
+Requirement already satisfied: six in /opt/conda/lib/python3.8/site-packages (from gdown>=4.4.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 4)) (1.16.0)
+Requirement already satisfied: filelock in /opt/conda/lib/python3.8/site-packages (from gdown>=4.4.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 4)) (3.3.0)
+Requirement already satisfied: itk-registration==5.2.1.post1 in /opt/conda/lib/python3.8/site-packages (from itk>=5.2->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: itk-io==5.2.1.post1 in /opt/conda/lib/python3.8/site-packages (from itk>=5.2->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: itk-segmentation==5.2.1.post1 in /opt/conda/lib/python3.8/site-packages (from itk>=5.2->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: itk-filtering==5.2.1.post1 in /opt/conda/lib/python3.8/site-packages (from itk>=5.2->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: itk-core==5.2.1.post1 in /opt/conda/lib/python3.8/site-packages (from itk>=5.2->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: itk-numerics==5.2.1.post1 in /opt/conda/lib/python3.8/site-packages (from itk>=5.2->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 6)) (5.2.1.post1)
+Requirement already satisfied: protobuf>=3.6.0 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (3.18.1)
+Requirement already satisfied: absl-py>=0.4 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (0.14.1)
+Requirement already satisfied: google-auth<2,>=1.6.3 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (1.35.0)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (0.4.6)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (1.8.0)
+Requirement already satisfied: wheel>=0.26 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (0.37.0)
+Requirement already satisfied: tensorboard-data-server<0.7.0,>=0.6.0 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (0.6.1)
+Requirement already satisfied: werkzeug>=0.11.15 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (2.0.2)
+Requirement already satisfied: markdown>=2.6.8 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (3.3.4)
+Requirement already satisfied: grpcio>=1.24.3 in /opt/conda/lib/python3.8/site-packages (from tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (1.41.0)
+Requirement already satisfied: imageio>=2.4.1 in /opt/conda/lib/python3.8/site-packages (from scikit-image>=0.19.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 10)) (2.16.0)
+Requirement already satisfied: networkx>=2.2 in /opt/conda/lib/python3.8/site-packages (from scikit-image>=0.19.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 10)) (2.6.3)
+Requirement already satisfied: PyWavelets>=1.1.1 in /opt/conda/lib/python3.8/site-packages (from scikit-image>=0.19.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 10)) (1.2.0)
+Requirement already satisfied: attrs>=19.2.0 in /opt/conda/lib/python3.8/site-packages (from flake8-bugbear->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 14)) (21.2.0)
+Collecting ast-decompiler<0.5.0,>=0.4.0
+  Downloading ast_decompiler-0.4.0-py2.py3-none-any.whl (12 kB)
+Requirement already satisfied: platformdirs>=2.2.0 in /opt/conda/lib/python3.8/site-packages (from pylint!=2.13->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 18)) (2.5.0)
+Requirement already satisfied: astroid<2.10,>=2.9.0 in /opt/conda/lib/python3.8/site-packages (from pylint!=2.13->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 18)) (2.9.3)
+Requirement already satisfied: toml>=0.9.2 in /opt/conda/lib/python3.8/site-packages (from pylint!=2.13->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 18)) (0.10.2)
+Requirement already satisfied: flake8-polyfill<2,>=1.0.2 in /opt/conda/lib/python3.8/site-packages (from pep8-naming->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 20)) (1.0.2)
+Requirement already satisfied: pathspec>=0.9.0 in /opt/conda/lib/python3.8/site-packages (from black->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 23)) (0.9.0)
+Requirement already satisfied: mypy-extensions>=0.4.3 in /opt/conda/lib/python3.8/site-packages (from black->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 23)) (0.4.3)
+Requirement already satisfied: tomli>=1.1.0 in /opt/conda/lib/python3.8/site-packages (from black->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 23)) (1.2.1)
+Requirement already satisfied: libcst in /opt/conda/lib/python3.8/site-packages (from pytype>=2020.6.1->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 25)) (0.4.1)
+Requirement already satisfied: importlab>=0.7 in /opt/conda/lib/python3.8/site-packages (from pytype>=2020.6.1->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 25)) (0.7)
+Requirement already satisfied: tabulate in /opt/conda/lib/python3.8/site-packages (from pytype>=2020.6.1->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 25)) (0.8.9)
+Requirement already satisfied: pytz>=2020.1 in /opt/conda/lib/python3.8/site-packages (from pandas->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 39)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in /opt/conda/lib/python3.8/site-packages (from pandas->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 39)) (2.8.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/conda/lib/python3.8/site-packages (from requests->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 40)) (3.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /opt/conda/lib/python3.8/site-packages (from requests->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 40)) (2.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /opt/conda/lib/python3.8/site-packages (from requests->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 40)) (1.26.7)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/lib/python3.8/site-packages (from requests->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 40)) (2021.5.30)
+Requirement already satisfied: tokenizers!=0.11.3,>=0.10.1 in /opt/conda/lib/python3.8/site-packages (from transformers->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 42)) (0.11.5)
+Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.8/site-packages (from transformers->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 42)) (2021.10.8)
+Requirement already satisfied: sacremoses in /opt/conda/lib/python3.8/site-packages (from transformers->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 42)) (0.0.46)
+Requirement already satisfied: huggingface-hub<1.0,>=0.1.0 in /opt/conda/lib/python3.8/site-packages (from transformers->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 42)) (0.4.0)
+Requirement already satisfied: querystring-parser in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.2.4)
+Requirement already satisfied: cloudpickle in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (2.0.0)
+Requirement already satisfied: importlib-metadata!=4.7.0,>=3.7.0 in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (4.11.1)
+Requirement already satisfied: alembic in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.7.6)
+Requirement already satisfied: Flask in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (2.0.2)
+Requirement already satisfied: gitpython>=2.1.0 in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (3.1.26)
+Requirement already satisfied: databricks-cli>=0.8.7 in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (0.16.4)
+Requirement already satisfied: sqlparse>=0.3.1 in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (0.4.2)
+Requirement already satisfied: sqlalchemy in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.4.31)
+Requirement already satisfied: gunicorn in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (20.1.0)
+Requirement already satisfied: prometheus-flask-exporter in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (0.18.7)
+Requirement already satisfied: docker>=4.0.0 in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (5.0.3)
+Requirement already satisfied: entrypoints in /opt/conda/lib/python3.8/site-packages (from mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (0.3)
+Requirement already satisfied: pyparsing>=2.2.1 in /opt/conda/lib/python3.8/site-packages (from matplotlib!=3.5.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 44)) (2.4.7)
+Requirement already satisfied: kiwisolver>=1.0.1 in /opt/conda/lib/python3.8/site-packages (from matplotlib!=3.5.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 44)) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /opt/conda/lib/python3.8/site-packages (from matplotlib!=3.5.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 44)) (0.10.0)
+Collecting termcolor
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in /opt/conda/lib/python3.8/site-packages (from jsonschema->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 49)) (0.18.0)
+Collecting identify>=1.0.0
+  Downloading identify-2.5.1-py2.py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.6/98.6 KB 199.4 MB/s eta 0:00:00
+Collecting virtualenv>=20.0.8
+  Downloading virtualenv-20.15.1-py2.py3-none-any.whl (10.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 61.6 MB/s eta 0:00:00
+Collecting cfgv>=2.0.0
+  Downloading cfgv-3.3.1-py2.py3-none-any.whl (7.3 kB)
+Collecting nodeenv>=0.11.1
+  Downloading nodeenv-1.7.0-py2.py3-none-any.whl (21 kB)
+Requirement already satisfied: wrapt<1.14,>=1.11 in /opt/conda/lib/python3.8/site-packages (from astroid<2.10,>=2.9.0->pylint!=2.13->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 18)) (1.13.3)
+Requirement already satisfied: lazy-object-proxy>=1.4.0 in /opt/conda/lib/python3.8/site-packages (from astroid<2.10,>=2.9.0->pylint!=2.13->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 18)) (1.7.1)
+Requirement already satisfied: websocket-client>=0.32.0 in /opt/conda/lib/python3.8/site-packages (from docker>=4.0.0->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.2.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /opt/conda/lib/python3.8/site-packages (from gitpython>=2.1.0->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (4.0.9)
+Requirement already satisfied: rsa<5,>=3.1.4 in /opt/conda/lib/python3.8/site-packages (from google-auth<2,>=1.6.3->tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (4.7.2)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /opt/conda/lib/python3.8/site-packages (from google-auth<2,>=1.6.3->tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (4.2.4)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /opt/conda/lib/python3.8/site-packages (from google-auth<2,>=1.6.3->tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (0.2.8)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /opt/conda/lib/python3.8/site-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (1.3.0)
+Requirement already satisfied: zipp>=0.5 in /opt/conda/lib/python3.8/site-packages (from importlib-metadata!=4.7.0,>=3.7.0->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (3.7.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/conda/lib/python3.8/site-packages (from Jinja2>=2.3->Sphinx==3.5.3->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 31)) (2.0.1)
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.4-py2.py3-none-any.whl (461 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 461.2/461.2 KB 217.5 MB/s eta 0:00:00
+Requirement already satisfied: Mako in /opt/conda/lib/python3.8/site-packages (from alembic->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.1.6)
+Requirement already satisfied: importlib-resources in /opt/conda/lib/python3.8/site-packages (from alembic->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (5.4.0)
+Requirement already satisfied: greenlet!=0.4.17 in /opt/conda/lib/python3.8/site-packages (from sqlalchemy->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (1.1.2)
+Requirement already satisfied: soupsieve>1.2 in /opt/conda/lib/python3.8/site-packages (from beautifulsoup4->gdown>=4.4.0->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 4)) (2.0.1)
+Requirement already satisfied: itsdangerous>=2.0 in /opt/conda/lib/python3.8/site-packages (from Flask->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (2.0.1)
+Requirement already satisfied: typing-inspect>=0.4.0 in /opt/conda/lib/python3.8/site-packages (from libcst->pytype>=2020.6.1->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 25)) (0.7.1)
+Requirement already satisfied: prometheus-client in /opt/conda/lib/python3.8/site-packages (from prometheus-flask-exporter->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (0.11.0)
+Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in /opt/conda/lib/python3.8/site-packages (from requests->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 40)) (1.7.1)
+Requirement already satisfied: joblib in /opt/conda/lib/python3.8/site-packages (from sacremoses->transformers->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 42)) (1.1.0)
+Requirement already satisfied: smmap<6,>=3.0.1 in /opt/conda/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->gitpython>=2.1.0->mlflow->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 43)) (5.0.0)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /opt/conda/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (0.4.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /opt/conda/lib/python3.8/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard->-r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt (line 9)) (3.1.1)
+Building wheels for collected packages: gdown, fire, termcolor
+  Building wheel for gdown (pyproject.toml): started
+  Building wheel for gdown (pyproject.toml): finished with status 'done'
+  Created wheel for gdown: filename=gdown-4.5.1-py3-none-any.whl size=14933 sha256=dd75b93abfd2f3aa17a432bd9209646a4f98ff690ef5611312869a57753c414b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-i2ujim3b/wheels/8d/df/71/846b2aa0fabaac2af23fbc5214eeaa55f0616e9d1a05187d72
+  Building wheel for fire (setup.py): started
+  Building wheel for fire (setup.py): finished with status 'done'
+  Created wheel for fire: filename=fire-0.4.0-py2.py3-none-any.whl size=115943 sha256=c5e6a89273f222e5f830b3ffe49ee0e429024515c14dc812afa39e0830b76636
+  Stored in directory: /tmp/pip-ephem-wheel-cache-i2ujim3b/wheels/1f/10/06/2a990ee4d73a8479fe2922445e8a876d38cfbfed052284c6a1
+  Building wheel for termcolor (setup.py): started
+  Building wheel for termcolor (setup.py): finished with status 'done'
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4847 sha256=bef2719f8ce0dde322d8914c5742b360b1b121b15f94cd57ebc32a8e1b8d9f7e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-i2ujim3b/wheels/a0/16/9c/5473df82468f958445479c59e784896fa24f4a5fc024b0f501
+Successfully built gdown fire termcolor
+Installing collected packages: types-PyYAML, termcolor, distlib, ast-decompiler, virtualenv, pynrrd, pydicom, nodeenv, identify, fire, cucim, cfgv, pytorch-ignite, pre-commit, flake8-pyi, flake8-executable, flake8-comprehensions, flake8-bugbear, gdown
+  Attempting uninstall: cucim
+    Found existing installation: cucim 22.2.0
+    Uninstalling cucim-22.2.0:
+      Successfully uninstalled cucim-22.2.0
+  Attempting uninstall: pytorch-ignite
+    Found existing installation: pytorch-ignite 0.4.8
+    Uninstalling pytorch-ignite-0.4.8:
+      Successfully uninstalled pytorch-ignite-0.4.8
+  Attempting uninstall: gdown
+    Found existing installation: gdown 4.2.1
+    Uninstalling gdown-4.2.1:
+      Successfully uninstalled gdown-4.2.1
+Successfully installed ast-decompiler-0.4.0 cfgv-3.3.1 cucim-22.2.1 distlib-0.3.4 fire-0.4.0 flake8-bugbear-22.7.1 flake8-comprehensions-3.10.0 flake8-executable-2.1.1 flake8-pyi-22.5.1 gdown-4.5.1 identify-2.5.1 nodeenv-1.7.0 pre-commit-2.19.0 pydicom-2.3.0 pynrrd-0.4.3 pytorch-ignite-0.4.9 termcolor-1.1.0 types-PyYAML-6.0.9 virtualenv-20.15.1
+WARNING: You are using pip version 22.0.3; however, version 22.1.2 is available.
+You should consider upgrading via the '/opt/conda/bin/python -m pip install --upgrade pip' command.

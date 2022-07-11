@@ -1,0 +1,128 @@
+Wed Jul  6 14:28:59 EDT 2022
+c42a-s29.ufhpc
+/home/hju/run_monaicore/basics/debug
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+"uname": executable file not found in $PATH
+True
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+"uname": executable file not found in $PATH
+MONAI version: 0.8.1
+Numpy version: 1.21.2
+Pytorch version: 1.10.0a0+0aef44c
+MONAI flags: HAS_EXT = True, USE_COMPILED = False
+MONAI rev id: 71ff399a3ea07aef667b23653620a290364095b1
+
+Optional dependencies:
+Pytorch Ignite version: 0.4.9
+Nibabel version: 3.2.2
+scikit-image version: 0.19.1
+Pillow version: 9.0.1
+Tensorboard version: 2.6.0
+gdown version: 4.5.1
+TorchVision version: 0.11.0a0
+tqdm version: 4.62.3
+lmdb version: 1.2.1
+psutil version: 5.8.0
+pandas version: 1.4.1
+einops version: 0.4.0
+transformers version: 4.16.2
+mlflow version: 1.23.1
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+generating synthetic data to /scratch/local/41299884/tmp_jz0mfk3 (this may take a while)
+torch.Size([10, 1, 96, 96]) torch.Size([10, 1, 96, 96])
+----------
+epoch 1/10
+This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+1/5, train_loss: 0.4650
+2/5, train_loss: 0.3799
+3/5, train_loss: 0.3644
+4/5, train_loss: 0.3266
+5/5, train_loss: 0.3015
+epoch 1 average loss: 0.3675
+----------
+epoch 2/10
+1/5, train_loss: 0.2917
+2/5, train_loss: 0.2694
+3/5, train_loss: 0.2629
+4/5, train_loss: 0.2672
+5/5, train_loss: 0.2453
+epoch 2 average loss: 0.2673
+saved new best metric model
+current epoch: 2 current mean dice: 0.9660 best mean dice: 0.9660 at epoch 2
+----------
+epoch 3/10
+1/5, train_loss: 0.2721
+2/5, train_loss: 0.2496
+3/5, train_loss: 0.2332
+4/5, train_loss: 0.2343
+5/5, train_loss: 0.2442
+epoch 3 average loss: 0.2467
+----------
+epoch 4/10
+1/5, train_loss: 0.2442
+2/5, train_loss: 0.2401
+3/5, train_loss: 0.2229
+4/5, train_loss: 0.2247
+5/5, train_loss: 0.2349
+epoch 4 average loss: 0.2334
+saved new best metric model
+current epoch: 4 current mean dice: 0.9786 best mean dice: 0.9786 at epoch 4
+----------
+epoch 5/10
+1/5, train_loss: 0.2392
+2/5, train_loss: 0.2260
+3/5, train_loss: 0.2376
+4/5, train_loss: 0.2145
+5/5, train_loss: 0.2166
+epoch 5 average loss: 0.2268
+----------
+epoch 6/10
+1/5, train_loss: 0.2144
+2/5, train_loss: 0.2131
+3/5, train_loss: 0.2239
+4/5, train_loss: 0.2209
+5/5, train_loss: 0.2176
+epoch 6 average loss: 0.2180
+saved new best metric model
+current epoch: 6 current mean dice: 0.9854 best mean dice: 0.9854 at epoch 6
+----------
+epoch 7/10
+1/5, train_loss: 0.2100
+2/5, train_loss: 0.2231
+3/5, train_loss: 0.2029
+4/5, train_loss: 0.2029
+5/5, train_loss: 0.2373
+epoch 7 average loss: 0.2152
+----------
+epoch 8/10
+1/5, train_loss: 0.1977
+2/5, train_loss: 0.2113
+3/5, train_loss: 0.2106
+4/5, train_loss: 0.2142
+5/5, train_loss: 0.2116
+epoch 8 average loss: 0.2091
+saved new best metric model
+current epoch: 8 current mean dice: 0.9886 best mean dice: 0.9886 at epoch 8
+----------
+epoch 9/10
+1/5, train_loss: 0.1925
+2/5, train_loss: 0.2024
+3/5, train_loss: 0.1966
+4/5, train_loss: 0.2240
+5/5, train_loss: 0.1976
+epoch 9 average loss: 0.2026
+----------
+epoch 10/10
+1/5, train_loss: 0.1892
+2/5, train_loss: 0.1996
+3/5, train_loss: 0.1954
+4/5, train_loss: 0.1926
+5/5, train_loss: 0.2029
+epoch 10 average loss: 0.1960
+saved new best metric model
+current epoch: 10 current mean dice: 0.9905 best mean dice: 0.9905 at epoch 10
+train completed, best_metric: 0.9905 at epoch: 10
