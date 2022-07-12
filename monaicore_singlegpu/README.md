@@ -140,7 +140,7 @@ Run a python script.
 python3 /home/hju/tutorials/2d_segmentation/torch/unet_training_array.py
 ```
 
-The first time you run scripts within the container, it might hang for quite a while before you see any console output, and the following runs will be much faster to see output. See [sample console output](interactive_python_console.out).
+The first time you run scripts within a newly spun-up container, it might hang for quite a while before you see any console output, and the following runs will be much faster to see output. See [sample console output](interactive_python_console.out).
 
 Exit the container.
 
