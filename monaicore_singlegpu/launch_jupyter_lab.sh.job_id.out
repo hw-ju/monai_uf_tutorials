@@ -1,0 +1,19 @@
+Mon Jul 11 20:24:00 EDT 2022
+c38a-s5.ufhpc
+/home/hju/monai_uf_tutorials/monaicore_singlegpu
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+"uname": executable file not found in $PATH
+[I 20:24:06.685 LabApp] jupyter_tensorboard extension loaded.
+[I 20:24:06.693 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.8/site-packages/jupyterlab
+[I 20:24:06.693 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 20:24:06.695 LabApp] [Jupytext Server Extension] NotebookApp.contents_manager_class is (a subclass of) jupytext.TextFileContentsManager already - OK
+[I 20:24:06.695 LabApp] Serving notebooks from local directory: /home/hju
+[I 20:24:06.695 LabApp] Jupyter Notebook 6.4.1 is running at:
+[I 20:24:06.695 LabApp] http://hostname:8888/?token=e15c5c7403c2218c68f33878f290a7edda4e4cf2f6f5e212
+[I 20:24:06.695 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 20:24:06.709 LabApp]
+
+    To access the notebook, open this file in a browser:
+        file:///home/hju/.local/share/jupyter/runtime/nbserver-46500-open.html
+    Or copy and paste this URL:
+        http://hostname:8888/?token=e15c5c7403c2218c68f33878f290a7edda4e4cf2f6f5e212

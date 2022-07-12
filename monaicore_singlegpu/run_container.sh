@@ -3,8 +3,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem-per-cpu=64gb
-#SBATCH --partition=hpg-ai
-#SBATCH --gpus=a100:1
+#SBATCH --partition=gpu
+#SBATCH --gpus=geforce:1
 #SBATCH --time=1:00:00
 #SBATCH --output=%x.%j.out
 

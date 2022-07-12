@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=60gb
+#SBATCH --mem-per-cpu=64gb
 #SBATCH --time=08:00:00
 #SBATCH --output=%x.%j.out
 date;hostname;pwd
