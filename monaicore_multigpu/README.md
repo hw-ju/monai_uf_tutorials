@@ -10,7 +10,7 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
 ## **Example: single-node multi-gpu training of Unet by** `torch.distributed.DistributedDataParallel` 
 Go to directory `unet_ddp/`
 ```
-cd ~/monai_uf_tutorials/monaicore_multigpu/unet_ddp
+cd ~/monai_uf_tutorials/monaicore_multigpu/unet_ddp/
 ```
 
 Submit a SLURM job script `launch.sh` to launch a training (see sample script [`launch.sh`](./unet_ddp/launch.sh))

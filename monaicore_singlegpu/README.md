@@ -45,7 +45,7 @@ chmod -R +x tutorials/
 Go to directory `monaicore_singlegpu/`.
 
 ```
-cd ~/monai_uf_tutorials/monaicore_singlegpu
+cd ~/monai_uf_tutorials/monaicore_singlegpu/
 ```
 
 Submit a SLURM job script (see sample script [`build_container.sh`](build_container.sh)) to build a [singularity sandbox container](https://docs.sylabs.io/guides/3.7/user-guide/build_a_container.html?highlight=sandbox#creating-writable-sandbox-directories) (a writable directory) in a directory (e.g., a directory in your blue storage, don't store the container in your home directory, see [HiperGator Storage](https://help.rc.ufl.edu/doc/Storage)). See [useful SLURM Commands on HiperGator](https://help.rc.ufl.edu/doc/SLURM_Commands) to learn more about commands like `sbatch`.
