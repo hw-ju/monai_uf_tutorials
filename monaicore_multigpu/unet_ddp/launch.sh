@@ -15,9 +15,12 @@
 #   set #SBATCH --ntasks-per-node=1  
 #   set #SBATCH --gpus=total number of processes to run on all nodes
 #   set #SBATCH --gpus-per-task=--gpus/--ntasks  
+#
 #   for multi-node training, replace `run_on_node.sh` in 
 #   `PT_LAUNCH_SCRIPT=$(realpath "${PT_LAUNCH_UTILS_PATH}/run_on_node.sh")`
 #   with `run_on_multinode.sh`.
+#   
+#   Modify paths to your own paths.
 #      
 # (c) 2021, Brian J. Stucky, UF Research Computing
 # 2022, modified by Huiwen Ju, hju@nvidia.com
@@ -42,7 +45,7 @@ export NCCL_DEBUG=INFO
 export TORCH_DISTRIBUTED_DEBUG=DETAIL
 export NCCL_ASYNC_ERROR_HANDLING=1
 # Training command specification: training_script -args.
-TRAINING_SCRIPT="$(realpath "$HOME/monaicore_multigpu/unet_ddp/unet_training_ddp.py")"
+TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/monaicore_multigpu/unet_ddp/unet_training_ddp.py")"
 TRAINING_CMD="$TRAINING_SCRIPT"
 
 # Python location (if not provided, system default will be used).
@@ -53,7 +56,7 @@ PYTHON_PATH="singularity exec --nv \
           
 # Location of the PyTorch launch utilities, 
 # i.e. `pt_multinode_helper_funcs.sh`, `run_on_node.sh` and `run_on_multinode`.
-PT_LAUNCH_UTILS_PATH=$HOME/monaicore_multigpu/util_multigpu
+PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
 source "${PT_LAUNCH_UTILS_PATH}/pt_multinode_helper_funcs.sh"
 
 init_node_info
