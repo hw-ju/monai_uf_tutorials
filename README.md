@@ -27,5 +27,5 @@ chmod -R +x monai_uf_tutorials
 ```
 
 ## Contents
-1. run on single GPU
-2. run on multi GPU
+1. [use MONAI Core for single-GPU training](./monaicore_singlegpu/)
+2. [use MONAI Core for multi-GPU training](./monaicore_multigpu/)
