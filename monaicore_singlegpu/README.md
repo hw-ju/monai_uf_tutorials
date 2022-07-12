@@ -38,11 +38,11 @@ git clone https://github.com/Project-MONAI/tutorials.git
 Make all files in the directory executable
 
 ```
-chmod -R +x tutorials
+chmod -R +x tutorials/
 ```
 
 ## **step 2. Build a MONAI Core singularity container**
-Go to directory `monaicore_singlegpu`.
+Go to directory `monaicore_singlegpu/`.
 
 ```
 cd ~/monai_uf_tutorials/monaicore_singlegpu
@@ -85,7 +85,7 @@ cat build_container.sh.job_id.out
 ## **step 3. Run tutorial scripts within the container** 
 Tutorial scripts are in 2 formats, python scripts (.py) and jupyter notebooks (.ipynb). How to run each script format is shown separately below. 
 
-Go to directory `monaicore_singlegpu`.
+Go to directory `monaicore_singlegpu/`.
 
 ```
 cd ~/monai_uf_tutorials/monaicore_singlegpu
@@ -195,7 +195,7 @@ You will be prompted to enter your password. If the password is correct, there w
 
 In a web browser, go to `http://localhost:8888/`. You might be prompted to authenticate as shown in the screenshot below. Copy & paste token from the SLURM output above in the prompt box. Note: if you do not want to go through copying/pasting the token for every jupyter job, you can set a default password, see [remote jupyter notebook on HiperGator](https://help.rc.ufl.edu/doc/Remote_Jupyter_Notebook).
 
-Open any jupyter notebooks in the directory `tutorials` on the left pane (e.g. ~/tutorials/2d_classification/mednist_tutorial.ipynb) and you're ready to run.
+Open any jupyter notebooks in the directory `tutorials/` on the left pane (e.g. ~/tutorials/2d_classification/mednist_tutorial.ipynb) and you're ready to run.
 
 
 

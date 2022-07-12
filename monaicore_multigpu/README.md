@@ -8,14 +8,14 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
 4. Please read the comments at the top of each script to get a better understanding on how to tune the scripts to your own needs. 
 
 ## **Example: single-node multi-gpu training of Unet by** `torch.distributed.DistributedDataParallel` 
-Go to `\unet_ddp`
+Go to directory `unet_ddp/`
 ```
-cd ~\monai_uf_tutorials\monaicore_multigpu\unet_ddp
+cd ~/monai_uf_tutorials/monaicore_multigpu/unet_ddp
 ```
 
 Submit a SLURM job script `launch.sh` to launch a training (see sample script [`launch.sh`](./unet_ddp/launch.sh))
 ```
-sbatch ~\monaicore_\launch.sh
+sbatch launch.sh
 ```
 
 Check SLURM output file, file name format `launch.sh.job_id.out` (see sample file [`launch.sh.job_id.out`](./unet_ddp/launch.sh.job_id.out)).

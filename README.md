@@ -23,7 +23,7 @@ git clone https://github.com/hw-ju/monai_uf_tutorials.git
 Make all files in the directory executable
 
 ```
-chmod -R +x monai_uf_tutorials
+chmod -R +x monai_uf_tutorials/
 ```
 
 ## Contents
