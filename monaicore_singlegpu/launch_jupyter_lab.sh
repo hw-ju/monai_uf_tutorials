@@ -12,8 +12,8 @@ date;hostname;pwd
 
 module load singularity
 
-# Go to MONAI Core tutorials directory
-cd $HOME/tutorials
+# Go to home directory
+cd $HOME
 
 # Modify the path to your singularity container 
 singularity exec --nv /blue/vendor-nvidia/hju/monaicore0.8.1 jupyter lab

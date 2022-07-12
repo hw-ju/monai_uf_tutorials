@@ -42,6 +42,12 @@ chmod -R +x tutorials
 ```
 
 ## **step 2. Build a MONAI Core singularity container**
+Go to directory `monaicore_singlegpu`.
+
+```bash
+cd ~/monai_uf_tutorials/monaicore_singlegpu
+```
+
 Submit a SLURM job script (see sample script [`build_container.sh`](build_container.sh)) to build a [singularity sandbox container](https://docs.sylabs.io/guides/3.7/user-guide/build_a_container.html?highlight=sandbox#creating-writable-sandbox-directories) (a writable directory) in a directory (e.g., a directory in your blue storage, don't store the container in your home directory, see [HiperGator Storage](https://help.rc.ufl.edu/doc/Storage)). See [useful SLURM Commands on HiperGator](https://help.rc.ufl.edu/doc/SLURM_Commands) to learn more about commands like `sbatch`.
 
 ```bash
@@ -79,6 +85,12 @@ cat build_container.sh.job_id.out
 ## **step 3. Run tutorial scripts within the container** 
 Tutorial scripts are in 2 formats, python scripts (.py) and jupyter notebooks (.ipynb). How to run each script format is shown separately below. 
 
+Go to directory `monaicore_singlegpu`.
+
+```bash
+cd ~/monai_uf_tutorials/monaicore_singlegpu
+```
+
 ### **1) Run python script .py in interactive mode**
 Request resources for an interactive session and start a bash shell (learn more about [interactive session on HiperGator](https://help.rc.ufl.edu/doc/Development_and_Testing), learn more about [GPU access on HiperGator](https://help.rc.ufl.edu/doc/GPU_Access)). 
 
@@ -96,7 +108,7 @@ srun --nodes=1 --ntasks=1 --partition=gpu --gpus=geforce:1 --cpus-per-task=2 --m
 
 When you see the prompt changes from something like ```[hju@login5 monaicore_singlegpu]$``` to something like ```[hju@c39a-s39 monaicore_singlegpu]$```, you have successfully hopped from the login node to a compute node. Sample console output:
 
-```shell
+```
 srun: job 41777769 queued and waiting for resources
 srun: job 41777769 has been allocated resources
 [hju@c39a-s39 monaicore_singlegpu]$
@@ -116,7 +128,7 @@ singularity shell --nv /blue/vendor-nvidia/hju/monaicore0.8.1
 
 It might hang for a while before any console output. The change in prompt (from hju@... to Singularity>) indicates that you have entered the container. Sample console output:
 
-```shell
+```
 WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts  # can be ignored
 "uname": executable file not found in $PATH  # can be ignored
 Singularity>
@@ -143,12 +155,6 @@ Ctrl + D
 ```
 
 ### **2) Run a python script .py in batch mode**
-Go to `/monai_uf_tutorials/monaicore_singlegpu`.
-
-```bash
-cd ~/monai_uf_tutorials/monaicore_singlegpu
-```
-
 Submit a SLURM job script. See sample job script [`run_container.sh`](run_container.sh).
 
 ```bash
@@ -167,12 +173,6 @@ tail -f run_container.sh.job_id.out
 ```
 
 ### **3) Run jupyter notebooks .ipynb by SSH tunneling**
-Go to `/monai_uf_tutorials/monaicore_singlegpu`.
-
-```bash
-cd ~/monai_uf_tutorials/monaicore_singlegpu
-```
-
 Submit a SLURM job script to launch a jupyter lab server (see sample script [`launch_jupyter_lab.sh`](launch_jupyter_lab.sh)). Note in the SLURM job script, do not set cpu memory too small, otherwise some cells (e.g., cells for training) in the jupyter notebooks cannot execute. 
 
 ```bash
@@ -195,7 +195,7 @@ You will be prompted to enter your password. If the password is correct, there w
 
 In a web browser, go to `http://localhost:8888/`. You might be prompted to authenticate as shown in the screenshot below. Copy & paste token from the SLURM output above in the prompt box. Note: if you do not want to go through copying/pasting the token for every jupyter job, you can set a default password, see [remote jupyter notebook on HiperGator](https://help.rc.ufl.edu/doc/Remote_Jupyter_Notebook).
 
-Open any jupyter notebooks in the directory “tutorials” on the left pane (e.g. ~/tutorials/2d_classification/mednist_tutorial.ipynb) and you're ready to run.
+Open any jupyter notebooks in the directory `tutorials` on the left pane (e.g. ~/tutorials/2d_classification/mednist_tutorial.ipynb) and you're ready to run.
 
 
 
