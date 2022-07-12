@@ -19,38 +19,38 @@
 ## **step 1. Download MONAI Core tutorial repository**
 Log in to HiperGator, change `hju` to your username
 
-```bash
+```
 ssh hju@hpg.rc.ufl.edu
 ```
 
 Go to your home directory 
 
-```bash
+```
 cd ~
 ```
 
 Download MONAI Core tutorial repository into a local directory. The default name of the directory is `tutorials`. 
 
-```bash
+```
 git clone https://github.com/Project-MONAI/tutorials.git
 ```
 
 Make all files in the directory executable
 
-```bash
+```
 chmod -R +x tutorials
 ```
 
 ## **step 2. Build a MONAI Core singularity container**
 Go to directory `monaicore_singlegpu`.
 
-```bash
+```
 cd ~/monai_uf_tutorials/monaicore_singlegpu
 ```
 
 Submit a SLURM job script (see sample script [`build_container.sh`](build_container.sh)) to build a [singularity sandbox container](https://docs.sylabs.io/guides/3.7/user-guide/build_a_container.html?highlight=sandbox#creating-writable-sandbox-directories) (a writable directory) in a directory (e.g., a directory in your blue storage, don't store the container in your home directory, see [HiperGator Storage](https://help.rc.ufl.edu/doc/Storage)). See [useful SLURM Commands on HiperGator](https://help.rc.ufl.edu/doc/SLURM_Commands) to learn more about commands like `sbatch`.
 
-```bash
+```
 sbatch build_container.sh
 ```
 
@@ -62,7 +62,7 @@ Submitted batch job 41779619  # 41779619 is the job id
 
 **This job might take a long time.** Check if the job is still running (`watch` command will update the job status every 2 sec.)
 
-```bash
+```
 watch squeue -u $USER
 ```
 
@@ -77,7 +77,7 @@ Every 2.0s: squeue -u hju                                                       
 
 Once the job is done, check the SLURM output file, file name in format `build_container.sh.job_id.out`. See [sample output file](build_container.sh.job_id.out)). If there is no error, then the container was built successfully.
 
-```bash
+```
 cat build_container.sh.job_id.out 
 ```
 
@@ -87,7 +87,7 @@ Tutorial scripts are in 2 formats, python scripts (.py) and jupyter notebooks (.
 
 Go to directory `monaicore_singlegpu`.
 
-```bash
+```
 cd ~/monai_uf_tutorials/monaicore_singlegpu
 ```
 
@@ -96,13 +96,13 @@ Request resources for an interactive session and start a bash shell (learn more 
 
 To request an A100 GPU:
 
-```bash
+```
 srun --nodes=1 --ntasks=1 --partition=gpu --gpus=a100:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
 ```
 
 To request a GeForce GPU:
 
-```bash
+```
 srun --nodes=1 --ntasks=1 --partition=gpu --gpus=geforce:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
 ```
 
@@ -116,13 +116,13 @@ srun: job 41777769 has been allocated resources
 
 Load singularity.
 
-```bash
+```
 module load singularity
 ```
 
 Spawn a new shell within your container and interact with it. Alter the path to your container. 
 
-```bash
+```
 singularity shell --nv /blue/vendor-nvidia/hju/monaicore0.8.1
 ```
 
@@ -136,7 +136,7 @@ Singularity>
 
 Run a python script.
 
-```bash
+```
 python3 /home/hju/tutorials/2d_segmentation/torch/unet_training_array.py
 ```
 
@@ -157,37 +157,37 @@ Ctrl + D
 ### **2) Run a python script .py in batch mode**
 Submit a SLURM job script. See sample job script [`run_container.sh`](run_container.sh).
 
-```bash
+```
 sbatch run_container.sh
 ```
 
 Check the SLURM output file, file name in the format `run_container.sh.job_id.out`. See [sample output file](run_container.sh.job_id.out).
 
-```bash
+```
 cat run_container.sh.job_id.out
 ```
 
 or you can use `tail` command to follow the SLURM output while it's spitting out. 
-```bash
+```
 tail -f run_container.sh.job_id.out
 ```
 
 ### **3) Run jupyter notebooks .ipynb by SSH tunneling**
 Submit a SLURM job script to launch a jupyter lab server (see sample script [`launch_jupyter_lab.sh`](launch_jupyter_lab.sh)). Note in the SLURM job script, do not set cpu memory too small, otherwise some cells (e.g., cells for training) in the jupyter notebooks cannot execute. 
 
-```bash
+```
 sbatch launch_jupyter_lab.sh
 ```
 
 Check the SLURM output file, file name in format `launch_jupyter_lab.sh.job_id.out`. It might take a while until you see the **hostname** (e.g., c38a-s5) and **http://hostname:8888/?token=** in the [sample output file](launch_jupyter_labe.sh.job_id.out), which we will use in next steps.
 
-```bash
+```
 cat launch_jupyter_lab.sh.job_id.out
 ```
 
 Open another local terminal window, SSH to the server host, alter the **hostname** (e.g., `c1000a-s17` between the 2 colons) according to the SLURM output above, alter `hju` to your username. 
 
-```bash
+```
 ssh -NL 8888:c38a-s5:8888 hju@hpg.rc.ufl.edu
 ```
 
