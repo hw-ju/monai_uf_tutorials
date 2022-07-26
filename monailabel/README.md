@@ -137,6 +137,12 @@ Start a MONAI Label server for your chosen application and dataset:
 singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel/ monailabel start_server --app /workspace/apps/deepedit --studies /workspace/datasets/Task03_Liver/imagesTr 
 ```
 
+If you're using `self.epistemic_enabled = strtobool(conf.get("epistemic_enabled", "true"))`, you'll see epistemic score calculation in server output:
+
+<img src="./screenshots/epistemic_output.png" width="800">
+
+*Note: in the live demo, the Epistemic strategy didn't work, restarting the MONAI Label server solves the issue.* 
+
 Once the output shows the server is up, go to 3DSlicer tab, switch to MONAI Label module, and connect with the server by putting the correct compute node name (e.g.,`c45a-s13` in `hju@c45a-s13`) in field `MONAI Label server:`:
 <img src="./screenshots/3DSlicer_connect_to_server.png" width="400">
 
