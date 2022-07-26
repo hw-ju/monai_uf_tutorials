@@ -11,6 +11,12 @@ See output (sample output [build.sh.job_id.out](./build.sh.job_id.out)):
 cat build.sh.job_id.out
 ```   
 
+## **Major steps**
+1. Explore and download sample applications and datasets.
+2. Launch a console session on the HWGUI nodes in Open OnDemand.
+3. Start MONAI Label server and client 3DSlicer.
+4. Use MONAI Label server and client 3DSlicer to annotate data & train models.
+
 ## **step 1. Explore and download sample applications and datasets**
 *Note: you can complete step 1 in an Open OnDemand terminal as well.*
 Log in to HiperGator, change `hju` to your username
