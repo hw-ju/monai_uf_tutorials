@@ -10,9 +10,9 @@ date;hostname;pwd
 
 module load singularity
 
-# show all monailabel commands to download sample apps, datasets and run server
-singularity exec -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel/ monailabel --help 
+# Show all monailabel commands
+singularity exec /apps/nvidia/containers/monai/monailabel/ monailabel --help 
 # List sample apps
-singularity exec -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel/ monailabel apps 
+singularity exec /apps/nvidia/containers/monai/monailabel/ monailabel apps 
 # List sample datasets
-singularity exec -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel/ monailabel datasets
+singularity exec /apps/nvidia/containers/monai/monailabel/ monailabel datasets
