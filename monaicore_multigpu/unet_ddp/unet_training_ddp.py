@@ -184,12 +184,12 @@ def main():
     parser.add_argument("--local_rank", type=int)
     args = parser.parse_args()
 
-    os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
-    os.environ["NCCL_ASYNC_ERROR_HANDLING"] = "1"
+    # for debugging purpose
+    # os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
+    # os.environ["NCCL_ASYNC_ERROR_HANDLING"] = "1"
 
     train(args=args)
 
 
 if __name__ == "__main__":
     main()
-
