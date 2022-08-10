@@ -1,0 +1,158 @@
+/home/hju/run_monaicore/multigpu/unetr_ddp/gputransform
+c1009a-s29.ufhpc
+Mon May  2 21:58:56 EDT 2022
+Primary node: c1009a-s29
+Primary TCP port: 7746
+Secondary nodes: 
+Running "/home/hju/run_monaicore/multigpu/unetr_ddp/gputransform/unetr_btcv_ddp_gputransform_ThreadDataLoader.py" on each node...
+[33mWARNING:[0m underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+/.singularity.d/env/10-docker2singularity.sh: line 2: uname: No such file or directory
+/opt/conda/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   8%|▊         | 1/12 [00:28<05:10, 28.27s/it]Loading dataset:   8%|▊         | 1/12 [00:28<05:11, 28.34s/it]Loading dataset:  25%|██▌       | 3/12 [00:28<01:06,  7.40s/it]Loading dataset:   8%|▊         | 1/12 [00:29<05:19, 29.01s/it]Loading dataset:  25%|██▌       | 3/12 [00:29<01:08,  7.58s/it]Loading dataset:   8%|▊         | 1/12 [00:29<05:22, 29.32s/it]Loading dataset:  75%|███████▌  | 9/12 [00:34<00:09,  3.02s/it]Loading dataset: 100%|██████████| 12/12 [00:34<00:00,  2.90s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  75%|███████▌  | 9/12 [00:35<00:08,  2.68s/it]Loading dataset: 100%|██████████| 12/12 [00:35<00:00,  2.97s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  75%|███████▌  | 9/12 [00:36<00:08,  2.72s/it]Loading dataset: 100%|██████████| 12/12 [00:36<00:00,  3.03s/it]
+Loading dataset:  75%|███████▌  | 9/12 [00:36<00:09,  3.16s/it]Loading dataset: 100%|██████████| 12/12 [00:36<00:00,  3.03s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  25%|██▌       | 1/4 [00:06<00:18,  6.03s/it]Loading dataset:  25%|██▌       | 1/4 [00:06<00:19,  6.65s/it]Loading dataset:  25%|██▌       | 1/4 [00:05<00:17,  5.77s/it]Loading dataset:  25%|██▌       | 1/4 [00:06<00:18,  6.06s/it]Loading dataset:  50%|█████     | 2/4 [00:07<00:06,  3.36s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.30s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.92s/it]
+Loading dataset:  50%|█████     | 2/4 [00:08<00:07,  3.78s/it]Loading dataset: 100%|██████████| 4/4 [00:08<00:00,  2.10s/it]
+Loading dataset:  50%|█████     | 2/4 [00:07<00:06,  3.49s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.92s/it]
+Loading dataset:  50%|█████     | 2/4 [00:07<00:07,  3.56s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.97s/it]
+NCCL version 2.11.4+cuda11.4
+[0] ---------- epoch 1/5[2] ---------- epoch 1/5[3] ---------- epoch 1/5[1] ---------- epoch 1/5
+
+
+
+[0] 1/12, train_loss: 3.7717[2] 1/12, train_loss: 3.7681[1] 1/12, train_loss: 3.7468[3] 1/12, train_loss: 3.7797
+
+
+
+[3] 2/12, train_loss: 3.7112
+[1] 2/12, train_loss: 3.7184
+[2] 2/12, train_loss: 3.7698
+[0] 2/12, train_loss: 3.7509
+[1] 3/12, train_loss: 3.6828
+[3] 3/12, train_loss: 3.7671
+[3] epoch 1, average loss: 3.7527
+[3] ---------- epoch 2/5
+[1] epoch 1, average loss: 3.7160
+[1] ---------- epoch 2/5
+[0] 3/12, train_loss: 3.6953
+[0] epoch 1, average loss: 3.7393
+[0] ---------- epoch 2/5
+[2] 3/12, train_loss: 3.6601
+[2] epoch 1, average loss: 3.7327
+[2] ---------- epoch 2/5
+[3] 1/12, train_loss: 3.7370[1] 1/12, train_loss: 3.6470[0] 1/12, train_loss: 3.6734
+
+
+[2] 1/12, train_loss: 3.6326
+[3] 2/12, train_loss: 3.6007
+[1] 2/12, train_loss: 3.6602
+[2] 2/12, train_loss: 3.6336
+[0] 2/12, train_loss: 3.6941
+[1] 3/12, train_loss: 3.5339
+[1] epoch 2, average loss: 3.6137
+[1] validation at epoch 2/5
+[2] 3/12, train_loss: 3.6059
+[2] epoch 2, average loss: 3.6240
+[2] validation at epoch 2/5
+[3] 3/12, train_loss: 3.5696
+[3] epoch 2, average loss: 3.6358
+[3] validation at epoch 2/5
+[0] 3/12, train_loss: 3.4811
+[0] epoch 2, average loss: 3.6162
+[0] validation at epoch 2/5
+[0] saved new best metric model[3] saved new best metric model[1] saved new best metric model
+
+
+[2] saved new best metric model
+[2] current epoch: 2 current mean dice: 0.0550 best mean dice: 0.0550 at epoch 2
+[0] current epoch: 2 current mean dice: 0.0550 best mean dice: 0.0550 at epoch 2[3] current epoch: 2 current mean dice: 0.0550 best mean dice: 0.0550 at epoch 2
+[1] current epoch: 2 current mean dice: 0.0550 best mean dice: 0.0550 at epoch 2
+
+[2] ---------- epoch 3/5
+[0] ---------- epoch 3/5
+[1] ---------- epoch 3/5
+[3] ---------- epoch 3/5
+[3] 1/12, train_loss: 3.6205
+[2] 1/12, train_loss: 3.5030
+[0] 1/12, train_loss: 3.5694
+[1] 1/12, train_loss: 3.6238
+[3] 2/12, train_loss: 3.5893
+[1] 2/12, train_loss: 3.4858
+[2] 2/12, train_loss: 3.4493
+[0] 2/12, train_loss: 3.4972
+[2] 3/12, train_loss: 3.5327[3] 3/12, train_loss: 3.4780
+
+[3] epoch 3, average loss: 3.5626
+[3] ---------- epoch 4/5
+[2] epoch 3, average loss: 3.4950
+[2] ---------- epoch 4/5
+[1] 3/12, train_loss: 3.4541
+[1] epoch 3, average loss: 3.5212
+[1] ---------- epoch 4/5
+[0] 3/12, train_loss: 3.4610
+[0] epoch 3, average loss: 3.5092
+[0] ---------- epoch 4/5
+[3] 1/12, train_loss: 3.6161[1] 1/12, train_loss: 3.4732[2] 1/12, train_loss: 3.4741
+
+
+[0] 1/12, train_loss: 3.4927
+[0] 2/12, train_loss: 3.4593
+[3] 2/12, train_loss: 3.4731
+[1] 2/12, train_loss: 3.4960
+[2] 2/12, train_loss: 3.4568
+[0] 3/12, train_loss: 3.5128
+[0] epoch 4, average loss: 3.4883
+[0] validation at epoch 4/5
+[2] 3/12, train_loss: 3.4736
+[2] epoch 4, average loss: 3.4682
+[2] validation at epoch 4/5
+[1] 3/12, train_loss: 3.5113
+[1] epoch 4, average loss: 3.4935
+[1] validation at epoch 4/5
+[3] 3/12, train_loss: 3.4466
+[3] epoch 4, average loss: 3.5119
+[3] validation at epoch 4/5
+[1] saved new best metric model
+[1] current epoch: 4 current mean dice: 0.0600 best mean dice: 0.0600 at epoch 4
+[1] ---------- epoch 5/5
+[2] saved new best metric model
+[2] current epoch: 4 current mean dice: 0.0600 best mean dice: 0.0600 at epoch 4
+[2] ---------- epoch 5/5
+[3] saved new best metric model
+[0] saved new best metric model[3] current epoch: 4 current mean dice: 0.0600 best mean dice: 0.0600 at epoch 4
+
+[0] current epoch: 4 current mean dice: 0.0600 best mean dice: 0.0600 at epoch 4
+[3] ---------- epoch 5/5
+[0] ---------- epoch 5/5
+[3] 1/12, train_loss: 3.4497[2] 1/12, train_loss: 3.4579
+
+[1] 1/12, train_loss: 3.3880
+[0] 1/12, train_loss: 3.3868
+[2] 2/12, train_loss: 3.3798
+[1] 2/12, train_loss: 3.4093
+[3] 2/12, train_loss: 3.4708
+[0] 2/12, train_loss: 3.3869
+[1] 3/12, train_loss: 3.4642
+[1] epoch 5, average loss: 3.4205
+[2] 3/12, train_loss: 3.4529
+[2] epoch 5, average loss: 3.4302
+[3] 3/12, train_loss: 3.5069
+[0] 3/12, train_loss: 3.4696
+[0] epoch 5, average loss: 3.4144
+[3] epoch 5, average loss: 3.4758
+[0] train completed, epoch losses: [3.739285469055176, 3.6161683400472007, 3.509201765060425, 3.488290627797445, 3.414411703745524][3] train completed, epoch losses: [3.7526546319325766, 3.635798772176107, 3.562644879023234, 3.5119325319925943, 3.4758031368255615][2] train completed, epoch losses: [3.732673247655233, 3.624040126800537, 3.4949991703033447, 3.468191464742025, 3.4302096366882324]
+
+
+[1] train completed, epoch losses: [3.7160068353017173, 3.613705635070801, 3.521246592203776, 3.4935153325398765, 3.4205146630605063]

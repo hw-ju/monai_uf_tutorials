@@ -1,0 +1,158 @@
+/home/hju/run_monaicore/multigpu/unetr_ddp
+c1007a-s17.ufhpc
+Mon Apr 25 22:55:23 EDT 2022
+Primary node: c1007a-s17
+Primary TCP port: 23868
+Secondary nodes: 
+Running "/home/hju/run_monaicore/multigpu/unetr_ddp/unetr_btcv_ddp.py" on each node...
+[33mWARNING:[0m underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+/.singularity.d/env/10-docker2singularity.sh: line 2: uname: No such file or directory
+/opt/conda/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   8%|▊         | 1/12 [00:11<02:03, 11.24s/it]Loading dataset:   8%|▊         | 1/12 [00:11<02:05, 11.45s/it]Loading dataset:   8%|▊         | 1/12 [00:11<02:07, 11.60s/it]Loading dataset:  17%|█▋        | 2/12 [00:11<00:48,  4.88s/it]Loading dataset:  17%|█▋        | 2/12 [00:11<00:49,  4.96s/it]Loading dataset:   8%|▊         | 1/12 [00:11<02:11, 11.91s/it]Loading dataset:  17%|█▋        | 2/12 [00:12<00:50,  5.08s/it]Loading dataset:  17%|█▋        | 2/12 [00:12<00:51,  5.18s/it]Loading dataset:  25%|██▌       | 3/12 [00:14<00:34,  3.84s/it]Loading dataset:  25%|██▌       | 3/12 [00:15<00:37,  4.15s/it]Loading dataset:  25%|██▌       | 3/12 [00:15<00:39,  4.37s/it]Loading dataset:  25%|██▌       | 3/12 [00:16<00:40,  4.51s/it]Loading dataset:  75%|███████▌  | 9/12 [00:19<00:04,  1.41s/it]Loading dataset: 100%|██████████| 12/12 [00:19<00:00,  1.59s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  75%|███████▌  | 9/12 [00:19<00:04,  1.38s/it]Loading dataset: 100%|██████████| 12/12 [00:19<00:00,  1.60s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  75%|███████▌  | 9/12 [00:20<00:04,  1.45s/it]Loading dataset: 100%|██████████| 12/12 [00:20<00:00,  1.67s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  75%|███████▌  | 9/12 [00:20<00:04,  1.55s/it]Loading dataset: 100%|██████████| 12/12 [00:20<00:00,  1.71s/it]
+Loading dataset:   0%|          | 0/4 [00:00<?, ?it/s]Loading dataset:  25%|██▌       | 1/4 [00:05<00:16,  5.48s/it]Loading dataset:  25%|██▌       | 1/4 [00:05<00:17,  5.84s/it]Loading dataset:  50%|█████     | 2/4 [00:06<00:05,  2.61s/it]Loading dataset:  50%|█████     | 2/4 [00:06<00:05,  2.96s/it]Loading dataset:  25%|██▌       | 1/4 [00:05<00:17,  5.80s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.26s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.75s/it]
+Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.18s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.76s/it]
+Loading dataset:  25%|██▌       | 1/4 [00:05<00:17,  5.98s/it]Loading dataset:  50%|█████     | 2/4 [00:06<00:05,  2.92s/it]Loading dataset: 100%|██████████| 4/4 [00:06<00:00,  1.68s/it]
+Loading dataset:  50%|█████     | 2/4 [00:07<00:06,  3.28s/it]Loading dataset: 100%|██████████| 4/4 [00:07<00:00,  1.84s/it]
+NCCL version 2.11.4+cuda11.4
+[3] ---------- epoch 1/5[0] ---------- epoch 1/5[2] ---------- epoch 1/5[1] ---------- epoch 1/5
+
+
+
+[3] 1/12, train_loss: 3.5213[1] 1/12, train_loss: 3.4574[2] 1/12, train_loss: 3.5088[0] 1/12, train_loss: 3.5113
+
+
+
+[0] 2/12, train_loss: 3.3578
+[3] 2/12, train_loss: 3.3897
+[1] 2/12, train_loss: 3.4047
+[2] 2/12, train_loss: 3.3998
+[0] 3/12, train_loss: 3.3696
+[1] 3/12, train_loss: 3.3540[3] 3/12, train_loss: 3.3649
+
+[2] 3/12, train_loss: 3.3728
+[2] epoch 1, average loss: 3.4271
+[2] ---------- epoch 2/5
+[1] epoch 1, average loss: 3.4054
+[1] ---------- epoch 2/5
+[0] epoch 1, average loss: 3.4129
+[0] ---------- epoch 2/5
+[3] epoch 1, average loss: 3.4253
+[3] ---------- epoch 2/5
+[2] 1/12, train_loss: 3.3485[3] 1/12, train_loss: 3.4497[0] 1/12, train_loss: 3.3216[1] 1/12, train_loss: 3.3583
+
+
+
+[0] 2/12, train_loss: 3.3319
+[3] 2/12, train_loss: 3.2889
+[1] 2/12, train_loss: 3.3219
+[2] 2/12, train_loss: 3.3317
+[1] 3/12, train_loss: 3.3374[0] 3/12, train_loss: 3.2989
+
+[3] 3/12, train_loss: 3.2784
+[2] 3/12, train_loss: 3.3281
+[0] epoch 2, average loss: 3.3174
+[0] validation at epoch 2/5
+[3] epoch 2, average loss: 3.3390
+[3] validation at epoch 2/5
+[1] epoch 2, average loss: 3.3392
+[1] validation at epoch 2/5
+[2] epoch 2, average loss: 3.3361
+[2] validation at epoch 2/5
+[1] saved new best metric model[0] saved new best metric model[3] saved new best metric model[2] saved new best metric model
+
+
+
+[3] current epoch: 2 current mean dice: 0.0450 best mean dice: 0.0450 at epoch 2[2] current epoch: 2 current mean dice: 0.0450 best mean dice: 0.0450 at epoch 2[0] current epoch: 2 current mean dice: 0.0450 best mean dice: 0.0450 at epoch 2
+[1] current epoch: 2 current mean dice: 0.0450 best mean dice: 0.0450 at epoch 2
+
+
+[3] ---------- epoch 3/5
+[1] ---------- epoch 3/5
+[0] ---------- epoch 3/5
+[2] ---------- epoch 3/5
+[0] 1/12, train_loss: 3.2743[1] 1/12, train_loss: 3.3192
+
+[3] 1/12, train_loss: 3.2645
+[2] 1/12, train_loss: 3.2332
+[0] 2/12, train_loss: 3.2165
+[1] 2/12, train_loss: 3.2444
+[3] 2/12, train_loss: 3.2091
+[2] 2/12, train_loss: 3.2828
+[0] 3/12, train_loss: 3.2581
+[3] 3/12, train_loss: 3.2399
+[1] 3/12, train_loss: 3.2169
+[2] 3/12, train_loss: 3.2275
+[0] epoch 3, average loss: 3.2496
+[0] ---------- epoch 4/5
+[3] epoch 3, average loss: 3.2378
+[3] ---------- epoch 4/5
+[2] epoch 3, average loss: 3.2478
+[2] ---------- epoch 4/5
+[1] epoch 3, average loss: 3.2602
+[1] ---------- epoch 4/5
+[0] 1/12, train_loss: 3.1744
+[1] 1/12, train_loss: 3.2588
+[2] 1/12, train_loss: 3.1504
+[3] 1/12, train_loss: 3.2238
+[0] 2/12, train_loss: 3.2175
+[1] 2/12, train_loss: 3.1613
+[3] 2/12, train_loss: 3.1603
+[2] 2/12, train_loss: 3.1646
+[0] 3/12, train_loss: 3.1255
+[1] 3/12, train_loss: 3.1617
+[2] 3/12, train_loss: 3.2049
+[3] 3/12, train_loss: 3.1517
+[0] epoch 4, average loss: 3.1725
+[0] validation at epoch 4/5
+[3] epoch 4, average loss: 3.1786
+[3] validation at epoch 4/5
+[2] epoch 4, average loss: 3.1733
+[2] validation at epoch 4/5
+[1] epoch 4, average loss: 3.1939
+[1] validation at epoch 4/5
+[0] saved new best metric model
+[2] saved new best metric model
+[1] saved new best metric model
+[0] current epoch: 4 current mean dice: 0.0660 best mean dice: 0.0660 at epoch 4
+[2] current epoch: 4 current mean dice: 0.0660 best mean dice: 0.0660 at epoch 4
+[0] ---------- epoch 5/5
+[1] current epoch: 4 current mean dice: 0.0660 best mean dice: 0.0660 at epoch 4[3] saved new best metric model
+[2] ---------- epoch 5/5
+
+[1] ---------- epoch 5/5
+[3] current epoch: 4 current mean dice: 0.0660 best mean dice: 0.0660 at epoch 4
+[3] ---------- epoch 5/5
+[2] 1/12, train_loss: 3.0975[0] 1/12, train_loss: 3.1544[3] 1/12, train_loss: 3.1216
+
+
+[1] 1/12, train_loss: 3.1285
+[0] 2/12, train_loss: 3.1002
+[1] 2/12, train_loss: 3.0872
+[3] 2/12, train_loss: 3.2802
+[2] 2/12, train_loss: 3.0740
+[0] 3/12, train_loss: 3.0768
+[2] 3/12, train_loss: 3.0894
+[1] 3/12, train_loss: 3.1803
+[3] 3/12, train_loss: 3.1101
+[1] epoch 5, average loss: 3.1320
+[0] epoch 5, average loss: 3.1105
+[1] train completed, epoch losses: [3.4053871631622314, 3.3392135302225747, 3.2601729234059653, 3.1939098834991455, 3.1320048173268638][0] train completed, epoch losses: [3.41292134920756, 3.3174494902292886, 3.2496105829874673, 3.1724624633789062, 3.11049485206604]
+
+[3] epoch 5, average loss: 3.1707
+[3] train completed, epoch losses: [3.4253137906392417, 3.3389764626820884, 3.237804651260376, 3.178602933883667, 3.1706634362538657]
+[2] epoch 5, average loss: 3.0870
+[2] train completed, epoch losses: [3.427128314971924, 3.3360798358917236, 3.2478193442026773, 3.1733078956604004, 3.086975336074829]
