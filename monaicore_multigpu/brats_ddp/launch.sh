@@ -1,19 +1,29 @@
 #!/bin/bash
-
-# Script to launch a multi-node pytorch.distributed training run on UF HiperGator's AI partition,
-# a SLURM cluster using Singularity as container runtime.
-# 
-# This script uses `pt_multinode_helper_funcs.sh` and `run_on_node.sh`.
 #
-# If launch with torch.distributed.launch, 
-#       set #SBATCH --ntasks=--nodes
-#       set #SBATCH --ntasks-per-node=1  
-#       set #SBATCH --gpus=total number of processes to run on all nodes
-#       set #SBATCH --gpus-per-task=--gpus / --ntasks  
-#       modify `LAUNCH_CMD` in `run_on_node.sh` to launch with torch.distributed.launch
-      
+# Script to launch a multi-gpu distributed training using MONAI Core
+# on UF HiperGator's AI partition, a SLURM cluster using Singularity 
+# as container runtime.
+# 
+# This script uses `pt_multinode_helper_funcs.sh`, and 
+# either `run_on_node.sh`(for single-node multi-gpu training) 
+# or `run_on_multinode.sh` (for multi-node multi-gpu training). All
+# the three `.sh` files are in \monaicore_multigpu\util_multigpu.
+#
+# We use torch.distributed.launch to launch the training, so please 
+# set as follows: 
+#   set #SBATCH --ntasks=--nodes
+#   set #SBATCH --ntasks-per-node=1  
+#   set #SBATCH --gpus=total number of processes to run on all nodes
+#   set #SBATCH --gpus-per-task=--gpus/--ntasks  
+#
+#   for multi-node training, replace `run_on_node.sh` in 
+#   `PT_LAUNCH_SCRIPT=$(realpath "${PT_LAUNCH_UTILS_PATH}/run_on_node.sh")`
+#   with `run_on_multinode.sh`.
+#   
+#   Modify paths to your own paths.
+#      
 # (c) 2021, Brian J. Stucky, UF Research Computing
-# 2021/09, modified by Huiwen Ju, hju@nvidia.com
+# 2022, modified by Huiwen Ju, hju@nvidia.com
 
 # Resource allocation.
 #SBATCH --wait-all-nodes=1
@@ -46,7 +56,7 @@ PYTHON_PATH="singularity exec --nv --bind /blue/vendor-nvidia/hju/data/brats_dat
           
 # Location of the PyTorch launch utilities, i.e. `pt_multinode_helper_funcs.sh` & `run_on_node.sh`.
 # PT_LAUNCH_UTILS_PATH=$HOME/pt_dist_launch/UF_tutorial_multinode_MONAI
-PT_LAUNCH_UTILS_PATH=$HOME/run_monaicore/util_multigpu
+PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
 source "${PT_LAUNCH_UTILS_PATH}/pt_multinode_helper_funcs.sh"
 
 init_node_info
