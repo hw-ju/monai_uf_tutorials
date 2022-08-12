@@ -1,25 +1,37 @@
 """
 This script is adpated from a MONAI Core tutorial script 
 https://github.com/Project-MONAI/tutorials/blob/master/acceleration/distributed_training/unet_training_ddp.py
-so that can be run mutli-node multi-gpu distributed training (using `torch.distributed.launch`,
-`torch.distributed.DistributedDataParallel` and native PyTorch training loop) on UF HiperGator's AI partition.
+so that it can be run in a multi-gpu distributed-training mode on UF 
+HiperGator's AI partition.  
+
+torch packages used for a distributed training:
+- `torch.distributed.launch` is used to help launch a distributed 
+training. In scripts `\util_multigpu\run_on_node.sh` and 
+`\util_multigpu\run_on_multinode.sh`, `torch.distributed.launch` is 
+called to spawn processes on every node.
+- `torch.distributed.DistributedDataParallel` is used in this script. 
 
 How to run this script:
-- See sample SLURM batch script `launch.sh` (also helper scripts `run_on_node.sh`, `run_on_multinode.sh` & 
-`pt_multinode_helper_funcs.sh`), which can launch a PyTorch/MONAI script using `torch.distributed.launch` on 
-a SLURM cluster like HiperGator using Singularity as container runtime. This script is for launching with 
-`torch.distributed.launch`. In `run_on_node.sh`, `torch.distributed.launch` is called to spawn processes on every node. 
+- See sample SLURM batch script `\unet_ddp\launch.sh` (also the called 
+helper scripts `\util_multigpu\run_on_node.sh`, 
+`\util_multigpu\run_on_multinode.sh` & 
+`\util_multigpu\pt_multinode_helper_funcs.sh`), which can launch a 
+PyTorch/MONAI script like this one using `torch.distributed.launch` on 
+a SLURM cluster like HiperGator using Singularity as container runtime. 
 
 Steps to use `torch.distributed.DistributedDataParallel` in this script:
-- Call `init_process_group` to initialize a process group. In this script, each process runs on one GPU.
-  Here we use `NVIDIA NCCL` as the backend for optimized multi-GPU training performance and `init_method="env://"`
-  to initialize a process group by environment variables.
-- Create a `DistributedSampler` and pass it to DataLoader. Disable `shuffle` in DataLoader; instead, 
-  shuffle data by turning on `shuffle` in `DistributedSampler` and calling `set_epoch` at the beginning 
-  of each epoch before creating the DataLoader iterator.
-- Wrap the model with `DistributedDataParallel` after moving to expected GPU.
+- Call `init_process_group` to initialize a process group. In this 
+  script, each process runs on one GPU. Here we use `NVIDIA NCCL` as the 
+  backend for optimized multi-GPU training performance and 
+  `init_method="env://"`to initialize a process group by environment 
+  variables.
+- Create a `DistributedSampler` and pass it to DataLoader. Disable 
+  `shuffle` in DataLoader; instead, shuffle data by turning on `shuffle` 
+  in `DistributedSampler` and calling `set_epoch` at the beginning of 
+  each epoch before creating the DataLoader iterator.
+- Wrap the model with `DistributedDataParallel` after moving to expected 
+  GPU.
 - Call `destroy_process_group` after training finishes.
-
 
 References:
 torch.distributed: 
@@ -30,13 +42,8 @@ torch.distributed.launch:
 torch.distributed.DistributedDataParallel:
 - https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
 
-
-
-There might be more multi-node multi-gpu support at the MONAI github mentioned above in the future, 
-so please stay updated.
-
 Huiwen Ju, hju@nvidia.com
-2021/09
+Aug 2022
 """
 import argparse
 import os

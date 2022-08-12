@@ -1,17 +1,54 @@
-# Copyright 2020 MONAI Consortium
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#     http://www.apache.org/licenses/LICENSE-2.0
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 """
-This example shows how to execute distributed training based on PyTorch native `DistributedDataParallel` module.
-It can run on several nodes with multiple GPU devices on every node.
+This script is adpated from a MONAI Core tutorial script 
+https://github.com/Project-MONAI/tutorials/blob/main/acceleration/distributed_training/brats_training_ddp.py
+so that it can be run in a multi-gpu distributed-training mode on UF 
+HiperGator's AI partition.  
+
+torch packages used for a distributed training:
+- `torch.distributed.launch` is used to help launch a distributed 
+training. In scripts `\util_multigpu\run_on_node.sh` and 
+`\util_multigpu\run_on_multinode.sh`, `torch.distributed.launch` is 
+called to spawn processes on every node.
+- `torch.distributed.DistributedDataParallel` is used in this script. 
+
+How to run this script:
+- See sample SLURM batch script `\brats_ddp\launch.sh` (also the called 
+helper scripts `\util_multigpu\run_on_node.sh`, 
+`\util_multigpu\run_on_multinode.sh` & 
+`\util_multigpu\pt_multinode_helper_funcs.sh`), which can launch a 
+PyTorch/MONAI script like this one using `torch.distributed.launch` on 
+a SLURM cluster like HiperGator using Singularity as container runtime. 
+
+Steps to use `torch.distributed.DistributedDataParallel` in this script:
+- Call `init_process_group` to initialize a process group. In this 
+  script, each process runs on one GPU. Here we use `NVIDIA NCCL` as the 
+  backend for optimized multi-GPU training performance and 
+  `init_method="env://"`to initialize a process group by environment 
+  variables.
+- Create a `DistributedSampler` and pass it to DataLoader. Disable 
+  `shuffle` in DataLoader; instead, shuffle data by turning on `shuffle` 
+  in `DistributedSampler` and calling `set_epoch` at the beginning of 
+  each epoch before creating the DataLoader iterator.
+- Wrap the model with `DistributedDataParallel` after moving to expected 
+  GPU.
+- Partition dataset before training, so every rank process will only 
+  handle its own data partition.  
+- Call `destroy_process_group` after training finishes.
+
+References:
+torch.distributed: 
+- https://pytorch.org/tutorials/beginner/dist_overview.html#
+torch.distributed.launch: 
+- https://github.com/pytorch/examples/blob/master/distributed/ddp/README.md 
+- https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py
+torch.distributed.DistributedDataParallel:
+- https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
+
+Huiwen Ju, hju@nvidia.com
+Aug 2022
+------------------------------------------------------------------------
+Below are some (not all) comments taken from the original script that 
+also applies to running on UF HiperGator. 
 
 This example is a real-world task based on Decathlon challenge Task01: Brain Tumor segmentation.
 So it's more complicated than other distributed training demo examples.
@@ -19,38 +56,6 @@ So it's more complicated than other distributed training demo examples.
 Under default settings, each single GPU needs to use ~12GB memory for network training. In addition, in order to
 cache the whole dataset, ~100GB GPU memory are necessary. Therefore, at least 5 NVIDIA TESLA V100 (32G) are needed.
 If you do not have enough GPU memory, you can try to decrease the input parameter `cache_rate`.
-
-Main steps to set up the distributed training:
-
-- Execute `torch.distributed.launch` to create processes on every node for every GPU.
-  It receives parameters as below:
-  `--nproc_per_node=NUM_GPUS_PER_NODE`
-  `--nnodes=NUM_NODES`
-  `--node_rank=INDEX_CURRENT_NODE`
-  `--master_addr="192.168.1.1"`
-  `--master_port=1234`
-  For more details, refer to https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py.
-  Alternatively, we can also use `torch.multiprocessing.spawn` to start program, but it that case, need to handle
-  all the above parameters and compute `rank` manually, then set to `init_process_group`, etc.
-  `torch.distributed.launch` is even more efficient than `torch.multiprocessing.spawn` during training.
-- Use `init_process_group` to initialize every process, every GPU runs in a separate process with unique rank.
-  Here we use `NVIDIA NCCL` as the backend and must set `init_method="env://"` if use `torch.distributed.launch`.
-- Wrap the model with `DistributedDataParallel` after moving to expected device.
-- Partition dataset before training, so every rank process will only handle its own data partition.
-
-Note:
-    `torch.distributed.launch` will launch `nnodes * nproc_per_node = world_size` processes in total.
-    Suggest setting exactly the same software environment for every node, especially `PyTorch`, `nccl`, etc.
-    A good practice is to use the same MONAI docker image for all nodes directly.
-    Example script to execute this program on every node:
-    python -m torch.distributed.launch --nproc_per_node=NUM_GPUS_PER_NODE
-           --nnodes=NUM_NODES --node_rank=INDEX_CURRENT_NODE
-           --master_addr="192.168.1.1" --master_port=1234
-           brats_training_ddp.py -d DIR_OF_TESTDATA
-
-    This example was tested with [Ubuntu 16.04/20.04], [NCCL 2.6.3].
-
-Referring to: https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
 
 Some codes are taken from https://github.com/pytorch/examples/blob/master/imagenet/main.py
 

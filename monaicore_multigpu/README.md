@@ -42,4 +42,7 @@ cat launch.sh.job_id.out
 
 ## **Example 2: multi-gpu training of Unet**
 
+Highlights of this example:
+1. This example is a real-world task based on Decathlon challenge Task01: Brain Tumor segmentation.
+So it's more complicated than other distributed training demo examples.
 
