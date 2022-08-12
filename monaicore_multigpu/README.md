@@ -75,6 +75,7 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
     ```
 5. Multiple fast model training techniques are used: optimizer Novograd, cache intermediate data on GPU memory, ThreadDataLoader, Automated Mixed Precision (AMP). See [Fast Model Training guide](https://github.com/Project-MONAI/tutorials/blob/main/acceleration/fast_model_training_guide.md) to learn more.  
 
+6. Dataset is splitted and cached on each GPU before training, see the implementation of `BratsCacheDataset`. This can avoid duplicated caching content on each GPU, but will not do global shuffle before every epoch. If you want to do global shuffle while caching on GPUs, you can replace the `BratsCacheDataset` object with a `CacheDataset` object and a `DistributedSampler` object, where each GPU will cache the whole dataset, see [discussion](https://github.com/Project-MONAI/tutorials/discussions/672).
 
-## **Example 3: multi-gpu training for Brain Tumor segmentation with UNetr**
+## **Example 3: multi-gpu training for Brain Tumor segmentation with UNet/SegResNet**
 ### **About this example**
