@@ -35,13 +35,13 @@ export NCCL_DEBUG=INFO
 export TORCH_DISTRIBUTED_DEBUG=DETAIL
 export NCCL_ASYNC_ERROR_HANDLING=1
 # Training command specification: training_script -args.
-TRAINING_SCRIPT="$(realpath "$HOME/run_monaicore/brats_ddp/brats_training_ddp.py")"
-TRAINING_CMD="$TRAINING_SCRIPT -d=/blue/vendor-nvidia/hju/brats_data --epochs=20"
+TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/monaicore_multigpu/brats_ddp/brats_training_ddp.py")"
+TRAINING_CMD="$TRAINING_SCRIPT -d=/mnt --epochs=20"
 
 # Python location (if not provided, system default will be used).
 # Here we run within a MONAI Singularity container based on NGC PyTorch container,
 # see `build_container.sh` to build a MONAI Singularity container.
-PYTHON_PATH="singularity exec --nv \
+PYTHON_PATH="singularity exec --nv --bind /blue/vendor-nvidia/hju/data/brats_data:/mnt \
          /blue/vendor-nvidia/hju/monaicore0.8.1 python3" 
           
 # Location of the PyTorch launch utilities, i.e. `pt_multinode_helper_funcs.sh` & `run_on_node.sh`.
