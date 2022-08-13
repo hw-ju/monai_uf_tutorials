@@ -46,7 +46,7 @@ export TORCH_DISTRIBUTED_DEBUG=DETAIL
 export NCCL_ASYNC_ERROR_HANDLING=1
 # Training command specification: training_script -args.
 TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/monaicore_multigpu/brats_ddp/brats_training_ddp.py")"
-TRAINING_CMD="$TRAINING_SCRIPT -d=/mnt --epochs=3"
+TRAINING_CMD="$TRAINING_SCRIPT -d=/mnt --epochs=10"
 
 # Python location (if not provided, system default will be used).
 # Here we run within a MONAI Singularity container based on NGC PyTorch container,
