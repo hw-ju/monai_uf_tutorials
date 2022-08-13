@@ -294,7 +294,7 @@ def main_worker(args):
     train_start = time.time()
     for epoch in range(args.epochs):
         epoch_start = time.time()
-        print("-" * 10)
+        # print("-" * 10)
         print(f"[{dist.get_rank()}] epoch {epoch + 1}/{args.epochs}")
         epoch_loss = train(train_loader, model, loss_function, optimizer, lr_scheduler, scaler)
         print(f"[{dist.get_rank()}] epoch {epoch + 1} average loss: {epoch_loss:.4f}")
