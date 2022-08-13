@@ -1,50 +1,49 @@
-"""
-This script is adpated from a MONAI Core tutorial script 
-https://github.com/Project-MONAI/tutorials/blob/master/acceleration/distributed_training/unet_training_ddp.py
-so that it can be run in a multi-gpu distributed-training mode on UF 
-HiperGator's AI partition.  
+# This script is adpated from a MONAI Core tutorial script 
+# https://github.com/Project-MONAI/tutorials/blob/master/acceleration/distributed_training/unet_training_ddp.py
+# so that it can be run in a multi-gpu distributed-training mode on UF 
+# HiperGator's AI partition.  
+#
+# torch packages used for a distributed training:
+# - `torch.distributed.launch` is used to help launch a distributed 
+# training. In scripts `\util_multigpu\run_on_node.sh` and 
+# `\util_multigpu\run_on_multinode.sh`, `torch.distributed.launch` is 
+# called to spawn processes on every node.
+# - `torch.distributed.DistributedDataParallel` is used in this script. 
+#
+# How to run this script:
+# - See sample SLURM batch script `\unet_ddp\launch.sh` (also the called 
+# helper scripts `\util_multigpu\run_on_node.sh`, 
+# `\util_multigpu\run_on_multinode.sh` & 
+# `\util_multigpu\pt_multinode_helper_funcs.sh`), which can launch a 
+# PyTorch/MONAI script like this one using `torch.distributed.launch` on 
+# a SLURM cluster like HiperGator using Singularity as container runtime. 
+#
+# Steps to use `torch.distributed.DistributedDataParallel` in this script:
+# - Call `init_process_group` to initialize a process group. In this 
+#   script, each process runs on one GPU. Here we use `NVIDIA NCCL` as the 
+#   backend for optimized multi-GPU training performance and 
+#   `init_method="env://"`to initialize a process group by environment 
+#   variables.
+# - Create a `DistributedSampler` and pass it to DataLoader. Disable 
+#   `shuffle` in DataLoader; instead, shuffle data by turning on `shuffle` 
+#   in `DistributedSampler` and calling `set_epoch` at the beginning of 
+#   each epoch before creating the DataLoader iterator.
+# - Wrap the model with `DistributedDataParallel` after moving to expected 
+#   GPU.
+# - Call `destroy_process_group` after training finishes.
+#
+# References:
+# torch.distributed: 
+# - https://pytorch.org/tutorials/beginner/dist_overview.html#
+# torch.distributed.launch: 
+# - https://github.com/pytorch/examples/blob/master/distributed/ddp/README.md 
+# - https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py
+# torch.distributed.DistributedDataParallel:
+# - https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
+#
+# Huiwen Ju, hju@nvidia.com
+# Aug 2022
 
-torch packages used for a distributed training:
-- `torch.distributed.launch` is used to help launch a distributed 
-training. In scripts `\util_multigpu\run_on_node.sh` and 
-`\util_multigpu\run_on_multinode.sh`, `torch.distributed.launch` is 
-called to spawn processes on every node.
-- `torch.distributed.DistributedDataParallel` is used in this script. 
-
-How to run this script:
-- See sample SLURM batch script `\unet_ddp\launch.sh` (also the called 
-helper scripts `\util_multigpu\run_on_node.sh`, 
-`\util_multigpu\run_on_multinode.sh` & 
-`\util_multigpu\pt_multinode_helper_funcs.sh`), which can launch a 
-PyTorch/MONAI script like this one using `torch.distributed.launch` on 
-a SLURM cluster like HiperGator using Singularity as container runtime. 
-
-Steps to use `torch.distributed.DistributedDataParallel` in this script:
-- Call `init_process_group` to initialize a process group. In this 
-  script, each process runs on one GPU. Here we use `NVIDIA NCCL` as the 
-  backend for optimized multi-GPU training performance and 
-  `init_method="env://"`to initialize a process group by environment 
-  variables.
-- Create a `DistributedSampler` and pass it to DataLoader. Disable 
-  `shuffle` in DataLoader; instead, shuffle data by turning on `shuffle` 
-  in `DistributedSampler` and calling `set_epoch` at the beginning of 
-  each epoch before creating the DataLoader iterator.
-- Wrap the model with `DistributedDataParallel` after moving to expected 
-  GPU.
-- Call `destroy_process_group` after training finishes.
-
-References:
-torch.distributed: 
-- https://pytorch.org/tutorials/beginner/dist_overview.html#
-torch.distributed.launch: 
-- https://github.com/pytorch/examples/blob/master/distributed/ddp/README.md 
-- https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py
-torch.distributed.DistributedDataParallel:
-- https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
-
-Huiwen Ju, hju@nvidia.com
-Aug 2022
-"""
 import argparse
 import os
 import sys
