@@ -340,7 +340,7 @@ def train(train_loader, model, criterion, optimizer, lr_scheduler, scaler):
         scaler.step(optimizer)
         scaler.update()
         epoch_loss += loss.item()
-        print(f"{step}/{epoch_len}, train_loss: {loss.item():.4f}, step time: {(time.time() - step_start):.4f}")
+        print(f"[{dist.get_rank()}] {step}/{epoch_len}, train_loss: {loss.item():.4f}, step time: {(time.time() - step_start):.4f}")
         step_start = time.time()
     lr_scheduler.step()
     epoch_loss /= step
