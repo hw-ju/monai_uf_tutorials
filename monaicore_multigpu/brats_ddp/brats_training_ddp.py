@@ -376,7 +376,7 @@ def main():
     parser.add_argument("-d", "--dir", default="./testdata", type=str, help="directory of Brain Tumor dataset")
     # must parse the command-line argument: ``--local_rank=LOCAL_PROCESS_RANK``, which will be provided by DDP
     parser.add_argument("--local_rank", type=int, help="node rank for distributed training")
-    parser.add_argument("--epochs", default=40, type=int, metavar="N", help="number of total epochs to run")
+    parser.add_argument("--epochs", default=300, type=int, metavar="N", help="number of total epochs to run")
     parser.add_argument("--lr", default=1e-4, type=float, help="learning rate")
     parser.add_argument("-b", "--batch_size", default=1, type=int, help="mini-batch size of every GPU")
     parser.add_argument("--seed", default=None, type=int, help="seed for initializing training.")
