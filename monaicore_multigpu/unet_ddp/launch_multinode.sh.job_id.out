@@ -1,0 +1,372 @@
+/home/hju/monai_uf_tutorials/monaicore_multigpu/unet_ddp
+c1100a-s35.ufhpc
+Fri Aug 12 23:25:54 EDT 2022
+Primary node: c1100a-s35
+Primary TCP port: 22583
+Secondary nodes: c1104a-s11
+Running "/home/hju/monai_uf_tutorials/monaicore_multigpu/unet_ddp/unet_training_ddp.py" on each node...
+[33mWARNING:[0m underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+[33mWARNING:[0m underlay of /usr/bin/nvidia-smi required more than 50 (484) bind mounts
+/.singularity.d/env/10-docker2singularity.sh: line 2: uname: No such file or directory
+/.singularity.d/env/10-docker2singularity.sh: line 2: uname: No such file or directory
+/opt/conda/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/opt/conda/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+NCCL version 2.11.4+cuda11.4
+[7] ---------- epoch 1/5
+[0] ---------- epoch 1/5
+[6] ---------- epoch 1/5
+[2] ---------- epoch 1/5
+[5] ---------- epoch 1/5
+[1] ---------- epoch 1/5
+[4] ---------- epoch 1/5
+[3] ---------- epoch 1/5
+[13] ---------- epoch 1/5
+[11] ---------- epoch 1/5
+[12] ---------- epoch 1/5[14] ---------- epoch 1/5
+
+[8] ---------- epoch 1/5[10] ---------- epoch 1/5[15] ---------- epoch 1/5
+
+
+[9] ---------- epoch 1/5
+[7] 1/32, train_loss: 0.6316
+[5] 1/32, train_loss: 0.6205
+[3] 1/32, train_loss: 0.6891
+[0] 1/32, train_loss: 0.6439
+[1] 1/32, train_loss: 0.6514
+[4] 1/32, train_loss: 0.6282
+[6] 1/32, train_loss: 0.7095
+[2] 1/32, train_loss: 0.6977
+[12] 1/32, train_loss: 0.6185
+[14] 1/32, train_loss: 0.6602
+[13] 1/32, train_loss: 0.6438
+[8] 1/32, train_loss: 0.6735[15] 1/32, train_loss: 0.6250
+[9] 1/32, train_loss: 0.6650
+[10] 1/32, train_loss: 0.7521
+
+[11] 1/32, train_loss: 0.6215
+[7] 2/32, train_loss: 0.5625
+[5] 2/32, train_loss: 0.6009
+[8] 2/32, train_loss: 0.5428
+[12] 2/32, train_loss: 0.5771
+[9] 2/32, train_loss: 0.5963
+[4] 2/32, train_loss: 0.6386
+[6] 2/32, train_loss: 0.5632
+[1] 2/32, train_loss: 0.6300
+[3] 2/32, train_loss: 0.6899
+[2] 2/32, train_loss: 0.5523
+[0] 2/32, train_loss: 0.5520
+[10] 2/32, train_loss: 0.6155
+[13] 2/32, train_loss: 0.6001
+[14] 2/32, train_loss: 0.5869
+[15] 2/32, train_loss: 0.5874
+[11] 2/32, train_loss: 0.5931
+[8] epoch 1, average loss: 0.6082
+[8] ---------- epoch 2/5
+[14] epoch 1, average loss: 0.6235
+[14] ---------- epoch 2/5
+[13] epoch 1, average loss: 0.6219[7] epoch 1, average loss: 0.5970
+[7] ---------- epoch 2/5
+[1] epoch 1, average loss: 0.6407[4] epoch 1, average loss: 0.6334
+[13] ---------- epoch 2/5
+[12] epoch 1, average loss: 0.5978
+[12] ---------- epoch 2/5
+
+[1] ---------- epoch 2/5
+
+[4] ---------- epoch 2/5
+[0] epoch 1, average loss: 0.5979
+[0] ---------- epoch 2/5
+[10] epoch 1, average loss: 0.6838[5] epoch 1, average loss: 0.6107
+[5] ---------- epoch 2/5
+
+[10] ---------- epoch 2/5
+[9] epoch 1, average loss: 0.6306
+[9] ---------- epoch 2/5
+[15] epoch 1, average loss: 0.6062
+[15] ---------- epoch 2/5
+[11] epoch 1, average loss: 0.6073
+[11] ---------- epoch 2/5
+[6] epoch 1, average loss: 0.6364
+[6] ---------- epoch 2/5
+[3] epoch 1, average loss: 0.6895
+[3] ---------- epoch 2/5
+[2] epoch 1, average loss: 0.6250
+[2] ---------- epoch 2/5
+[5] 1/32, train_loss: 0.6146[2] 1/32, train_loss: 0.5612
+
+[7] 1/32, train_loss: 0.6517
+[3] 1/32, train_loss: 0.5979
+[6] 1/32, train_loss: 0.5534
+[4] 1/32, train_loss: 0.5871
+[0] 1/32, train_loss: 0.5558
+[1] 1/32, train_loss: 0.5178
+[12] 1/32, train_loss: 0.5328
+[8] 1/32, train_loss: 0.5450
+[13] 1/32, train_loss: 0.5700
+[10] 1/32, train_loss: 0.6532
+[9] 1/32, train_loss: 0.5657
+[15] 1/32, train_loss: 0.5921
+[11] 1/32, train_loss: 0.5496
+[14] 1/32, train_loss: 0.5634
+[5] 2/32, train_loss: 0.5409
+[8] 2/32, train_loss: 0.5497
+[7] 2/32, train_loss: 0.6044[6] 2/32, train_loss: 0.5938
+
+[4] 2/32, train_loss: 0.5177
+[2] 2/32, train_loss: 0.5590
+[3] 2/32, train_loss: 0.4993
+[9] 2/32, train_loss: 0.5096
+[12] 2/32, train_loss: 0.5616
+[15] 2/32, train_loss: 0.4808
+[14] 2/32, train_loss: 0.5891
+[0] 2/32, train_loss: 0.5413
+[13] 2/32, train_loss: 0.5256
+[10] 2/32, train_loss: 0.5218[11] 2/32, train_loss: 0.4744
+
+[1] 2/32, train_loss: 0.5307
+[3] epoch 2, average loss: 0.5486
+[3] ---------- epoch 3/5
+[9] epoch 2, average loss: 0.5377
+[9] ---------- epoch 3/5
+[8] epoch 2, average loss: 0.5474
+[8] ---------- epoch 3/5
+[12] epoch 2, average loss: 0.5472
+[12] ---------- epoch 3/5
+[4] epoch 2, average loss: 0.5524
+[4] ---------- epoch 3/5
+[6] epoch 2, average loss: 0.5736
+[6] ---------- epoch 3/5
+[0] epoch 2, average loss: 0.5486
+[0] ---------- epoch 3/5
+[13] epoch 2, average loss: 0.5478
+[13] ---------- epoch 3/5
+[5] epoch 2, average loss: 0.5777
+[5] ---------- epoch 3/5
+[7] epoch 2, average loss: 0.6280
+[7] ---------- epoch 3/5
+[11] epoch 2, average loss: 0.5120
+[11] ---------- epoch 3/5
+[15] epoch 2, average loss: 0.5364
+[15] ---------- epoch 3/5
+[14] epoch 2, average loss: 0.5762
+[14] ---------- epoch 3/5
+[2] epoch 2, average loss: 0.5601
+[2] ---------- epoch 3/5
+[1] epoch 2, average loss: 0.5242
+[1] ---------- epoch 3/5
+[10] epoch 2, average loss: 0.5875
+[10] ---------- epoch 3/5
+[5] 1/32, train_loss: 0.5433
+[7] 1/32, train_loss: 0.5490
+[2] 1/32, train_loss: 0.5609
+[6] 1/32, train_loss: 0.5242
+[3] 1/32, train_loss: 0.4938
+[4] 1/32, train_loss: 0.5226
+[0] 1/32, train_loss: 0.5424
+[1] 1/32, train_loss: 0.5245
+[10] 1/32, train_loss: 0.5583
+[12] 1/32, train_loss: 0.5158
+[8] 1/32, train_loss: 0.5319
+[13] 1/32, train_loss: 0.5272
+[9] 1/32, train_loss: 0.4429
+[14] 1/32, train_loss: 0.5739
+[11] 1/32, train_loss: 0.4663
+[15] 1/32, train_loss: 0.5408
+[5] 2/32, train_loss: 0.6474
+[12] 2/32, train_loss: 0.5026
+[10] 2/32, train_loss: 0.4762
+[8] 2/32, train_loss: 0.4979
+[14] 2/32, train_loss: 0.4998
+[11] 2/32, train_loss: 0.4828
+[13] 2/32, train_loss: 0.5516[9] 2/32, train_loss: 0.5373
+
+[7] 2/32, train_loss: 0.5184
+[2] 2/32, train_loss: 0.4814
+[4] 2/32, train_loss: 0.4758
+[6] 2/32, train_loss: 0.5854
+[3] 2/32, train_loss: 0.4818
+[15] 2/32, train_loss: 0.5484
+[1] 2/32, train_loss: 0.5118
+[0] 2/32, train_loss: 0.4880
+[0] epoch 3, average loss: 0.5152
+[0] ---------- epoch 4/5
+[3] epoch 3, average loss: 0.4878
+[3] ---------- epoch 4/5
+[5] epoch 3, average loss: 0.5953
+[5] ---------- epoch 4/5
+[8] epoch 3, average loss: 0.5149
+[8] ---------- epoch 4/5
+[15] epoch 3, average loss: 0.5446
+[15] ---------- epoch 4/5
+[13] epoch 3, average loss: 0.5394[2] epoch 3, average loss: 0.5212
+[13] ---------- epoch 4/5
+
+[11] epoch 3, average loss: 0.4745
+[2] ---------- epoch 4/5
+[11] ---------- epoch 4/5
+[10] epoch 3, average loss: 0.5172
+[10] ---------- epoch 4/5
+[12] epoch 3, average loss: 0.5092
+[12] ---------- epoch 4/5
+[7] epoch 3, average loss: 0.5337
+[7] ---------- epoch 4/5
+[6] epoch 3, average loss: 0.5548
+[6] ---------- epoch 4/5
+[14] epoch 3, average loss: 0.5368
+[14] ---------- epoch 4/5
+[9] epoch 3, average loss: 0.4901
+[9] ---------- epoch 4/5
+[1] epoch 3, average loss: 0.5182
+[1] ---------- epoch 4/5
+[4] epoch 3, average loss: 0.4992
+[4] ---------- epoch 4/5
+[2] 1/32, train_loss: 0.5914
+[5] 1/32, train_loss: 0.4958
+[3] 1/32, train_loss: 0.6033
+[6] 1/32, train_loss: 0.4721
+[1] 1/32, train_loss: 0.4837
+[4] 1/32, train_loss: 0.4952
+[0] 1/32, train_loss: 0.5551
+[12] 1/32, train_loss: 0.5382
+[10] 1/32, train_loss: 0.4735
+[14] 1/32, train_loss: 0.4727
+[15] 1/32, train_loss: 0.5383
+[9] 1/32, train_loss: 0.4763
+[8] 1/32, train_loss: 0.5022
+[11] 1/32, train_loss: 0.5074
+[7] 1/32, train_loss: 0.5267
+[13] 1/32, train_loss: 0.5160
+[5] 2/32, train_loss: 0.4772
+[12] 2/32, train_loss: 0.5691
+[2] 2/32, train_loss: 0.4241
+[6] 2/32, train_loss: 0.4702
+[4] 2/32, train_loss: 0.4901
+[3] 2/32, train_loss: 0.4562
+[1] 2/32, train_loss: 0.5659
+[7] 2/32, train_loss: 0.5003
+[0] 2/32, train_loss: 0.4858
+[10] 2/32, train_loss: 0.5226
+[8] 2/32, train_loss: 0.4897
+[14] 2/32, train_loss: 0.4793
+[11] 2/32, train_loss: 0.4766
+[13] 2/32, train_loss: 0.5477
+[9] 2/32, train_loss: 0.4559
+[15] 2/32, train_loss: 0.4910
+[12] epoch 4, average loss: 0.5536
+[12] ---------- epoch 5/5
+[11] epoch 4, average loss: 0.4920[2] epoch 4, average loss: 0.5078
+[11] ---------- epoch 5/5
+[14] epoch 4, average loss: 0.4760
+[14] ---------- epoch 5/5
+
+[2] ---------- epoch 5/5
+[3] epoch 4, average loss: 0.5298
+[3] ---------- epoch 5/5
+[5] epoch 4, average loss: 0.4865
+[5] ---------- epoch 5/5
+[0] epoch 4, average loss: 0.5205
+[0] ---------- epoch 5/5
+[9] epoch 4, average loss: 0.4661
+[9] ---------- epoch 5/5
+[13] epoch 4, average loss: 0.5318[6] epoch 4, average loss: 0.4711
+[6] ---------- epoch 5/5
+
+[13] ---------- epoch 5/5
+[7] epoch 4, average loss: 0.5135
+[7] ---------- epoch 5/5
+[15] epoch 4, average loss: 0.5147
+[15] ---------- epoch 5/5
+[10] epoch 4, average loss: 0.4981
+[10] ---------- epoch 5/5
+[8] epoch 4, average loss: 0.4959
+[8] ---------- epoch 5/5
+[1] epoch 4, average loss: 0.5248
+[1] ---------- epoch 5/5
+[4] epoch 4, average loss: 0.4926
+[4] ---------- epoch 5/5
+[5] 1/32, train_loss: 0.4534
+[7] 1/32, train_loss: 0.4363[4] 1/32, train_loss: 0.5498
+
+[6] 1/32, train_loss: 0.4810
+[2] 1/32, train_loss: 0.4557
+[3] 1/32, train_loss: 0.4816
+[10] 1/32, train_loss: 0.4716[12] 1/32, train_loss: 0.4684
+
+[14] 1/32, train_loss: 0.4859
+[8] 1/32, train_loss: 0.4119
+[13] 1/32, train_loss: 0.4321
+[9] 1/32, train_loss: 0.5254
+[15] 1/32, train_loss: 0.5038
+[11] 1/32, train_loss: 0.6033
+[0] 1/32, train_loss: 0.5085
+[1] 1/32, train_loss: 0.5691
+[7] 2/32, train_loss: 0.4780
+[10] 2/32, train_loss: 0.4504
+[9] 2/32, train_loss: 0.5140
+[12] 2/32, train_loss: 0.5092
+[3] 2/32, train_loss: 0.4706
+[4] 2/32, train_loss: 0.4561
+[2] 2/32, train_loss: 0.5071
+[8] 2/32, train_loss: 0.5024
+[14] 2/32, train_loss: 0.5452
+[13] 2/32, train_loss: 0.5264
+[15] 2/32, train_loss: 0.4558
+[1] 2/32, train_loss: 0.5110
+[11] 2/32, train_loss: 0.4404
+[6] 2/32, train_loss: 0.5108
+[5] 2/32, train_loss: 0.5030
+[0] 2/32, train_loss: 0.4671
+[10] epoch 5, average loss: 0.4610
+[10] train completed, epoch losses: [0.683787077665329, 0.5874837338924408, 0.5172210335731506, 0.4980658292770386, 0.46098509430885315]
+[15] epoch 5, average loss: 0.4798
+[15] train completed, epoch losses: [0.6062115728855133, 0.5364442765712738, 0.5445785820484161, 0.5146612077951431, 0.4798181653022766]
+[8] epoch 5, average loss: 0.4571
+[8] train completed, epoch losses: [0.6081729233264923, 0.5473788380622864, 0.5148683190345764, 0.4959280341863632, 0.4571360945701599]
+[7] epoch 5, average loss: 0.4572
+[7] train completed, epoch losses: [0.5970392227172852, 0.6280418038368225, 0.533655434846878, 0.5134736895561218, 0.45715391635894775]
+[2] epoch 5, average loss: 0.4814
+[2] train completed, epoch losses: [0.6250004768371582, 0.5600925087928772, 0.5211657285690308, 0.5077720582485199, 0.4813944846391678]
+[6] epoch 5, average loss: 0.4959
+[6] train completed, epoch losses: [0.6363674402236938, 0.5735794901847839, 0.5548242628574371, 0.4711209237575531, 0.4959065616130829]
+[9] epoch 5, average loss: 0.5197
+[9] train completed, epoch losses: [0.630645364522934, 0.5376669764518738, 0.49010275304317474, 0.4660852998495102, 0.5197125673294067]
+[14] epoch 5, average loss: 0.5156
+[14] train completed, epoch losses: [0.6235437095165253, 0.576221376657486, 0.5368419587612152, 0.47599464654922485, 0.5155536979436874]
+[0] epoch 5, average loss: 0.4878[12] epoch 5, average loss: 0.4888
+[12] train completed, epoch losses: [0.5978224575519562, 0.5471949577331543, 0.5091943740844727, 0.5536342859268188, 0.4888037443161011]
+
+[0] train completed, epoch losses: [0.5979437232017517, 0.5485878586769104, 0.5151689946651459, 0.5204694867134094, 0.48779480159282684]
+[11] epoch 5, average loss: 0.5218
+[11] train completed, epoch losses: [0.6072837114334106, 0.5119875222444534, 0.4745432734489441, 0.49199533462524414, 0.5218496918678284]
+[13] epoch 5, average loss: 0.4793
+[13] train completed, epoch losses: [0.6219049990177155, 0.5478227436542511, 0.5394097864627838, 0.5318412780761719, 0.4792591333389282]
+[4] epoch 5, average loss: 0.5030
+[4] train completed, epoch losses: [0.6334093809127808, 0.5524044334888458, 0.49919208884239197, 0.4926365613937378, 0.5029626339673996]
+[5] epoch 5, average loss: 0.4782
+[5] train completed, epoch losses: [0.6107098758220673, 0.5777490437030792, 0.5953331887722015, 0.4864587336778641, 0.4782054126262665]
+[1] epoch 5, average loss: 0.5400
+[1] train completed, epoch losses: [0.6406518220901489, 0.5242270231246948, 0.5181610584259033, 0.5248171985149384, 0.5400270521640778]
+[3] epoch 5, average loss: 0.4761
+[3] train completed, epoch losses: [0.6895184516906738, 0.5486093163490295, 0.48779284954071045, 0.529768779873848, 0.4760960191488266]

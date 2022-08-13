@@ -290,14 +290,14 @@ def main_worker(args):
     # start a typical PyTorch training
     best_metric = -1
     best_metric_epoch = -1
-    print(f"time elapsed before training: {time.time() - total_start}")
+    print(f"[{dist.get_rank()}] time elapsed before training: {time.time() - total_start}")
     train_start = time.time()
     for epoch in range(args.epochs):
         epoch_start = time.time()
         print("-" * 10)
-        print(f"epoch {epoch + 1}/{args.epochs}")
+        print(f"[{dist.get_rank()}] epoch {epoch + 1}/{args.epochs}")
         epoch_loss = train(train_loader, model, loss_function, optimizer, lr_scheduler, scaler)
-        print(f"epoch {epoch + 1} average loss: {epoch_loss:.4f}")
+        print(f"[{dist.get_rank()}] epoch {epoch + 1} average loss: {epoch_loss:.4f}")
 
         if (epoch + 1) % args.val_interval == 0:
             metric, metric_tc, metric_wt, metric_et = evaluate(
@@ -310,16 +310,16 @@ def main_worker(args):
                 if dist.get_rank() == 0:
                     torch.save(model.state_dict(), "best_metric_model.pth")
             print(
-                f"current epoch: {epoch + 1} current mean dice: {metric:.4f}"
-                f" tc: {metric_tc:.4f} wt: {metric_wt:.4f} et: {metric_et:.4f}"
-                f"\nbest mean dice: {best_metric:.4f} at epoch: {best_metric_epoch}"
+                f"[{dist.get_rank()}] current epoch: {epoch + 1} current mean dice: {metric:.4f}"
+                f"[{dist.get_rank()}] tc: {metric_tc:.4f} wt: {metric_wt:.4f} et: {metric_et:.4f}"
+                f"\n[{dist.get_rank()}] best mean dice: {best_metric:.4f} at epoch: {best_metric_epoch}"
             )
 
-        print(f"time consuming of epoch {epoch + 1} is: {(time.time() - epoch_start):.4f}")
+        print(f"[{dist.get_rank()}] time consuming of epoch {epoch + 1} is: {(time.time() - epoch_start):.4f}")
 
     print(
-        f"train completed, best_metric: {best_metric:.4f} at epoch: {best_metric_epoch},"
-        f" total train time: {(time.time() - train_start):.4f}"
+        f"[{dist.get_rank()}] train completed, best_metric: {best_metric:.4f} at epoch: {best_metric_epoch},"
+        f"[{dist.get_rank()}] total train time: {(time.time() - train_start):.4f}"
     )
     dist.destroy_process_group()
 

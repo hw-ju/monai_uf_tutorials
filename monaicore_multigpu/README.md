@@ -39,7 +39,7 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
     PT_LAUNCH_SCRIPT=$(realpath "${PT_LAUNCH_UTILS_PATH}/run_on_node.sh")
     ```
 
-3. Check SLURM output file, file name format `launch.sh.job_id.out` or `launch_multinode.sh.job_id.out` (see sample file [`/unet_ddp/launch.sh.job_id.out`](./unet_ddp/launch.sh.job_id.out)).
+3. Check SLURM output file, file name format `launch.sh.job_id.out` or `launch_multinode.sh.job_id.out` (see sample file [`/unet_ddp/launch.sh.job_id.out`](./unet_ddp/launch.sh.job_id.out) and [`/unet_ddp/launch_multinode.sh.job_id.out`](./unet_ddp/launch_multinode.sh.job_id.out)).
     ```
     cat launch.sh.job_id.out
     ```
@@ -77,5 +77,9 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
 
 6. Dataset is splitted and cached on each GPU before training, see the implementation of `BratsCacheDataset`. This can avoid duplicated caching content on each GPU, but will not do global shuffle before every epoch. If you want to do global shuffle while caching on GPUs, you can replace the `BratsCacheDataset` object with a `CacheDataset` object and a `DistributedSampler` object, where each GPU will cache the whole dataset, see [discussion](https://github.com/Project-MONAI/tutorials/discussions/672).
 
-## **Example 3: multi-gpu training for Brain Tumor segmentation with UNet/SegResNet**
+### **How to run this example**
+Steps are similar to [Example 1](#how-to-run-this-example), except sample scripts and output files are in directory `brats_ddp/`.
+
+
+## **Example 3: multi-gpu training with Unetr**
 ### **About this example**
