@@ -1,8 +1,61 @@
+# This script is adpated from a MONAI Core tutorial script 
+# https://github.com/Project-MONAI/tutorials/blob/main/3d_segmentation/unetr_btcv_segmentation_3d.ipynb
+# so that it can be run in a multi-gpu distributed-training mode on UF 
+# HiperGator's AI partition.  
+#
+# torch packages used for a distributed training:
+# - `torch.distributed.launch` is used to help launch a distributed 
+# training. In scripts `\util_multigpu\run_on_node.sh` and 
+# `\util_multigpu\run_on_multinode.sh`, `torch.distributed.launch` is 
+# called to spawn processes on every node.
+# - `torch.distributed.DistributedDataParallel` is used in this script. 
+#
+# How to run this script:
+# - See sample SLURM batch script `\unetr_ddp\launch_gputransform_ThreadDataLoader.sh` 
+# (also the called helper scripts `\util_multigpu\run_on_node.sh`, 
+# `\util_multigpu\run_on_multinode.sh` & 
+# `\util_multigpu\pt_multinode_helper_funcs.sh`), which can launch a 
+# PyTorch/MONAI script like this one using `torch.distributed.launch` on 
+# a SLURM cluster like HiperGator using Singularity as container runtime. 
+#
+# Steps to use `torch.distributed.DistributedDataParallel` in this script:
+# - Call `init_process_group` to initialize a process group. In this 
+#   script, each process runs on one GPU. Here we use `NVIDIA NCCL` as the 
+#   backend for optimized multi-GPU training performance and 
+#   `init_method="env://"`to initialize a process group by environment 
+#   variables.
+# - Create a `DistributedSampler` and pass it to DataLoader. Disable 
+#   `shuffle` in DataLoader; instead, shuffle data by turning on `shuffle` 
+#   in `DistributedSampler` and calling `set_epoch` at the beginning of 
+#   each epoch before creating the DataLoader iterator.
+# - Wrap the model with `DistributedDataParallel` after moving to expected 
+#   GPU.
+# - Call `destroy_process_group` after training finishes.
+# 
+# This script caches imtermediate preprocessed data in GPU memory and then
+# performs GPU-based transforms, by using `EnsureTyped``, `ToDeviced` and 
+# `CacheDataset`. It also uses `ThreadDataLoader` instead of `DataLoader` for 
+# faster I/O. To learn more, see Fast Model Training guide  
+# https://github.com/Project-MONAI/tutorials/blob/main/acceleration/fast_model_training_guide.md.
+#
+# 
+# References:
+# torch.distributed: 
+# - https://pytorch.org/tutorials/beginner/dist_overview.html#
+# torch.distributed.launch: 
+# - https://github.com/pytorch/examples/blob/master/distributed/ddp/README.md 
+# - https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py
+# torch.distributed.DistributedDataParallel:
+# - https://pytorch.org/tutorials/intermediate/ddp_tutorial.html
+#
+# Huiwen Ju, hju@nvidia.com
+# Aug 2022
+
 import argparse
 import os
 import shutil
 import tempfile
-
+import time
 import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
@@ -301,8 +354,10 @@ def main():
     parser.add_argument("--local_rank", type=int)
     args = parser.parse_args()
 
-    os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
-    os.environ["NCCL_ASYNC_ERROR_HANDLING"] = "1"
+    # for debugging purpose
+    # os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
+    # os.environ["NCCL_ASYNC_ERROR_HANDLING"] = "1"
+
     t_start = time.time()
     train(args=args)
     t_end = time.time()

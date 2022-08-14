@@ -35,7 +35,7 @@ export NCCL_DEBUG=INFO
 export TORCH_DISTRIBUTED_DEBUG=DETAIL
 export NCCL_ASYNC_ERROR_HANDLING=1
 # Training command specification: training_script -args.
-TRAINING_SCRIPT="$(realpath "$HOME/run_monaicore/multigpu/unetr_ddp/unetr_btcv_ddp.py")"
+TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/monaicore_multigpu/unetr_ddp/unetr_btcv_ddp.py")"
 TRAINING_CMD="$TRAINING_SCRIPT"
 
 # Python location (if not provided, system default will be used).
@@ -46,7 +46,7 @@ PYTHON_PATH="singularity exec --nv --bind /blue/vendor-nvidia/hju/data/unetr_dat
           
 # Location of the PyTorch launch utilities, i.e. `pt_multinode_helper_funcs.sh` & `run_on_node.sh`.
 # PT_LAUNCH_UTILS_PATH=$HOME/pt_dist_launch/UF_tutorial_multinode_MONAI
-PT_LAUNCH_UTILS_PATH=$HOME/run_monaicore/multigpu/util_multigpu
+PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
 source "${PT_LAUNCH_UTILS_PATH}/pt_multinode_helper_funcs.sh"
 
 init_node_info

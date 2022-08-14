@@ -11,7 +11,7 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
 
 ## **Example 1: simple multi-gpu training with Unet**
 ### **About this example**
-1. The training python script we're using here is adapted from [a script in MONAI Core tutorial repository](https://github.com/Project-MONAI/tutorials/blob/master/acceleration/distributed_training/unet_training_ddp.py). 
+1. The [training python script](./unet_ddp/unet_training_ddp.py) we're using here is adapted from [a MONAI Core tutorial script](https://github.com/Project-MONAI/tutorials/blob/master/acceleration/distributed_training/unet_training_ddp.py). 
 2. Synthetic data will be generated, so you don't need to download any data or have your own data to use this script.
 3. Validation is not implemented within the training loop, see other following examples for validation implementation.
 
@@ -46,7 +46,8 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
 
 ## **Example 2: multi-gpu training for Brain Tumor segmentation with UNet/SegResNet**
 ### **About this example**
-1. This example is a real-world task based on Decathlon challenge Task01: Brain Tumor segmentation, so it's more complicated than [Exmaple 1](#example-1-simple-multi-gpu-training-with-unet). 
+1. The [training python script](./brats_ddp/brats_training_ddp.py) is adapted from [a MONAI Core tutorial script](https://github.com/Project-MONAI/tutorials/blob/main/acceleration/distributed_training/brats_training_ddp.py). 
+2. This example is a real-world task based on Decathlon challenge Task01: Brain Tumor segmentation, so it's more complicated than [Exmaple 1](#example-1-simple-multi-gpu-training-with-unet). 
 2. Steps to get the required data:
     - go to http://medicaldecathlon.com/, click on `Get Data` and then download `Task01_BrainTumour.tar` to your local computer. 
     - upload it to your storage partition (e.g. blue or red partition) on HiperGator, sample command:
@@ -81,5 +82,9 @@ This directory hosts sample scripts to launch a multi-gpu distributed training u
 Steps are similar to [Example 1](#how-to-run-this-example), except sample scripts and output files are in directory `brats_ddp/`.
 
 
-## **Example 3: multi-gpu training with Unetr**
+## **Example 3: multi-gpu training 3D Multi-organ Segmentation with UNETR** (in preparation...)
 ### **About this example**
+1. The [training python script](./unetr_ddp/unetr_btcv_ddp.py) is adapted from [a MONAI Core tutorial script](https://github.com/Project-MONAI/tutorials/blob/main/3d_segmentation/unetr_btcv_segmentation_3d.ipynb).
+2. data, bind
+3. single gpu
+3. fast techs
