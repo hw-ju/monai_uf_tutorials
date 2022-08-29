@@ -1,0 +1,45 @@
+None of the inputs have requires_grad=True. Gradients will be None
+
+#for validation? what happens if no validation? yes!
+
+==================================================================
+y_pred should be a binarized tensor.
+
+https://docs.monai.io/en/0.9.1/_modules/monai/metrics/meandice.html
+DiceMetric
+    is_binary_tensor(y_pred, "y_pred")
+
+https://github.com/Project-MONAI/MONAI/blob/d34fa14eed3191126fc1bc1a9751e69e0396f78b/monai/metrics/utils.py
+    if not torch.all(input.byte() == input) or input.max() > 1 or input.min() < 0:
+        warnings.warn(f"{name} should be a binarized tensor.")
+
+tutorial:
+Once again note that the assumption is the inputs for both the loss and metric 
+have been through activation already and are in one-hot format. 
+
+DiceLoss: If the prediction hasn't been activated softmax can be set to True to apply this activation, 
+and to_onehot_y can be set to True to convert the ground truth to one-hot.
+
+doc for DiceMetric:
+class monai.metrics.DiceMetric(include_background=True, reduction=MetricReduction.MEAN, get_not_nans=False, ignore_empty=True)
+[source]
+Compute average Dice score between two tensors. It can support both multi-classes and multi-labels tasks. 
+Input y_pred is compared with ground truth y. 
+y_preds is expected to have binarized predictions 
+and y should be in one-hot format. 
+You can use suitable transforms in monai.transforms.post first to achieve binarized values. 
+------------------------------------------------------
+1. postpred, AsDiscrete, does not convert to 0.0 / 1.0. 
+In AsDiscrete(), --logit_thres is depracated, use --threshold.
+#2. don't need to convert y_pred to onehot? no need, y_pred already is onehot
+#3. labels are boolean for each class?  ConvertToMultiChannelBasedOnBratsClassesd: labels (1,2,4)->multi-channel
+
+
+-------------
+[0] acc_func: y_pred
+len(val_output_convert): 1
+val_output_convert[0].shape: (3, 240, 240, 155), val_output_convert[0].dtype: torch.float32
+-------------
+[0] acc_func: y
+len(val_labels_list): 1
+val_labels_list[0].shape: torch.Size([3, 240, 240, 155]), val_labels_list[0].dtype: torch.bool
