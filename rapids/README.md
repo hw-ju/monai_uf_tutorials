@@ -21,6 +21,8 @@ jupyter labextension list
 jupyter lab
 ```
 
+For running on HiperGator, refer to [this tutorial](https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels) about setting up a conda environment and then building a customized jupyter kernel from it.  To learn how to use Jupyter on HiperGator, refer to this [UFRC doc](https://help.rc.ufl.edu/doc/Jupyter_Notebooks).
+
 Below are the commands used to set up the conda environment on HiperGator:
 ```
 conda update conda
@@ -30,4 +32,3 @@ conda install -c rapidsai -c nvidia -c conda-forge rapids=22.08 python=3.9 cudat
 mamba install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 
-For running on HiperGator, refer to [this tutorial](https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels) about building a customized jupyter kernel from a conda environment.
