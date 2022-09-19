@@ -46,19 +46,19 @@ export TORCH_DISTRIBUTED_DEBUG=DETAIL
 export NCCL_ASYNC_ERROR_HANDLING=1
 # Training command specification: training_script -args.
 # TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/monaicore_multigpu/unet_ddp/unet_training_ddp.py")"
-TRAINING_SCRIPT="$(realpath "$HOME/run_monaicore/btcv_modify/main.py")"
+TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/btcv_modify/main.py")"
 
 # 1. train from scratch (without amp)
 # training 24 images, 24/8 = 3 iter/epoch. validation 6 images.
-# TRAINING_CMD="$TRAINING_SCRIPT \
-# --distributed \
-# --logdir=/mnt \
-# --data_dir=/mnt --json_list=dataset_0.json \
-# --roi_x=96 --roi_y=96 --roi_z=96 --feature_size=48 \
-# --batch_size=1 \
-# --val_every=1 --max_epochs=3 \
-# --save_checkpoint \
-# --noamp"
+TRAINING_CMD="$TRAINING_SCRIPT \
+--distributed \
+--logdir=/mnt \
+--data_dir=/mnt --json_list=dataset_0.json \
+--roi_x=96 --roi_y=96 --roi_z=96 --feature_size=48 \
+--batch_size=1 \
+--val_every=1 --max_epochs=3 \
+--save_checkpoint \
+--noamp"
 
 # 2. train from pretrained ssl (self-supervised pretrained weights) downloaded
 # TRAINING_CMD="$TRAINING_SCRIPT \
@@ -102,16 +102,16 @@ TRAINING_SCRIPT="$(realpath "$HOME/run_monaicore/btcv_modify/main.py")"
 # --pretrained_model_name=swin_unetr.base_5000ep_f48_lr2e-4_pretrained.pt"
 
 # 5. train/finetune from pretrained full SwinUNETR trained by this script
-TRAINING_CMD="$TRAINING_SCRIPT \
---distributed \
---logdir=/mnt \
---data_dir=/mnt --json_list=dataset_0.json \
---roi_x=96 --roi_y=96 --roi_z=96 --feature_size=48 --optim_lr=2e-4 \
---batch_size=1 \
---val_every=1 --max_epochs=6 \
---save_checkpoint \
---noamp \
---checkpoint=/mnt/runs/model.pt"
+# TRAINING_CMD="$TRAINING_SCRIPT \
+# --distributed \
+# --logdir=/mnt \
+# --data_dir=/mnt --json_list=dataset_0.json \
+# --roi_x=96 --roi_y=96 --roi_z=96 --feature_size=48 --optim_lr=2e-4 \
+# --batch_size=1 \
+# --val_every=1 --max_epochs=6 \
+# --save_checkpoint \
+# --noamp \
+# --checkpoint=/mnt/runs/model.pt"
 
 # Python location (if not provided, system default will be used).
 # Here we run within a MONAI Core Singularity container,
@@ -123,8 +123,7 @@ PYTHON_PATH="singularity exec --nv --bind /blue/vendor-nvidia/hju/data/BTCV:/mnt
 
 # Location of the PyTorch launch utilities, 
 # i.e. `pt_multinode_helper_funcs.sh`, `run_on_node.sh` and `run_on_multinode`.
-# PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
-PT_LAUNCH_UTILS_PATH=$HOME/run_monaicore/multigpu/util_multigpu
+PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
 source "${PT_LAUNCH_UTILS_PATH}/pt_multinode_helper_funcs.sh"
 
 init_node_info

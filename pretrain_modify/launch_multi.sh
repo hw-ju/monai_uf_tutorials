@@ -46,7 +46,7 @@ export TORCH_DISTRIBUTED_DEBUG=DETAIL
 export NCCL_ASYNC_ERROR_HANDLING=1
 # Training command specification: training_script -args.
 # TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/monaicore_multigpu/unet_ddp/unet_training_ddp.py")"
-TRAINING_SCRIPT="$(realpath "$HOME/run_monaicore/pretrain_modify/main.py")"
+TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/pretrain_modify/main.py")"
 
 # 1. train from scratch (no --use_checkpoint, use --noamp)
 # 8 GPUs, batch_size = 1, 722/8 = 90 iters/epoch. val: 49 images
@@ -122,8 +122,7 @@ PYTHON_PATH="singularity exec --nv --bind /blue/vendor-nvidia/hju/data/swinunetr
 
 # Location of the PyTorch launch utilities, 
 # i.e. `pt_multinode_helper_funcs.sh`, `run_on_node.sh` and `run_on_multinode`.
-# PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
-PT_LAUNCH_UTILS_PATH=$HOME/run_monaicore/multigpu/util_multigpu
+PT_LAUNCH_UTILS_PATH=$HOME/monai_uf_tutorials/monaicore_multigpu/util_multigpu
 source "${PT_LAUNCH_UTILS_PATH}/pt_multinode_helper_funcs.sh"
 
 init_node_info
