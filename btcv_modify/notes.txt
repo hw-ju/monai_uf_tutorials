@@ -1,0 +1,22 @@
+[] single GPU
+- [ok] from scratch
+- load pretrained swinViT
+    - theirs
+    - mine
+- load pretrained swinUNETR
+    - theirs
+    - mine
+- [] evaluation
+
+multi GPU
+- [ok] from scratch
+- load pretrained swinViT    [] pretrained_encoder -? pretrained_ssl
+    - [ok] theirs
+    - [ok] mine
+- load pretrained swinUNETR
+    - [ok] theirs
+    - [ok] mine
+
+
+
+args.resume_ckpt VS args.checkpoint?
