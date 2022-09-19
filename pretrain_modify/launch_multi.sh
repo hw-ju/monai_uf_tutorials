@@ -33,7 +33,7 @@
 #SBATCH --gpus=8
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=600gb
+#SBATCH --mem=200gb
 #SBATCH --partition=hpg-ai
 #SBATCH --exclude=c0906a-s29,c1101a-s29,c1101a-s23,c1004a-s23,c1103a-s17
 #SBATCH --exclusive
