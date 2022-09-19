@@ -50,14 +50,14 @@ TRAINING_SCRIPT="$(realpath "$HOME/monai_uf_tutorials/pretrain_modify/main.py")"
 
 # 1. train from scratch (no --use_checkpoint, use --noamp)
 # 8 GPUs, batch_size = 1, 722/8 = 90 iters/epoch. val: 49 images
-# TRAINING_CMD="$TRAINING_SCRIPT \
-# --distributed \
-# --logdir=/mnt \
-# --roi_x=128 --roi_y=128 --roi_z=128 \
-# --lrdecay --lr=6e-6 --decay=0.1 \
-# --batch_size=1 \
-# --epochs=3 --num_steps=270 --eval_num=90 \
-# --noamp"
+TRAINING_CMD="$TRAINING_SCRIPT \
+--distributed \
+--logdir=/mnt \
+--roi_x=128 --roi_y=128 --roi_z=128 \
+--lrdecay --lr=6e-6 --decay=0.1 \
+--batch_size=1 \
+--epochs=3 --num_steps=270 --eval_num=90 \
+--noamp"
 
 # 2. train from scratch (with amp, without checkpointing gradients)
 # TRAINING_CMD="$TRAINING_SCRIPT \
