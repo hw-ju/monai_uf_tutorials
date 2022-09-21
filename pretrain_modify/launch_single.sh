@@ -26,5 +26,4 @@ python main.py \
 --lrdecay --lr=6e-6 \
 --batch_size=1 \
 --epochs=3 --num_steps=6 --eval_num=2 \
---use_checkpoint \
 --noamp
