@@ -68,7 +68,7 @@ TRAINING_CMD="$TRAINING_SCRIPT \
 # --batch_size=1 \
 # --epochs=3 --num_steps=270 --eval_num=90"
 
-# 3. NOT WORKING NOW! train from scratch (cachedataset, --mem Specify the real memory required per node.)
+# 3. NOT WORKING with the default setting! train from scratch (cachedataset, --mem Specify the real memory required per node.)
 # TRAINING_CMD="$TRAINING_SCRIPT \
 # --distributed \
 # --logdir=/mnt \
@@ -79,7 +79,7 @@ TRAINING_CMD="$TRAINING_SCRIPT \
 # --noamp \
 # --cache_dataset"
 
-# 4. NOT WORKING NOW! train from scratch (smartcachedataset, --mem Specify the real memory required per node.)
+# 4. NOT WORKING with the current main.py, need to add more code! train from scratch (smartcachedataset, --mem Specify the real memory required per node.)
 # TRAINING_CMD="$TRAINING_SCRIPT \
 # --distributed \
 # --logdir=/mnt \
