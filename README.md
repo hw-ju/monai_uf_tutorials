@@ -31,4 +31,5 @@ chmod -R +x monai_uf_tutorials/
 2. [use MONAI Core for multi-GPU training](./monaicore_multigpu/)
 3. [use MONAI Core for Swin UNETR training & evaluation for BRATS21](./monaicore_swinUNETR/)
 4. [use MONAI Core for Swin UNETR self-supervised pretraining for BTCV](./pretrain_modify/)
-4. [use MONAI Core for Swin UNETR training & evaluation for BTCV](./btcv_modify/)
+5. [use MONAI Core for Swin UNETR training & evaluation for BTCV](./btcv_modify/)
+6. [use Datasets accelerated by caching in MONAI Core](./caching/)
