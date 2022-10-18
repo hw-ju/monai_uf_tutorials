@@ -97,13 +97,13 @@ Request resources for an interactive session and start a bash shell (learn more 
 To request an A100 GPU:
 
 ```
-srun --nodes=1 --ntasks=1 --partition=gpu --gpus=a100:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
+srun --nodes=1 --ntasks=1 --partition=gpu --gpus=a100:1 --cpus-per-task=4 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
 ```
 
 To request a GeForce GPU:
 
 ```
-srun --nodes=1 --ntasks=1 --partition=gpu --gpus=geforce:1 --cpus-per-task=2 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
+srun --nodes=1 --ntasks=1 --partition=gpu --gpus=geforce:1 --cpus-per-task=4 --mem-per-cpu 64gb --time=03:00:00 --pty -u bash -i
 ```
 
 When you see the prompt changes from something like ```[hju@login5 monaicore_singlegpu]$``` to something like ```[hju@c39a-s39 monaicore_singlegpu]$```, you have successfully hopped from the login node to a compute node. Sample console output:
@@ -123,7 +123,7 @@ module load singularity
 Spawn a new shell within your container and interact with it. Alter the path to your container. 
 
 ```
-singularity shell --nv /blue/vendor-nvidia/hju/monaicore0.8.1
+singularity shell --nv /blue/vendor-nvidia/hju/monaicore0.9.1
 ```
 
 It might hang for a while before any console output. The change in prompt (from hju@... to Singularity>) indicates that you have entered the container. Sample console output:
