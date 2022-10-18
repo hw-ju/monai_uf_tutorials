@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=64gb
 #SBATCH --partition=gpu
 #SBATCH --gpus=geforce:1
