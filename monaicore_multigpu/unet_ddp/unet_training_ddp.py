@@ -148,7 +148,7 @@ def train(args):
         strides=(2, 2, 2, 2),
         num_res_units=2,
     ).to(device)
-    loss_function = monai.losses.DiceLoss(sigmoid=True)  
+    loss_function = monai.losses.DiceLoss(sigmoid=True).to(device)  
     optimizer = torch.optim.Adam(model.parameters(), 1e-3)
     # wrap the model with DistributedDataParallel module
     model = DistributedDataParallel(model, device_ids=[device])

@@ -1,0 +1,98 @@
+2022-11-28 17:57:56,940 - ignite.engine.engine.DynUNetTrainer - INFO - Engine run resuming from iteration 0, epoch 0 until 5 epochs
+2022-11-28 17:58:31,878 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 1/11 -- train_loss: 3.0855 
+2022-11-28 17:58:31,932 - torch.nn.parallel.distributed - INFO - Reducer buckets have been rebuilt in this iteration.
+2022-11-28 17:58:31,932 - torch.nn.parallel.distributed - INFO - Reducer buckets have been rebuilt in this iteration.
+2022-11-28 17:58:31,990 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 2/11 -- train_loss: 2.1159 
+2022-11-28 17:58:32,104 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 3/11 -- train_loss: 1.5072 
+2022-11-28 17:58:32,154 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 4/11 -- train_loss: 1.2929 
+2022-11-28 17:58:32,282 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 5/11 -- train_loss: 1.2070 
+2022-11-28 17:58:32,352 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 6/11 -- train_loss: 1.1881 
+2022-11-28 17:58:32,426 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 7/11 -- train_loss: 1.1559 
+2022-11-28 17:58:32,470 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 8/11 -- train_loss: 1.1601 
+2022-11-28 17:58:32,564 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 9/11 -- train_loss: 1.1456 
+2022-11-28 17:58:32,634 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 10/11 -- train_loss: 1.1127 
+2022-11-28 17:58:32,708 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 1/5, Iter: 11/11 -- train_loss: 1.0626 
+2022-11-28 17:58:32,708 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2022-11-28 17:58:43,945 - ignite.engine.engine.DynUNetEvaluator - INFO - Got new best metric of val_mean_dice: 0.0
+2022-11-28 17:58:43,946 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[1] Metrics -- val_mean_dice: 0.0000 
+2022-11-28 17:58:43,946 - ignite.engine.engine.DynUNetEvaluator - INFO - Key metric: val_mean_dice best value: 0.0 at epoch: 1
+2022-11-28 17:58:44,108 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[1] Complete. Time taken: 00:00:11.379
+2022-11-28 17:58:44,109 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run complete. Time taken: 00:00:11.400
+2022-11-28 17:58:44,137 - ignite.engine.engine.DynUNetTrainer - INFO - Key metric: None best value: -1 at epoch: -1
+2022-11-28 17:58:44,137 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch[1] Complete. Time taken: 00:00:46.905
+2022-11-28 17:58:44,482 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 1/11 -- train_loss: 1.0625 
+2022-11-28 17:58:44,558 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 2/11 -- train_loss: 1.0774 
+2022-11-28 17:58:44,655 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 3/11 -- train_loss: 1.0484 
+2022-11-28 17:58:44,701 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 4/11 -- train_loss: 1.0313 
+2022-11-28 17:58:44,772 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 5/11 -- train_loss: 1.0164 
+2022-11-28 17:58:44,850 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 6/11 -- train_loss: 0.9979 
+2022-11-28 17:58:44,947 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 7/11 -- train_loss: 0.9934 
+2022-11-28 17:58:45,012 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 8/11 -- train_loss: 0.9732 
+2022-11-28 17:58:45,085 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 9/11 -- train_loss: 0.9390 
+2022-11-28 17:58:45,158 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 10/11 -- train_loss: 0.9476 
+2022-11-28 17:58:45,226 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 2/5, Iter: 11/11 -- train_loss: 0.9191 
+2022-11-28 17:58:45,226 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2022-11-28 17:58:47,347 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[2] Metrics -- val_mean_dice: 0.0000 
+2022-11-28 17:58:47,348 - ignite.engine.engine.DynUNetEvaluator - INFO - Key metric: val_mean_dice best value: 0.0 at epoch: 1
+2022-11-28 17:58:47,348 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[2] Complete. Time taken: 00:00:02.101
+2022-11-28 17:58:47,348 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run complete. Time taken: 00:00:02.122
+2022-11-28 17:58:47,385 - ignite.engine.engine.DynUNetTrainer - INFO - Key metric: None best value: -1 at epoch: -1
+2022-11-28 17:58:47,385 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch[2] Complete. Time taken: 00:00:03.248
+2022-11-28 17:58:47,753 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 1/11 -- train_loss: 0.9082 
+2022-11-28 17:58:47,837 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 2/11 -- train_loss: 0.8916 
+2022-11-28 17:58:47,916 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 3/11 -- train_loss: 0.8488 
+2022-11-28 17:58:48,014 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 4/11 -- train_loss: 0.8630 
+2022-11-28 17:58:48,059 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 5/11 -- train_loss: 0.8411 
+2022-11-28 17:58:48,149 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 6/11 -- train_loss: 0.8003 
+2022-11-28 17:58:48,214 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 7/11 -- train_loss: 0.7845 
+2022-11-28 17:58:48,307 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 8/11 -- train_loss: 0.7942 
+2022-11-28 17:58:48,351 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 9/11 -- train_loss: 0.8159 
+2022-11-28 17:58:48,418 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 10/11 -- train_loss: 0.7625 
+2022-11-28 17:58:48,488 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 3/5, Iter: 11/11 -- train_loss: 0.7255 
+2022-11-28 17:58:48,488 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2022-11-28 17:58:50,540 - ignite.engine.engine.DynUNetEvaluator - INFO - Got new best metric of val_mean_dice: 0.19728705286979675
+2022-11-28 17:58:50,541 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[3] Metrics -- val_mean_dice: 0.1973 
+2022-11-28 17:58:50,541 - ignite.engine.engine.DynUNetEvaluator - INFO - Key metric: val_mean_dice best value: 0.19728705286979675 at epoch: 3
+2022-11-28 17:58:50,617 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[3] Complete. Time taken: 00:00:02.105
+2022-11-28 17:58:50,618 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run complete. Time taken: 00:00:02.130
+2022-11-28 17:58:50,659 - ignite.engine.engine.DynUNetTrainer - INFO - Key metric: None best value: -1 at epoch: -1
+2022-11-28 17:58:50,659 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch[3] Complete. Time taken: 00:00:03.274
+2022-11-28 17:58:51,137 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 1/11 -- train_loss: 0.7412 
+2022-11-28 17:58:51,188 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 2/11 -- train_loss: 0.6911 
+2022-11-28 17:58:51,284 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 3/11 -- train_loss: 0.7066 
+2022-11-28 17:58:51,359 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 4/11 -- train_loss: 0.6915 
+2022-11-28 17:58:51,469 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 5/11 -- train_loss: 0.6752 
+2022-11-28 17:58:51,513 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 6/11 -- train_loss: 0.6818 
+2022-11-28 17:58:51,602 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 7/11 -- train_loss: 0.6664 
+2022-11-28 17:58:51,672 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 8/11 -- train_loss: 0.6604 
+2022-11-28 17:58:51,808 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 9/11 -- train_loss: 0.6413 
+2022-11-28 17:58:51,877 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 10/11 -- train_loss: 0.6410 
+2022-11-28 17:58:51,942 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 4/5, Iter: 11/11 -- train_loss: 0.6451 
+2022-11-28 17:58:51,942 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run resuming from iteration 0, epoch 3 until 4 epochs
+2022-11-28 17:58:54,042 - ignite.engine.engine.DynUNetEvaluator - INFO - Got new best metric of val_mean_dice: 0.2793819010257721
+2022-11-28 17:58:54,043 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[4] Metrics -- val_mean_dice: 0.2794 
+2022-11-28 17:58:54,043 - ignite.engine.engine.DynUNetEvaluator - INFO - Key metric: val_mean_dice best value: 0.2793819010257721 at epoch: 4
+2022-11-28 17:58:54,126 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[4] Complete. Time taken: 00:00:02.158
+2022-11-28 17:58:54,127 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run complete. Time taken: 00:00:02.184
+2022-11-28 17:58:54,163 - ignite.engine.engine.DynUNetTrainer - INFO - Key metric: None best value: -1 at epoch: -1
+2022-11-28 17:58:54,164 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch[4] Complete. Time taken: 00:00:03.505
+2022-11-28 17:58:54,588 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 1/11 -- train_loss: 0.6739 
+2022-11-28 17:58:54,689 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 2/11 -- train_loss: 0.7008 
+2022-11-28 17:58:54,760 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 3/11 -- train_loss: 0.6251 
+2022-11-28 17:58:54,832 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 4/11 -- train_loss: 0.6445 
+2022-11-28 17:58:54,929 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 5/11 -- train_loss: 0.6591 
+2022-11-28 17:58:54,998 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 6/11 -- train_loss: 0.6297 
+2022-11-28 17:58:55,068 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 7/11 -- train_loss: 0.6038 
+2022-11-28 17:58:55,136 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 8/11 -- train_loss: 0.5951 
+2022-11-28 17:58:55,227 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 9/11 -- train_loss: 0.6621 
+2022-11-28 17:58:55,330 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 10/11 -- train_loss: 0.6141 
+2022-11-28 17:58:55,398 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch: 5/5, Iter: 11/11 -- train_loss: 0.6180 
+2022-11-28 17:58:55,399 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run resuming from iteration 0, epoch 4 until 5 epochs
+2022-11-28 17:58:57,507 - ignite.engine.engine.DynUNetEvaluator - INFO - Got new best metric of val_mean_dice: 0.29488736391067505
+2022-11-28 17:58:57,508 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[5] Metrics -- val_mean_dice: 0.2949 
+2022-11-28 17:58:57,508 - ignite.engine.engine.DynUNetEvaluator - INFO - Key metric: val_mean_dice best value: 0.29488736391067505 at epoch: 5
+2022-11-28 17:58:57,579 - ignite.engine.engine.DynUNetEvaluator - INFO - Epoch[5] Complete. Time taken: 00:00:02.158
+2022-11-28 17:58:57,579 - ignite.engine.engine.DynUNetEvaluator - INFO - Engine run complete. Time taken: 00:00:02.180
+2022-11-28 17:58:57,613 - ignite.engine.engine.DynUNetTrainer - INFO - Key metric: None best value: -1 at epoch: -1
+2022-11-28 17:58:57,614 - ignite.engine.engine.DynUNetTrainer - INFO - Epoch[5] Complete. Time taken: 00:00:03.450
+2022-11-28 17:58:57,614 - ignite.engine.engine.DynUNetTrainer - INFO - Engine run complete. Time taken: 00:01:00.674
