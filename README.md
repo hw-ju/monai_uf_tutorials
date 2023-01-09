@@ -33,3 +33,4 @@ chmod -R +x monai_uf_tutorials/
 4. [use MONAI Core for Swin UNETR self-supervised pretraining for BTCV](./pretrain_modify/)
 5. [use MONAI Core for Swin UNETR training & evaluation for BTCV](./btcv_modify/)
 6. [use Datasets accelerated by caching in MONAI Core](./caching/)
+7. [performance profiling of MONAI Core training by NVIDIA Nsight Systems](./profile/)
