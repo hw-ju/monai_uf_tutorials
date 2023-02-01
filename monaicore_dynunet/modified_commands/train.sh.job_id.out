@@ -1,0 +1,191 @@
+Tue Jan 31 20:12:02 EST 2023
+c1100a-s11.ufhpc
+/home/hju/run_monaicore/monaicore_dynunet/modified_commands
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (479) bind mounts
+MONAI version: 1.0.1
+Numpy version: 1.22.2
+Pytorch version: 1.13.0a0+d0d6b1f
+MONAI flags: HAS_EXT = True, USE_COMPILED = False, USE_META_DICT = False
+MONAI rev id: 8271a193229fe4437026185e218d5b06f7c8ce69
+MONAI __file__: /opt/monai/monai/__init__.py
+
+Optional dependencies:
+Pytorch Ignite version: 0.4.10
+Nibabel version: 4.0.2
+scikit-image version: 0.19.3
+Pillow version: 9.0.1
+Tensorboard version: 2.10.0
+gdown version: 4.5.3
+TorchVision version: 0.14.0a0
+tqdm version: 4.64.1
+lmdb version: 1.3.0
+psutil version: 5.9.2
+pandas version: 1.4.4
+einops version: 0.5.0
+transformers version: 4.21.3
+mlflow version: 1.30.0
+pynrrd version: 1.0.0
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+Using deterministic training.
+Loading dataset:   0%|          | 0/52 [00:00<?, ?it/s]Loading dataset:   2%|▏         | 1/52 [00:03<02:46,  3.27s/it]Loading dataset:  29%|██▉       | 15/52 [00:03<00:06,  6.08it/s]Loading dataset:  50%|█████     | 26/52 [00:03<00:02, 11.82it/s]Loading dataset:  67%|██████▋   | 35/52 [00:03<00:00, 17.43it/s]Loading dataset:  85%|████████▍ | 44/52 [00:03<00:00, 23.37it/s]Loading dataset: 100%|██████████| 52/52 [00:03<00:00, 13.67it/s]
+Loading dataset:   0%|          | 0/208 [00:00<?, ?it/s]Loading dataset:   0%|          | 1/208 [00:00<00:30,  6.70it/s]Loading dataset:   5%|▍         | 10/208 [00:00<00:04, 44.25it/s]Loading dataset:   9%|▊         | 18/208 [00:00<00:03, 56.52it/s]Loading dataset:  12%|█▎        | 26/208 [00:00<00:02, 64.56it/s]Loading dataset:  16%|█▌        | 33/208 [00:00<00:02, 65.36it/s]Loading dataset:  19%|█▉        | 40/208 [00:00<00:02, 60.71it/s]Loading dataset:  24%|██▍       | 50/208 [00:00<00:02, 66.24it/s]Loading dataset:  28%|██▊       | 58/208 [00:00<00:02, 67.61it/s]Loading dataset:  32%|███▏      | 66/208 [00:01<00:02, 67.43it/s]Loading dataset:  36%|███▌      | 74/208 [00:01<00:01, 70.76it/s]Loading dataset:  40%|████      | 84/208 [00:01<00:01, 76.61it/s]Loading dataset:  44%|████▍     | 92/208 [00:01<00:01, 76.54it/s]Loading dataset:  49%|████▊     | 101/208 [00:01<00:01, 72.82it/s]Loading dataset:  52%|█████▏    | 109/208 [00:01<00:01, 72.21it/s]Loading dataset:  56%|█████▋    | 117/208 [00:01<00:01, 73.43it/s]Loading dataset:  60%|██████    | 125/208 [00:01<00:01, 75.13it/s]Loading dataset:  64%|██████▍   | 133/208 [00:01<00:01, 70.15it/s]Loading dataset:  68%|██████▊   | 141/208 [00:02<00:00, 72.63it/s]Loading dataset:  72%|███████▏  | 149/208 [00:02<00:00, 72.57it/s]Loading dataset:  75%|███████▌  | 157/208 [00:02<00:00, 73.38it/s]Loading dataset:  79%|███████▉  | 165/208 [00:02<00:00, 73.47it/s]Loading dataset:  83%|████████▎ | 173/208 [00:02<00:00, 73.53it/s]Loading dataset:  87%|████████▋ | 181/208 [00:02<00:00, 73.11it/s]Loading dataset:  91%|█████████ | 189/208 [00:02<00:00, 74.01it/s]Loading dataset:  95%|█████████▍| 197/208 [00:02<00:00, 74.85it/s]Loading dataset:  99%|█████████▊| 205/208 [00:02<00:00, 75.52it/s]Loading dataset: 100%|██████████| 208/208 [00:02<00:00, 70.50it/s]2023-01-31 20:17:52,482 - Engine run resuming from iteration 0, epoch 0 until 5 epochs
+
+2023-01-31 20:18:27,354 - Epoch: 1/5, Iter: 1/23 -- train_loss: 2.4818 
+2023-01-31 20:18:27,412 - Epoch: 1/5, Iter: 2/23 -- train_loss: 1.8322 
+2023-01-31 20:18:27,458 - Epoch: 1/5, Iter: 3/23 -- train_loss: 1.4205 
+2023-01-31 20:18:27,504 - Epoch: 1/5, Iter: 4/23 -- train_loss: 1.2811 
+2023-01-31 20:18:27,572 - Epoch: 1/5, Iter: 5/23 -- train_loss: 1.2181 
+2023-01-31 20:18:27,613 - Epoch: 1/5, Iter: 6/23 -- train_loss: 1.1845 
+2023-01-31 20:18:27,654 - Epoch: 1/5, Iter: 7/23 -- train_loss: 1.1818 
+2023-01-31 20:18:27,696 - Epoch: 1/5, Iter: 8/23 -- train_loss: 1.1293 
+2023-01-31 20:18:27,757 - Epoch: 1/5, Iter: 9/23 -- train_loss: 1.1004 
+2023-01-31 20:18:27,824 - Epoch: 1/5, Iter: 10/23 -- train_loss: 1.0621 
+2023-01-31 20:18:27,893 - Epoch: 1/5, Iter: 11/23 -- train_loss: 1.0695 
+2023-01-31 20:18:27,964 - Epoch: 1/5, Iter: 12/23 -- train_loss: 1.0460 
+2023-01-31 20:18:28,036 - Epoch: 1/5, Iter: 13/23 -- train_loss: 1.0227 
+2023-01-31 20:18:28,107 - Epoch: 1/5, Iter: 14/23 -- train_loss: 1.0128 
+2023-01-31 20:18:28,168 - Epoch: 1/5, Iter: 15/23 -- train_loss: 0.9831 
+2023-01-31 20:18:28,236 - Epoch: 1/5, Iter: 16/23 -- train_loss: 0.9760 
+2023-01-31 20:18:28,301 - Epoch: 1/5, Iter: 17/23 -- train_loss: 0.9469 
+2023-01-31 20:18:28,371 - Epoch: 1/5, Iter: 18/23 -- train_loss: 0.9304 
+2023-01-31 20:18:28,435 - Epoch: 1/5, Iter: 19/23 -- train_loss: 0.9177 
+2023-01-31 20:18:28,505 - Epoch: 1/5, Iter: 20/23 -- train_loss: 0.8778 
+2023-01-31 20:18:28,570 - Epoch: 1/5, Iter: 21/23 -- train_loss: 0.8785 
+2023-01-31 20:18:28,639 - Epoch: 1/5, Iter: 22/23 -- train_loss: 0.8407 
+2023-01-31 20:18:28,704 - Epoch: 1/5, Iter: 23/23 -- train_loss: 0.8926 
+2023-01-31 20:18:28,704 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-01-31 20:18:37,736 - Got new best metric of val_mean_dice: 0.0
+2023-01-31 20:18:37,736 - Epoch[1] Metrics -- val_mean_dice: 0.0000 
+2023-01-31 20:18:37,736 - Key metric: val_mean_dice best value: 0.0 at epoch: 1
+2023-01-31 20:18:37,842 - Epoch[1] Complete. Time taken: 00:00:09.124
+2023-01-31 20:18:37,842 - Engine run complete. Time taken: 00:00:09.138
+2023-01-31 20:18:37,861 - Key metric: None best value: -1 at epoch: -1
+2023-01-31 20:18:37,861 - Epoch[1] Complete. Time taken: 00:00:43.692
+2023-01-31 20:18:40,177 - Epoch: 2/5, Iter: 1/23 -- train_loss: 0.8395 
+2023-01-31 20:18:40,433 - Epoch: 2/5, Iter: 2/23 -- train_loss: 0.8449 
+2023-01-31 20:18:40,500 - Epoch: 2/5, Iter: 3/23 -- train_loss: 0.8083 
+2023-01-31 20:18:40,546 - Epoch: 2/5, Iter: 4/23 -- train_loss: 0.7733 
+2023-01-31 20:18:40,593 - Epoch: 2/5, Iter: 5/23 -- train_loss: 0.7907 
+2023-01-31 20:18:40,687 - Epoch: 2/5, Iter: 6/23 -- train_loss: 0.7780 
+2023-01-31 20:18:40,727 - Epoch: 2/5, Iter: 7/23 -- train_loss: 0.7505 
+2023-01-31 20:18:40,767 - Epoch: 2/5, Iter: 8/23 -- train_loss: 0.7242 
+2023-01-31 20:18:40,807 - Epoch: 2/5, Iter: 9/23 -- train_loss: 0.7244 
+2023-01-31 20:18:40,877 - Epoch: 2/5, Iter: 10/23 -- train_loss: 0.7059 
+2023-01-31 20:18:40,946 - Epoch: 2/5, Iter: 11/23 -- train_loss: 0.7084 
+2023-01-31 20:18:41,012 - Epoch: 2/5, Iter: 12/23 -- train_loss: 0.6883 
+2023-01-31 20:18:41,078 - Epoch: 2/5, Iter: 13/23 -- train_loss: 0.6935 
+2023-01-31 20:18:41,148 - Epoch: 2/5, Iter: 14/23 -- train_loss: 0.6855 
+2023-01-31 20:18:41,217 - Epoch: 2/5, Iter: 15/23 -- train_loss: 0.6419 
+2023-01-31 20:18:41,282 - Epoch: 2/5, Iter: 16/23 -- train_loss: 0.6564 
+2023-01-31 20:18:41,347 - Epoch: 2/5, Iter: 17/23 -- train_loss: 0.6395 
+2023-01-31 20:18:41,412 - Epoch: 2/5, Iter: 18/23 -- train_loss: 0.6311 
+2023-01-31 20:18:41,480 - Epoch: 2/5, Iter: 19/23 -- train_loss: 0.6220 
+2023-01-31 20:18:41,545 - Epoch: 2/5, Iter: 20/23 -- train_loss: 0.6086 
+2023-01-31 20:18:41,610 - Epoch: 2/5, Iter: 21/23 -- train_loss: 0.6378 
+2023-01-31 20:18:41,679 - Epoch: 2/5, Iter: 22/23 -- train_loss: 0.6074 
+2023-01-31 20:18:41,749 - Epoch: 2/5, Iter: 23/23 -- train_loss: 0.6151 
+2023-01-31 20:18:41,749 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-01-31 20:18:46,066 - Got new best metric of val_mean_dice: 0.4782697260379791
+2023-01-31 20:18:46,066 - Epoch[2] Metrics -- val_mean_dice: 0.4783 
+2023-01-31 20:18:46,066 - Key metric: val_mean_dice best value: 0.4782697260379791 at epoch: 2
+2023-01-31 20:18:46,153 - Epoch[2] Complete. Time taken: 00:00:04.389
+2023-01-31 20:18:46,153 - Engine run complete. Time taken: 00:00:04.404
+2023-01-31 20:18:46,173 - Key metric: None best value: -1 at epoch: -1
+2023-01-31 20:18:46,173 - Epoch[2] Complete. Time taken: 00:00:08.312
+2023-01-31 20:18:48,270 - Epoch: 3/5, Iter: 1/23 -- train_loss: 0.6024 
+2023-01-31 20:18:48,814 - Epoch: 3/5, Iter: 2/23 -- train_loss: 0.6133 
+2023-01-31 20:18:48,861 - Epoch: 3/5, Iter: 3/23 -- train_loss: 0.5790 
+2023-01-31 20:18:48,904 - Epoch: 3/5, Iter: 4/23 -- train_loss: 0.6278 
+2023-01-31 20:18:48,945 - Epoch: 3/5, Iter: 5/23 -- train_loss: 0.5827 
+2023-01-31 20:18:49,012 - Epoch: 3/5, Iter: 6/23 -- train_loss: 0.5819 
+2023-01-31 20:18:49,053 - Epoch: 3/5, Iter: 7/23 -- train_loss: 0.5715 
+2023-01-31 20:18:49,094 - Epoch: 3/5, Iter: 8/23 -- train_loss: 0.5988 
+2023-01-31 20:18:49,135 - Epoch: 3/5, Iter: 9/23 -- train_loss: 0.6074 
+2023-01-31 20:18:49,198 - Epoch: 3/5, Iter: 10/23 -- train_loss: 0.5671 
+2023-01-31 20:18:49,261 - Epoch: 3/5, Iter: 11/23 -- train_loss: 0.5563 
+2023-01-31 20:18:49,323 - Epoch: 3/5, Iter: 12/23 -- train_loss: 0.5598 
+2023-01-31 20:18:49,385 - Epoch: 3/5, Iter: 13/23 -- train_loss: 0.5490 
+2023-01-31 20:18:49,446 - Epoch: 3/5, Iter: 14/23 -- train_loss: 0.5495 
+2023-01-31 20:18:49,508 - Epoch: 3/5, Iter: 15/23 -- train_loss: 0.5799 
+2023-01-31 20:18:49,569 - Epoch: 3/5, Iter: 16/23 -- train_loss: 0.5542 
+2023-01-31 20:18:49,630 - Epoch: 3/5, Iter: 17/23 -- train_loss: 0.5371 
+2023-01-31 20:18:49,690 - Epoch: 3/5, Iter: 18/23 -- train_loss: 0.5411 
+2023-01-31 20:18:49,751 - Epoch: 3/5, Iter: 19/23 -- train_loss: 0.5569 
+2023-01-31 20:18:49,811 - Epoch: 3/5, Iter: 20/23 -- train_loss: 0.5438 
+2023-01-31 20:18:49,872 - Epoch: 3/5, Iter: 21/23 -- train_loss: 0.5991 
+2023-01-31 20:18:49,933 - Epoch: 3/5, Iter: 22/23 -- train_loss: 0.5301 
+2023-01-31 20:18:49,994 - Epoch: 3/5, Iter: 23/23 -- train_loss: 0.5683 
+2023-01-31 20:18:49,994 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-01-31 20:18:54,294 - Got new best metric of val_mean_dice: 0.597480058670044
+2023-01-31 20:18:54,294 - Epoch[3] Metrics -- val_mean_dice: 0.5975 
+2023-01-31 20:18:54,294 - Key metric: val_mean_dice best value: 0.597480058670044 at epoch: 3
+2023-01-31 20:18:54,385 - Epoch[3] Complete. Time taken: 00:00:04.376
+2023-01-31 20:18:54,385 - Engine run complete. Time taken: 00:00:04.391
+2023-01-31 20:18:54,405 - Key metric: None best value: -1 at epoch: -1
+2023-01-31 20:18:54,405 - Epoch[3] Complete. Time taken: 00:00:08.232
+2023-01-31 20:18:56,441 - Epoch: 4/5, Iter: 1/23 -- train_loss: 0.5229 
+2023-01-31 20:18:56,859 - Epoch: 4/5, Iter: 2/23 -- train_loss: 0.5450 
+2023-01-31 20:18:56,934 - Epoch: 4/5, Iter: 3/23 -- train_loss: 0.5319 
+2023-01-31 20:18:57,238 - Epoch: 4/5, Iter: 4/23 -- train_loss: 0.5207 
+2023-01-31 20:18:57,282 - Epoch: 4/5, Iter: 5/23 -- train_loss: 0.5222 
+2023-01-31 20:18:57,326 - Epoch: 4/5, Iter: 6/23 -- train_loss: 0.5338 
+2023-01-31 20:18:57,368 - Epoch: 4/5, Iter: 7/23 -- train_loss: 0.5646 
+2023-01-31 20:18:57,476 - Epoch: 4/5, Iter: 8/23 -- train_loss: 0.5098 
+2023-01-31 20:18:57,518 - Epoch: 4/5, Iter: 9/23 -- train_loss: 0.5258 
+2023-01-31 20:18:57,559 - Epoch: 4/5, Iter: 10/23 -- train_loss: 0.4818 
+2023-01-31 20:18:57,600 - Epoch: 4/5, Iter: 11/23 -- train_loss: 0.4812 
+2023-01-31 20:18:57,662 - Epoch: 4/5, Iter: 12/23 -- train_loss: 0.5004 
+2023-01-31 20:18:57,725 - Epoch: 4/5, Iter: 13/23 -- train_loss: 0.4715 
+2023-01-31 20:18:57,787 - Epoch: 4/5, Iter: 14/23 -- train_loss: 0.4675 
+2023-01-31 20:18:57,849 - Epoch: 4/5, Iter: 15/23 -- train_loss: 0.4516 
+2023-01-31 20:18:57,911 - Epoch: 4/5, Iter: 16/23 -- train_loss: 0.4703 
+2023-01-31 20:18:57,972 - Epoch: 4/5, Iter: 17/23 -- train_loss: 0.4349 
+2023-01-31 20:18:58,033 - Epoch: 4/5, Iter: 18/23 -- train_loss: 0.4572 
+2023-01-31 20:18:58,093 - Epoch: 4/5, Iter: 19/23 -- train_loss: 0.4246 
+2023-01-31 20:18:58,154 - Epoch: 4/5, Iter: 20/23 -- train_loss: 0.4255 
+2023-01-31 20:18:58,216 - Epoch: 4/5, Iter: 21/23 -- train_loss: 0.4265 
+2023-01-31 20:18:58,277 - Epoch: 4/5, Iter: 22/23 -- train_loss: 0.3940 
+2023-01-31 20:18:58,337 - Epoch: 4/5, Iter: 23/23 -- train_loss: 0.3967 
+2023-01-31 20:18:58,337 - Engine run resuming from iteration 0, epoch 3 until 4 epochs
+2023-01-31 20:19:03,437 - Got new best metric of val_mean_dice: 0.8139164447784424
+2023-01-31 20:19:03,437 - Epoch[4] Metrics -- val_mean_dice: 0.8139 
+2023-01-31 20:19:03,437 - Key metric: val_mean_dice best value: 0.8139164447784424 at epoch: 4
+2023-01-31 20:19:03,531 - Epoch[4] Complete. Time taken: 00:00:05.179
+2023-01-31 20:19:03,532 - Engine run complete. Time taken: 00:00:05.194
+2023-01-31 20:19:03,551 - Key metric: None best value: -1 at epoch: -1
+2023-01-31 20:19:03,551 - Epoch[4] Complete. Time taken: 00:00:09.146
+2023-01-31 20:19:05,831 - Epoch: 5/5, Iter: 1/23 -- train_loss: 0.3966 
+2023-01-31 20:19:05,877 - Epoch: 5/5, Iter: 2/23 -- train_loss: 0.3824 
+2023-01-31 20:19:05,924 - Epoch: 5/5, Iter: 3/23 -- train_loss: 0.4000 
+2023-01-31 20:19:05,971 - Epoch: 5/5, Iter: 4/23 -- train_loss: 0.3532 
+2023-01-31 20:19:06,032 - Epoch: 5/5, Iter: 5/23 -- train_loss: 0.3790 
+2023-01-31 20:19:06,073 - Epoch: 5/5, Iter: 6/23 -- train_loss: 0.3496 
+2023-01-31 20:19:06,114 - Epoch: 5/5, Iter: 7/23 -- train_loss: 0.3443 
+2023-01-31 20:19:06,155 - Epoch: 5/5, Iter: 8/23 -- train_loss: 0.3533 
+2023-01-31 20:19:06,218 - Epoch: 5/5, Iter: 9/23 -- train_loss: 0.3636 
+2023-01-31 20:19:06,279 - Epoch: 5/5, Iter: 10/23 -- train_loss: 0.3305 
+2023-01-31 20:19:06,341 - Epoch: 5/5, Iter: 11/23 -- train_loss: 0.3337 
+2023-01-31 20:19:06,403 - Epoch: 5/5, Iter: 12/23 -- train_loss: 0.3337 
+2023-01-31 20:19:06,465 - Epoch: 5/5, Iter: 13/23 -- train_loss: 0.3745 
+2023-01-31 20:19:06,527 - Epoch: 5/5, Iter: 14/23 -- train_loss: 0.3197 
+2023-01-31 20:19:06,589 - Epoch: 5/5, Iter: 15/23 -- train_loss: 0.3162 
+2023-01-31 20:19:06,650 - Epoch: 5/5, Iter: 16/23 -- train_loss: 0.3129 
+2023-01-31 20:19:06,711 - Epoch: 5/5, Iter: 17/23 -- train_loss: 0.3565 
+2023-01-31 20:19:06,772 - Epoch: 5/5, Iter: 18/23 -- train_loss: 0.3079 
+2023-01-31 20:19:06,832 - Epoch: 5/5, Iter: 19/23 -- train_loss: 0.2908 
+2023-01-31 20:19:06,893 - Epoch: 5/5, Iter: 20/23 -- train_loss: 0.3207 
+2023-01-31 20:19:06,954 - Epoch: 5/5, Iter: 21/23 -- train_loss: 0.2823 
+2023-01-31 20:19:07,014 - Epoch: 5/5, Iter: 22/23 -- train_loss: 0.3230 
+2023-01-31 20:19:07,075 - Epoch: 5/5, Iter: 23/23 -- train_loss: 0.3289 
+2023-01-31 20:19:07,075 - Engine run resuming from iteration 0, epoch 4 until 5 epochs
+2023-01-31 20:19:12,532 - Got new best metric of val_mean_dice: 0.8263009190559387
+2023-01-31 20:19:12,532 - Epoch[5] Metrics -- val_mean_dice: 0.8263 
+2023-01-31 20:19:12,532 - Key metric: val_mean_dice best value: 0.8263009190559387 at epoch: 5
+2023-01-31 20:19:12,618 - Epoch[5] Complete. Time taken: 00:00:05.528
+2023-01-31 20:19:12,618 - Engine run complete. Time taken: 00:00:05.543
+2023-01-31 20:19:12,638 - Key metric: None best value: -1 at epoch: -1
+2023-01-31 20:19:12,638 - Epoch[5] Complete. Time taken: 00:00:09.086
+2023-01-31 20:19:12,638 - Engine run complete. Time taken: 00:01:20.156
