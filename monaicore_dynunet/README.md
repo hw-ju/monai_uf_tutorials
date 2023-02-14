@@ -2,7 +2,7 @@
 
 This directory hosts scripts for runnning MONAI Core's dynunet pipeline (modified nnUNet pipeline) on HiperGator, adapted from [dynunet pipeline tutorial](https://github.com/Project-MONAI/tutorials/tree/main/modules/dynunet_pipeline). 
 
-For ease of use and in case there's breaking change in the MONAI Core tutorial scripts in the future, the current (2023/01/26) dynunet pipeline tutorial is copied in `./dynunet_pipeline` in this directory. The launch scripts in `./dynunet_pipeline/commands` are not suitable for running on HiperGator, and the sample adapted ones for HiperGator are put in `./modifeid_commands`. The `.py` scripts are not modified.  
+For ease of use and in case there's breaking change in the MONAI Core tutorial scripts in the future, the current (2023/01/31) dynunet pipeline tutorial is copied in `./dynunet_pipeline` in this directory. The launch scripts in `./dynunet_pipeline/commands` are not suitable for running on HiperGator, and the sample adapted ones for HiperGator are put in `./modifeid_commands`. The `.py` scripts are not modified.  
 
 ## **Note**
 1. This tutorial assumes you have downloaded the repository `monai_uf_tutorials` following [this section](../README.md/#download-this-repository-on-hipergator). 
