@@ -31,6 +31,8 @@ This directory shows how to run the tutorial for **GPU-Accelerated Single-Cell G
     See section [**Run in all-in-one tutorial container**](#run-in-all-in-one-tutorial-container) for building a container and run within the container on HiperGator.
 
 - **Create a conda environment** with all dependencies. I.e., you need to install dependencies and download the tutorial jupyter notebooks yourself.
+    
+    Jupyter notebooks for example 3 and 5 cannot be run properly now, and I'm working on that.
 
     See section [**Run in conda environment**](#run-in-conda-environment) for creating a conda environement and run the jupyter kernel based on the environment on HiperGator.
 
@@ -138,6 +140,8 @@ This directory shows how to run the tutorial for **GPU-Accelerated Single-Cell G
     You will be prompted to enter your password. If the password is correct, there will be no console output; if wrong, you will be prompted to enter it again.
 
 5. In a local web browser, go to `http://localhost:port/` (e.g., http://localhost:8888). If you are prompted to authenticate, copy & paste the token from the SLURM output above into the prompt box. Note: if you do not want to go through copying/pasting the token for every jupyter job, you can set a default password, see [remote jupyter notebook on HiperGator](https://help.rc.ufl.edu/doc/Remote_Jupyter_Notebook).
+
+    Choose `Python 3` as the kernel.
 
     On the left pane, you should see all tutorial jupyter notebooks in the directory `rapids-single-cell-examples` and you're ready to run. 
 
