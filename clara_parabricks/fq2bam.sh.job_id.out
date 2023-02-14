@@ -1,0 +1,77 @@
+Tue Feb  7 16:56:48 EST 2023
+c1103a-s11.ufhpc
+/home/hju/run_parabricks/dryrun
+
+[Parabricks Options Mesg]: Checking argument compatibility
+[Parabricks Options Mesg]: Automatically generating ID prefix
+[Parabricks Options Mesg]: Read group created for /blue/vendor-
+nvidia/hju/data_parabricks/parabricks_sample/Data/sample_1.fq.gz and /blue/vendor-
+nvidia/hju/data_parabricks/parabricks_sample/Data/sample_2.fq.gz
+[Parabricks Options Mesg]: @RG\tID:HK3TJBCX2.1\tLB:lib1\tPL:bar\tSM:sample\tPU:HK3TJBCX2.1
+[PB Info 2023-Feb-07 16:56:53] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 16:56:53] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2023-Feb-07 16:56:53] ||                              Version 4.0.1-1                             ||
+[PB Info 2023-Feb-07 16:56:53] ||                       GPU-BWA mem, Sorting Phase-I                       ||
+[PB Info 2023-Feb-07 16:56:53] ------------------------------------------------------------------------------
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[PB Info 2023-Feb-07 16:56:56] GPU-BWA mem
+[PB Info 2023-Feb-07 16:56:56] ProgressMeter	Reads		Base Pairs Aligned
+[PB Info 2023-Feb-07 16:57:07] 5043564		570000000
+[PB Info 2023-Feb-07 16:57:10] 10087128	1180000000
+[PB Info 2023-Feb-07 16:57:14] 15130692	1760000000
+[PB Info 2023-Feb-07 16:57:17] 20174256	2310000000
+[PB Info 2023-Feb-07 16:57:21] 25217820	2900000000
+[PB Info 2023-Feb-07 16:57:25] 30261384	3530000000
+[PB Info 2023-Feb-07 16:57:28] 35304948	4050000000
+[PB Info 2023-Feb-07 16:57:31] 40348512	4670000000
+[PB Info 2023-Feb-07 16:57:35] 45392076	5220000000
+[PB Info 2023-Feb-07 16:57:38] 50435640	5810000000
+[PB Info 2023-Feb-07 16:59:45] 
+GPU-BWA Mem time: 168.868550 seconds
+[PB Info 2023-Feb-07 16:59:45] GPU-BWA Mem is finished.
+
+
+[main] CMD: /usr/local/parabricks/binaries//bin/bwa mem -Z ./pbOpts.txt /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/Ref/Homo_sapiens_assembly38.fasta /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/Data/sample_1.fq.gz /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/Data/sample_2.fq.gz @RG\tID:HK3TJBCX2.1\tLB:lib1\tPL:bar\tSM:sample\tPU:HK3TJBCX2.1
+[main] Real time: 171.776 sec; CPU: 1641.234 sec
+[PB Info 2023-Feb-07 16:59:45] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 16:59:45] ||        Program:                      GPU-BWA mem, Sorting Phase-I        ||
+[PB Info 2023-Feb-07 16:59:45] ||        Version:                                           4.0.1-1        ||
+[PB Info 2023-Feb-07 16:59:45] ||        Start Time:                       Tue Feb  7 16:56:53 2023        ||
+[PB Info 2023-Feb-07 16:59:45] ||        End Time:                         Tue Feb  7 16:59:45 2023        ||
+[PB Info 2023-Feb-07 16:59:45] ||        Total Time:                           2 minutes 52 seconds        ||
+[PB Info 2023-Feb-07 16:59:45] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 16:59:49] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 16:59:49] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2023-Feb-07 16:59:49] ||                              Version 4.0.1-1                             ||
+[PB Info 2023-Feb-07 16:59:49] ||                             Sorting Phase-II                             ||
+[PB Info 2023-Feb-07 16:59:49] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 16:59:49] progressMeter - Percentage
+[PB Info 2023-Feb-07 16:59:49] 0.0	 0.00 GB
+[PB Info 2023-Feb-07 16:59:59] 60.2	 2.00 GB
+[PB Info 2023-Feb-07 17:00:09] Sorting and Marking: 20.001 seconds
+[PB Info 2023-Feb-07 17:00:09] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:00:09] ||        Program:                                  Sorting Phase-II        ||
+[PB Info 2023-Feb-07 17:00:09] ||        Version:                                           4.0.1-1        ||
+[PB Info 2023-Feb-07 17:00:09] ||        Start Time:                       Tue Feb  7 16:59:49 2023        ||
+[PB Info 2023-Feb-07 17:00:09] ||        End Time:                         Tue Feb  7 17:00:09 2023        ||
+[PB Info 2023-Feb-07 17:00:09] ||        Total Time:                                     20 seconds        ||
+[PB Info 2023-Feb-07 17:00:09] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:00:09] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:00:09] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2023-Feb-07 17:00:09] ||                              Version 4.0.1-1                             ||
+[PB Info 2023-Feb-07 17:00:09] ||                         Marking Duplicates, BQSR                         ||
+[PB Info 2023-Feb-07 17:00:09] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:00:09] progressMeter -	Percentage
+[PB Info 2023-Feb-07 17:00:19] 52.2	 9.24 GB
+[PB Info 2023-Feb-07 17:00:29] 100.0	 0.00 GB
+[PB Info 2023-Feb-07 17:00:29] BQSR and writing final BAM:  20.041 seconds
+[PB Info 2023-Feb-07 17:00:29] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:00:29] ||        Program:                          Marking Duplicates, BQSR        ||
+[PB Info 2023-Feb-07 17:00:29] ||        Version:                                           4.0.1-1        ||
+[PB Info 2023-Feb-07 17:00:29] ||        Start Time:                       Tue Feb  7 17:00:09 2023        ||
+[PB Info 2023-Feb-07 17:00:29] ||        End Time:                         Tue Feb  7 17:00:29 2023        ||
+[PB Info 2023-Feb-07 17:00:29] ||        Total Time:                                     20 seconds        ||
+[PB Info 2023-Feb-07 17:00:29] ------------------------------------------------------------------------------
+Please visit https://docs.nvidia.com/clara/#parabricks for detailed documentation
+
+

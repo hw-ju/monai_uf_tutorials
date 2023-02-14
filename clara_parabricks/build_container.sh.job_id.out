@@ -1,0 +1,24 @@
+Tue Feb  7 11:46:20 EST 2023
+c0709a-s25.ufhpc
+/home/hju/run_parabricks
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob sha256:85e82cfdf7b312e62e6923cfeeda567fd97a0fcc5d3b1e1ac845ce5b1de3de28
+Copying blob sha256:7b27cc0e5494da684e91a38a7d7b69d40209c9dce7ce15fb6c5c587064e82837
+Copying blob sha256:f1f4b76f064d865392976df62d32389779b462f8232e1c5acb6d294271cd782c
+Copying blob sha256:602244ba45e93c670bd35e1f2cfc00fd97e05acd45182ccfff27a4084405a09d
+Copying blob sha256:eaead16dc43bb8811d4ff450935d607f9ba4baffda4fc110cc402fa43f601d83
+Copying blob sha256:075e77f3a16e95957246de8f3f079a1e13d7342128853bac8ac2fb1cb78b78c5
+Copying blob sha256:8821bb3e5a15228e8c86baa45dfecab88ab94304664873e66dc4393c83e57252
+Copying config sha256:d3e3bb5252db9d81134fbd52a0003f37450122fc9965203416f9830b75b1965f
+Writing manifest to image destination
+Storing signatures
+2023/02/07 11:47:11  info unpack layer: sha256:eaead16dc43bb8811d4ff450935d607f9ba4baffda4fc110cc402fa43f601d83
+2023/02/07 11:47:12  info unpack layer: sha256:075e77f3a16e95957246de8f3f079a1e13d7342128853bac8ac2fb1cb78b78c5
+2023/02/07 11:47:12  info unpack layer: sha256:85e82cfdf7b312e62e6923cfeeda567fd97a0fcc5d3b1e1ac845ce5b1de3de28
+2023/02/07 11:47:12  info unpack layer: sha256:f1f4b76f064d865392976df62d32389779b462f8232e1c5acb6d294271cd782c
+2023/02/07 11:47:12  info unpack layer: sha256:602244ba45e93c670bd35e1f2cfc00fd97e05acd45182ccfff27a4084405a09d
+2023/02/07 11:47:12  info unpack layer: sha256:7b27cc0e5494da684e91a38a7d7b69d40209c9dce7ce15fb6c5c587064e82837
+2023/02/07 11:47:35  info unpack layer: sha256:8821bb3e5a15228e8c86baa45dfecab88ab94304664873e66dc4393c83e57252
+INFO:    Creating SIF file...

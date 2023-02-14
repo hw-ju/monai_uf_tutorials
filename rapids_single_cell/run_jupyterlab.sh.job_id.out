@@ -1,0 +1,29 @@
+Mon Feb 13 20:01:14 EST 2023
+c1100a-s17.ufhpc
+/home/hju/run_singlecell_rapids/conda_rapids
+
+Starting Jupyter Notebook on port 28389 on the c1100a-s17.ufhpc server.
+
+SSH tunnel command:
+	ssh -NL 28389:c1100a-s17.ufhpc:28389 hju@hpg.rc.ufl.edu
+
+Local browser URI:
+	http://localhost:28389
+[W 2023-02-13 20:01:19.556 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-13 20:01:19.556 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-13 20:01:19.556 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-13 20:01:19.556 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-02-13 20:01:19.559 LabApp] JupyterLab extension loaded from /apps/jupyter/6.5.2/lib/python3.10/site-packages/jupyterlab
+[I 2023-02-13 20:01:19.559 LabApp] JupyterLab application directory is /apps/jupyter/6.5.2/share/jupyter/lab
+[I 20:01:19.904 NotebookApp] Serving notebooks from local directory: /home/hju
+[I 20:01:19.904 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+[I 20:01:19.904 NotebookApp] http://c1100a-s17.ufhpc:28389/?token=17e964c5a99580cd9cef391b72c35a8f43d225105d277db2
+[I 20:01:19.904 NotebookApp]  or http://127.0.0.1:28389/?token=17e964c5a99580cd9cef391b72c35a8f43d225105d277db2
+[I 20:01:19.904 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 20:01:19.915 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/hju/.local/share/jupyter/runtime/nbserver-128715-open.html
+    Or copy and paste one of these URLs:
+        http://c1100a-s17.ufhpc:28389/?token=17e964c5a99580cd9cef391b72c35a8f43d225105d277db2
+     or http://127.0.0.1:28389/?token=17e964c5a99580cd9cef391b72c35a8f43d225105d277db2

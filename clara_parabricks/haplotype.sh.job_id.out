@@ -1,0 +1,29 @@
+Tue Feb  7 17:03:19 EST 2023
+c1103a-s23.ufhpc
+/home/hju/run_parabricks/dryrun
+[PB Info 2023-Feb-07 17:03:25] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:03:25] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2023-Feb-07 17:03:25] ||                              Version 4.0.1-1                             ||
+[PB Info 2023-Feb-07 17:03:25] ||                         GPU-GATK4 HaplotypeCaller                        ||
+[PB Info 2023-Feb-07 17:03:25] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:03:39] 0 /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/output.bam/blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/haplotype.vcf
+[PB Info 2023-Feb-07 17:03:39] ProgressMeter -	Current-Locus	Elapsed-Minutes	Regions-Processed	Regions/Minute
+[PB Info 2023-Feb-07 17:03:49] chr1:202742401	0.2	834934	5009526
+[PB Info 2023-Feb-07 17:03:59] chr3:93470401	0.3	2519465	7558344
+[PB Info 2023-Feb-07 17:04:09] chr5:74443201	0.5	4071140	8142280
+[PB Info 2023-Feb-07 17:04:19] chr7:72729601	0.7	5574517	8361771
+[PB Info 2023-Feb-07 17:04:29] chr9:132892801	0.8	7075969	8491154
+[PB Info 2023-Feb-07 17:04:39] chr12:70622401	1.0	8624050	8624045
+[PB Info 2023-Feb-07 17:04:49] chr16:48537601	1.2	10147941	8698225
+[PB Info 2023-Feb-07 17:04:59] chr20:62136001	1.3	11533638	8650225
+[PB Info 2023-Feb-07 17:05:10] Total time taken: 90.432018
+[PB Info 2023-Feb-07 17:05:10] ------------------------------------------------------------------------------
+[PB Info 2023-Feb-07 17:05:10] ||        Program:                         GPU-GATK4 HaplotypeCaller        ||
+[PB Info 2023-Feb-07 17:05:10] ||        Version:                                           4.0.1-1        ||
+[PB Info 2023-Feb-07 17:05:10] ||        Start Time:                       Tue Feb  7 17:03:25 2023        ||
+[PB Info 2023-Feb-07 17:05:10] ||        End Time:                         Tue Feb  7 17:05:10 2023        ||
+[PB Info 2023-Feb-07 17:05:10] ||        Total Time:                            1 minute 45 seconds        ||
+[PB Info 2023-Feb-07 17:05:10] ------------------------------------------------------------------------------
+/usr/local/parabricks/binaries//bin/htvc /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/Ref/Homo_sapiens_assembly38.fasta /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/output.bam 4 -o /blue/vendor-nvidia/hju/data_parabricks/parabricks_sample/haplotype.vcf -nt 5
+Please visit https://docs.nvidia.com/clara/#parabricks for detailed documentation
+

@@ -1,0 +1,36 @@
+Fri Feb 10 15:16:23 EST 2023
+c0900a-s23.ufhpc
+/home/hju/run_singlecell_rapids
+[WARN  tini (28621)] Tini is not running as PID 1 and isn't registered as a child subreaper.
+Zombie processes will not be re-parented to Tini, so zombie reaping won't work.
+To fix the problem, use the -s option or set the environment variable TINI_SUBREAPER to register Tini as a child subreaper, or run Tini as PID 1.
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.download.nvidia.com/licenses/NVIDIA_Deep_Learning_Container_License.pdf
+
+A JupyterLab server has been started!
+To access it, visit http://localhost:8888 on your host machine.
+Ensure the following arguments were added to "docker run" to expose the JupyterLab server to your host machine:
+      -p 8888:8888 -p 8787:8787 -p 8786:8786
+Make local folders visible by bind mounting to /rapids/notebooks/host
+[I 2023-02-10 15:18:09.541 ServerApp] dask_labextension | extension was successfully linked.
+[I 2023-02-10 15:18:09.541 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[W 2023-02-10 15:18:09.546 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-10 15:18:09.546 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-10 15:18:09.546 LabApp] 'password_required' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-02-10 15:18:09.552 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-02-10 15:18:09.552 ServerApp] jupyterlab_nvdashboard | extension was successfully linked.
+[I 2023-02-10 15:18:25.659 ServerApp] nbclassic | extension was successfully linked.
+[W 2023-02-10 15:18:26.339 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2023-02-10 15:18:26.541 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-02-10 15:18:26.542 ServerApp] dask_labextension | extension was successfully loaded.
+[I 2023-02-10 15:18:30.061 ServerApp] jupyter_server_proxy | extension was successfully loaded.
+[I 2023-02-10 15:18:30.062 LabApp] JupyterLab extension loaded from /opt/conda/envs/rapids/lib/python3.7/site-packages/jupyterlab
+[I 2023-02-10 15:18:30.062 LabApp] JupyterLab application directory is /opt/conda/envs/rapids/share/jupyter/lab
+[I 2023-02-10 15:18:30.096 ServerApp] jupyterlab | extension was successfully loaded.
+[W 2023-02-10 15:18:30.129 ServerApp] jupyterlab_nvdashboard | extension failed loading with message: module 'jupyterlab_nvdashboard' has no attribute 'load_jupyter_server_extension'
+[I 2023-02-10 15:18:30.130 ServerApp] Serving notebooks from local directory: /workspace
+[I 2023-02-10 15:18:30.130 ServerApp] Jupyter Server 1.10.2 is running at:
+[I 2023-02-10 15:18:30.130 ServerApp] http://c0900a-s23.ufhpc:8888/lab
+[I 2023-02-10 15:18:30.130 ServerApp]  or http://127.0.0.1:8888/lab
+[I 2023-02-10 15:18:30.130 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
