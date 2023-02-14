@@ -1,4 +1,4 @@
-# **run GPU-Accelerated Single-Cell Genomics Analysis with RAPIDS on HiperGator**
+# **Run GPU-Accelerated Single-Cell Genomics Analysis with RAPIDS on HiperGator**
 
 This directory shows how to run the tutorial for **GPU-Accelerated Single-Cell Genomics Analysis with RAPIDS** hosted in [https://github.com/NVIDIA-Genomics-Research/rapids-single-cell-examples](https://github.com/NVIDIA-Genomics-Research/rapids-single-cell-examples) on HiperGator.  
 

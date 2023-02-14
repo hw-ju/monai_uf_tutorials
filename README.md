@@ -35,3 +35,5 @@ chmod -R +x monai_uf_tutorials/
 6. [use MONAI Core for dynunet(nnUnet) training](./monaicore_dynunet/)
 7. [use Datasets accelerated by caching in MONAI Core](./caching/)
 8. [performance profiling of MONAI Core training by NVIDIA Nsight Systems](./profile/)
+9. [Use Clara Parabricks on HiperGator](./clara_parabricks/)
+10. [Run GPU-Accelerated Single-Cell Genomics Analysis with RAPIDS on HiperGator](./rapids-single-cell/)
