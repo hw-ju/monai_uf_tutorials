@@ -1,0 +1,365 @@
+/home/hju/torchrun/hovernet_ddp
+c1001a-s17.ufhpc
+Tue Mar 14 14:16:34 EDT 2023
+Primary node: c1001a-s17
+Primary TCP port: 21032
+Secondary nodes: 
+Running "/home/hju/torchrun/hovernet_ddp/training.py --stage=0 --ep=3 --bs=16 --log-dir=./logs --root=/mnt/Prepared" on each node...
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (479) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.141.03
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}Logs and models are saved at './logs/stage0'.
+
+Logs and models are saved at './logs/stage0'.
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}
+
+Logs and models are saved at './logs/stage0'.
+Logs and models are saved at './logs/stage0'.Logs and models are saved at './logs/stage0'.
+
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}
+Logs and models are saved at './logs/stage0'.
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}
+Logs and models are saved at './logs/stage0'.
+{'root': '/mnt/Prepared', 'log_dir': './logs', 'seed': 24, 'batch_size': 16, 'n_epochs': 3, 'lr': 0.0001, 'step_size': 25, 'val_freq': 1, 'stage': 0, 'amp': True, 'out_classes': 5, 'mode': 'fast', 'save_interval': 10, 'num_workers': 8, 'use_gpu': True, 'ckpt': None}
+Logs and models are saved at './logs/stage0'.
+2023-03-14 14:19:55,299 - Added key: store_based_barrier_key:1 to store for rank: 0
+2023-03-14 14:19:55,299 - Added key: store_based_barrier_key:1 to store for rank: 1
+2023-03-14 14:19:55,299 - Added key: store_based_barrier_key:1 to store for rank: 3
+2023-03-14 14:19:55,299 - Added key: store_based_barrier_key:1 to store for rank: 2
+2023-03-14 14:19:55,308 - Added key: store_based_barrier_key:1 to store for rank: 4
+2023-03-14 14:19:55,308 - Added key: store_based_barrier_key:1 to store for rank: 6
+2023-03-14 14:19:55,319 - Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,319 - Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,318 - Added key: store_based_barrier_key:1 to store for rank: 5
+2023-03-14 14:19:55,319 - Added key: store_based_barrier_key:1 to store for rank: 7
+2023-03-14 14:19:55,319 - Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,319 - Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,319 - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,319 - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,319 - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+2023-03-14 14:19:55,319 - Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+train_files: 166
+val_files: 86
+Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/166 [00:00<?, ?it/s]Loading dataset:   1%|          | 1/166 [00:00<02:41,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:41,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:42,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:42,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:42,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:42,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:42,  1.02it/s]Loading dataset:   1%|          | 1/166 [00:00<02:42,  1.02it/s]Loading dataset:   3%|▎         | 5/166 [00:01<00:26,  5.97it/s]Loading dataset:   4%|▎         | 6/166 [00:01<00:22,  7.22it/s]Loading dataset:   5%|▌         | 9/166 [00:01<00:14, 11.00it/s]Loading dataset:   6%|▌         | 10/166 [00:01<00:12, 12.15it/s]Loading dataset:   6%|▌         | 10/166 [00:01<00:13, 12.00it/s]Loading dataset:   3%|▎         | 5/166 [00:01<00:27,  5.79it/s]Loading dataset:   4%|▍         | 7/166 [00:01<00:19,  8.18it/s]Loading dataset:   4%|▎         | 6/166 [00:01<00:23,  6.79it/s]Loading dataset:   6%|▌         | 10/166 [00:01<00:12, 12.46it/s]Loading dataset:   9%|▉         | 15/166 [00:01<00:08, 17.28it/s]Loading dataset:   7%|▋         | 11/166 [00:01<00:12, 12.90it/s]Loading dataset:   7%|▋         | 11/166 [00:01<00:11, 13.34it/s]Loading dataset:   8%|▊         | 14/166 [00:01<00:09, 16.73it/s]Loading dataset:  10%|█         | 17/166 [00:01<00:06, 21.45it/s]Loading dataset:   8%|▊         | 14/166 [00:01<00:10, 14.57it/s]Loading dataset:  10%|█         | 17/166 [00:01<00:08, 18.22it/s]Loading dataset:  13%|█▎        | 22/166 [00:01<00:04, 31.11it/s]Loading dataset:  12%|█▏        | 20/166 [00:01<00:05, 26.21it/s]Loading dataset:  15%|█▌        | 25/166 [00:01<00:04, 30.02it/s]Loading dataset:  14%|█▍        | 24/166 [00:01<00:04, 29.38it/s]Loading dataset:  16%|█▌        | 26/166 [00:01<00:04, 34.53it/s]Loading dataset:  14%|█▍        | 24/166 [00:01<00:04, 29.71it/s]Loading dataset:  18%|█▊        | 30/166 [00:01<00:03, 35.81it/s]Loading dataset:  19%|█▊        | 31/166 [00:01<00:03, 40.41it/s]Loading dataset:  16%|█▋        | 27/166 [00:01<00:04, 30.73it/s]Loading dataset:  20%|██        | 34/166 [00:01<00:03, 40.80it/s]Loading dataset:  18%|█▊        | 30/166 [00:01<00:03, 38.32it/s]Loading dataset:  22%|██▏       | 36/166 [00:01<00:02, 45.76it/s]Loading dataset:  22%|██▏       | 36/166 [00:01<00:02, 44.74it/s]Loading dataset:  20%|█▉        | 33/166 [00:01<00:03, 39.65it/s]Loading dataset:  23%|██▎       | 38/166 [00:01<00:03, 40.73it/s]Loading dataset:  24%|██▍       | 40/166 [00:01<00:02, 50.11it/s]Loading dataset:  20%|█▉        | 33/166 [00:01<00:03, 35.31it/s]Loading dataset:  27%|██▋       | 44/166 [00:01<00:02, 53.13it/s]Loading dataset:  23%|██▎       | 39/166 [00:01<00:02, 48.01it/s]Loading dataset:  27%|██▋       | 45/166 [00:01<00:02, 53.30it/s]Loading dataset:  27%|██▋       | 44/166 [00:01<00:02, 53.15it/s]Loading dataset:  29%|██▉       | 48/166 [00:01<00:02, 55.28it/s]Loading dataset:  30%|███       | 50/166 [00:01<00:01, 61.24it/s]Loading dataset:  29%|██▉       | 48/166 [00:01<00:02, 51.85it/s]Loading dataset:  24%|██▍       | 40/166 [00:01<00:02, 42.15it/s]Loading dataset:  29%|██▉       | 48/166 [00:01<00:02, 55.50it/s]Loading dataset:  33%|███▎      | 55/166 [00:01<00:01, 62.32it/s]Loading dataset:  31%|███▏      | 52/166 [00:01<00:02, 53.18it/s]Loading dataset:  31%|███▏      | 52/166 [00:01<00:02, 56.91it/s]Loading dataset:  34%|███▍      | 57/166 [00:01<00:01, 60.79it/s]Loading dataset:  34%|███▍      | 57/166 [00:01<00:01, 59.13it/s]Loading dataset:  30%|██▉       | 49/166 [00:01<00:02, 51.73it/s]Loading dataset:  36%|███▌      | 59/166 [00:01<00:01, 66.12it/s]Loading dataset:  34%|███▎      | 56/166 [00:01<00:01, 60.68it/s]Loading dataset:  36%|███▌      | 59/166 [00:01<00:01, 56.02it/s]Loading dataset:  39%|███▊      | 64/166 [00:01<00:01, 63.40it/s]Loading dataset:  36%|███▌      | 60/166 [00:01<00:01, 57.06it/s]Loading dataset:  40%|███▉      | 66/166 [00:01<00:01, 65.60it/s]Loading dataset:  35%|███▍      | 58/166 [00:01<00:01, 59.87it/s]Loading dataset:  39%|███▉      | 65/166 [00:01<00:01, 60.38it/s]Loading dataset:  41%|████      | 68/166 [00:01<00:01, 69.51it/s]Loading dataset:  39%|███▊      | 64/166 [00:01<00:01, 64.71it/s]Loading dataset:  40%|███▉      | 66/166 [00:01<00:01, 57.76it/s]Loading dataset:  43%|████▎     | 72/166 [00:01<00:01, 67.11it/s]Loading dataset:  42%|████▏     | 70/166 [00:01<00:01, 64.41it/s]Loading dataset:  42%|████▏     | 69/166 [00:01<00:01, 70.40it/s]Loading dataset:  46%|████▌     | 76/166 [00:01<00:01, 71.82it/s]Loading dataset:  45%|████▌     | 75/166 [00:01<00:01, 66.89it/s]Loading dataset:  45%|████▍     | 74/166 [00:02<00:01, 61.42it/s]Loading dataset:  45%|████▍     | 74/166 [00:02<00:01, 68.38it/s]Loading dataset:  49%|████▉     | 82/166 [00:02<00:01, 72.00it/s]Loading dataset:  47%|████▋     | 78/166 [00:02<00:01, 74.23it/s]Loading dataset:  51%|█████     | 84/166 [00:02<00:01, 72.58it/s]Loading dataset:  48%|████▊     | 79/166 [00:02<00:01, 67.11it/s]Loading dataset:  51%|█████     | 84/166 [00:02<00:01, 68.88it/s]Loading dataset:  46%|████▌     | 76/166 [00:02<00:01, 56.33it/s]Loading dataset:  49%|████▉     | 82/166 [00:02<00:01, 71.33it/s]Loading dataset:  50%|█████     | 83/166 [00:02<00:01, 61.27it/s]Loading dataset:  54%|█████▍    | 90/166 [00:02<00:01, 72.41it/s]Loading dataset:  53%|█████▎    | 88/166 [00:02<00:00, 78.68it/s]Loading dataset:  56%|█████▌    | 93/166 [00:02<00:00, 76.54it/s]Loading dataset:  57%|█████▋    | 95/166 [00:02<00:00, 77.95it/s]Loading dataset:  54%|█████▎    | 89/166 [00:02<00:01, 71.36it/s]Loading dataset:  54%|█████▎    | 89/166 [00:02<00:01, 68.95it/s]Loading dataset:  54%|█████▍    | 90/166 [00:02<00:01, 70.75it/s]Loading dataset:  59%|█████▉    | 98/166 [00:02<00:00, 72.78it/s]Loading dataset:  58%|█████▊    | 96/166 [00:02<00:00, 73.63it/s]Loading dataset:  59%|█████▉    | 98/166 [00:02<00:00, 84.41it/s]Loading dataset:  61%|██████▏   | 102/166 [00:02<00:00, 77.43it/s]Loading dataset:  63%|██████▎   | 105/166 [00:02<00:00, 82.95it/s]Loading dataset:  59%|█████▉    | 98/166 [00:02<00:00, 73.97it/s]Loading dataset:  58%|█████▊    | 97/166 [00:02<00:00, 71.13it/s]Loading dataset:  59%|█████▉    | 98/166 [00:02<00:00, 73.09it/s]Loading dataset:  64%|██████▍   | 107/166 [00:02<00:00, 75.64it/s]Loading dataset:  64%|██████▍   | 106/166 [00:02<00:00, 79.88it/s]Loading dataset:  64%|██████▍   | 107/166 [00:02<00:00, 83.91it/s]Loading dataset:  68%|██████▊   | 113/166 [00:02<00:00, 85.46it/s]Loading dataset:  69%|██████▉   | 115/166 [00:02<00:00, 86.25it/s]Loading dataset:  64%|██████▍   | 106/166 [00:02<00:00, 73.11it/s]Loading dataset:  64%|██████▍   | 107/166 [00:02<00:00, 77.51it/s]Loading dataset:  65%|██████▌   | 108/166 [00:02<00:00, 76.36it/s]Loading dataset:  70%|██████▉   | 116/166 [00:02<00:00, 84.34it/s]Loading dataset:  70%|███████   | 117/166 [00:02<00:00, 78.62it/s]Loading dataset:  73%|███████▎  | 122/166 [00:02<00:00, 86.66it/s]Loading dataset:  70%|██████▉   | 116/166 [00:02<00:00, 80.60it/s]Loading dataset:  75%|███████▍  | 124/166 [00:02<00:00, 81.13it/s]Loading dataset:  71%|███████   | 118/166 [00:02<00:00, 83.00it/s]Loading dataset:  71%|███████   | 118/166 [00:02<00:00, 81.50it/s]Loading dataset:  71%|███████   | 118/166 [00:02<00:00, 82.52it/s]Loading dataset:  75%|███████▌  | 125/166 [00:02<00:00, 82.33it/s]Loading dataset:  79%|███████▉  | 131/166 [00:02<00:00, 83.55it/s]Loading dataset:  75%|███████▌  | 125/166 [00:02<00:00, 82.17it/s]Loading dataset:  76%|███████▌  | 126/166 [00:02<00:00, 73.54it/s]Loading dataset:  77%|███████▋  | 127/166 [00:02<00:00, 82.99it/s]Loading dataset:  82%|████████▏ | 136/166 [00:02<00:00, 87.45it/s]Loading dataset:  77%|███████▋  | 128/166 [00:02<00:00, 83.39it/s]Loading dataset:  78%|███████▊  | 129/166 [00:02<00:00, 85.20it/s]Loading dataset:  81%|████████  | 134/166 [00:02<00:00, 83.06it/s]Loading dataset:  84%|████████▍ | 140/166 [00:02<00:00, 84.07it/s]Loading dataset:  84%|████████▎ | 139/166 [00:02<00:00, 86.81it/s]Loading dataset:  81%|████████  | 134/166 [00:02<00:00, 78.96it/s]Loading dataset:  83%|████████▎ | 138/166 [00:02<00:00, 84.77it/s]Loading dataset:  87%|████████▋ | 145/166 [00:02<00:00, 80.14it/s]Loading dataset:  86%|████████▌ | 143/166 [00:02<00:00, 80.48it/s]Loading dataset:  83%|████████▎ | 138/166 [00:02<00:00, 77.77it/s]Loading dataset:  90%|████████▉ | 149/166 [00:02<00:00, 83.87it/s]Loading dataset:  84%|████████▎ | 139/166 [00:02<00:00, 77.44it/s]Loading dataset:  90%|█████████ | 150/166 [00:02<00:00, 85.94it/s]Loading dataset:  87%|████████▋ | 145/166 [00:02<00:00, 81.54it/s]Loading dataset:  93%|█████████▎| 155/166 [00:02<00:00, 82.78it/s]Loading dataset:  89%|████████▊ | 147/166 [00:02<00:00, 78.29it/s]Loading dataset:  92%|█████████▏| 152/166 [00:02<00:00, 82.76it/s]Loading dataset:  96%|█████████▌| 159/166 [00:02<00:00, 88.01it/s]Loading dataset:  90%|█████████ | 150/166 [00:02<00:00, 86.57it/s]Loading dataset:  89%|████████▉ | 148/166 [00:02<00:00, 78.82it/s]Loading dataset:  94%|█████████▍| 156/166 [00:02<00:00, 84.62it/s]Loading dataset:  97%|█████████▋| 161/166 [00:03<00:00, 82.94it/s]Loading dataset:  99%|█████████▉| 164/166 [00:03<00:00, 84.08it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 54.95it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset:  98%|█████████▊| 162/166 [00:03<00:00, 85.06it/s]Loading dataset:  95%|█████████▌| 158/166 [00:03<00:00, 82.44it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 54.50it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 54.39it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset:  96%|█████████▌| 159/166 [00:03<00:00, 84.56it/s]Loading dataset:  98%|█████████▊| 162/166 [00:03<00:00, 92.38it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 53.77it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 53.69it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset:  99%|█████████▉| 165/166 [00:03<00:00, 85.84it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 53.31it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 52.68it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset: 100%|██████████| 166/166 [00:03<00:00, 51.22it/s]
+Loading dataset:   0%|          | 0/86 [00:00<?, ?it/s]Loading dataset:   1%|          | 1/86 [00:01<01:50,  1.30s/it]Loading dataset:   1%|          | 1/86 [00:01<02:02,  1.44s/it]Loading dataset:   1%|          | 1/86 [00:01<01:57,  1.38s/it]Loading dataset:   1%|          | 1/86 [00:01<02:03,  1.45s/it]Loading dataset:   1%|          | 1/86 [00:01<02:07,  1.50s/it]Loading dataset:   1%|          | 1/86 [00:01<01:51,  1.31s/it]Loading dataset:   1%|          | 1/86 [00:01<02:05,  1.48s/it]Loading dataset:   1%|          | 1/86 [00:01<02:11,  1.55s/it]Loading dataset:   6%|▌         | 5/86 [00:01<00:20,  3.96it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:20,  3.94it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:21,  3.77it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:21,  3.78it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:22,  3.65it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:21,  3.69it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:21,  3.78it/s]Loading dataset:   6%|▌         | 5/86 [00:01<00:21,  3.71it/s]Loading dataset:   9%|▉         | 8/86 [00:01<00:12,  6.08it/s]Loading dataset:   8%|▊         | 7/86 [00:01<00:16,  4.85it/s]Loading dataset:  10%|█         | 9/86 [00:01<00:11,  6.72it/s]Loading dataset:   8%|▊         | 7/86 [00:01<00:17,  4.57it/s]Loading dataset:   9%|▉         | 8/86 [00:01<00:14,  5.48it/s]Loading dataset:   8%|▊         | 7/86 [00:01<00:17,  4.48it/s]Loading dataset:   8%|▊         | 7/86 [00:01<00:16,  4.67it/s]Loading dataset:  10%|█         | 9/86 [00:02<00:12,  6.02it/s]Loading dataset:  10%|█         | 9/86 [00:02<00:12,  6.02it/s]Loading dataset:  13%|█▎        | 11/86 [00:02<00:10,  7.42it/s]Loading dataset:  12%|█▏        | 10/86 [00:02<00:11,  6.52it/s]Loading dataset:  10%|█         | 9/86 [00:02<00:13,  5.86it/s]Loading dataset:  12%|█▏        | 10/86 [00:02<00:11,  6.40it/s]Loading dataset:  12%|█▏        | 10/86 [00:02<00:13,  5.66it/s]Loading dataset:  16%|█▋        | 14/86 [00:02<00:07,  9.50it/s]Loading dataset:  13%|█▎        | 11/86 [00:02<00:10,  6.97it/s]Loading dataset:  10%|█         | 9/86 [00:02<00:14,  5.41it/s]Loading dataset:  14%|█▍        | 12/86 [00:02<00:09,  7.91it/s]Loading dataset:  13%|█▎        | 11/86 [00:02<00:12,  6.13it/s]Loading dataset:  15%|█▌        | 13/86 [00:02<00:08,  8.47it/s]Loading dataset:  14%|█▍        | 12/86 [00:02<00:10,  7.03it/s]Loading dataset:  13%|█▎        | 11/86 [00:02<00:11,  6.69it/s]Loading dataset:  15%|█▌        | 13/86 [00:02<00:09,  7.93it/s]Loading dataset:  15%|█▌        | 13/86 [00:02<00:10,  7.14it/s]Loading dataset:  16%|█▋        | 14/86 [00:02<00:08,  8.76it/s]Loading dataset:  21%|██        | 18/86 [00:02<00:05, 13.13it/s]Loading dataset:  16%|█▋        | 14/86 [00:02<00:08,  8.61it/s]Loading dataset:  16%|█▋        | 14/86 [00:02<00:07,  9.61it/s]Loading dataset:  17%|█▋        | 15/86 [00:02<00:07,  9.63it/s]Loading dataset:  21%|██        | 18/86 [00:02<00:06, 10.15it/s]Loading dataset:  20%|█▉        | 17/86 [00:02<00:06, 10.53it/s]Loading dataset:  22%|██▏       | 19/86 [00:02<00:04, 13.71it/s]Loading dataset:  21%|██        | 18/86 [00:02<00:05, 12.84it/s]Loading dataset:  24%|██▍       | 21/86 [00:02<00:05, 11.60it/s]Loading dataset:  23%|██▎       | 20/86 [00:02<00:06,  9.73it/s]Loading dataset:  23%|██▎       | 20/86 [00:02<00:05, 12.64it/s]Loading dataset:  22%|██▏       | 19/86 [00:02<00:06,  9.87it/s]Loading dataset:  23%|██▎       | 20/86 [00:02<00:05, 11.10it/s]Loading dataset:  22%|██▏       | 19/86 [00:02<00:06, 10.05it/s]Loading dataset:  22%|██▏       | 19/86 [00:02<00:06,  9.88it/s]Loading dataset:  27%|██▋       | 23/86 [00:03<00:05, 10.69it/s]Loading dataset:  26%|██▌       | 22/86 [00:03<00:05, 10.87it/s]Loading dataset:  24%|██▍       | 21/86 [00:03<00:06,  9.92it/s]Loading dataset:  24%|██▍       | 21/86 [00:03<00:07,  9.09it/s]Loading dataset:  26%|██▌       | 22/86 [00:03<00:06, 10.34it/s]Loading dataset:  27%|██▋       | 23/86 [00:03<00:06,  9.35it/s]Loading dataset:  26%|██▌       | 22/86 [00:03<00:07,  9.05it/s]Loading dataset:  28%|██▊       | 24/86 [00:03<00:05, 11.14it/s]Loading dataset:  29%|██▉       | 25/86 [00:03<00:06,  9.68it/s]Loading dataset:  26%|██▌       | 22/86 [00:03<00:07,  8.21it/s]Loading dataset:  28%|██▊       | 24/86 [00:03<00:06,  9.75it/s]Loading dataset:  35%|███▍      | 30/86 [00:03<00:03, 14.57it/s]Loading dataset:  29%|██▉       | 25/86 [00:03<00:06,  8.84it/s]Loading dataset:  30%|███       | 26/86 [00:03<00:05, 10.96it/s]Loading dataset:  27%|██▋       | 23/86 [00:03<00:08,  7.79it/s]Loading dataset:  27%|██▋       | 23/86 [00:03<00:07,  8.19it/s]Loading dataset:  29%|██▉       | 25/86 [00:03<00:06,  9.60it/s]Loading dataset:  33%|███▎      | 28/86 [00:03<00:04, 13.62it/s]Loading dataset:  29%|██▉       | 25/86 [00:03<00:06,  9.99it/s]Loading dataset:  30%|███       | 26/86 [00:03<00:05, 10.58it/s]Loading dataset:  34%|███▎      | 29/86 [00:03<00:04, 11.84it/s]Loading dataset:  36%|███▌      | 31/86 [00:03<00:03, 15.55it/s]Loading dataset:  35%|███▍      | 30/86 [00:03<00:04, 13.95it/s]Loading dataset:  34%|███▎      | 29/86 [00:03<00:04, 13.63it/s]Loading dataset:  35%|███▍      | 30/86 [00:03<00:04, 12.90it/s]Loading dataset:  33%|███▎      | 28/86 [00:03<00:05, 11.28it/s]Loading dataset:  37%|███▋      | 32/86 [00:03<00:04, 11.35it/s]Loading dataset:  31%|███▏      | 27/86 [00:03<00:06,  9.57it/s]Loading dataset:  37%|███▋      | 32/86 [00:03<00:04, 12.67it/s]Loading dataset:  37%|███▋      | 32/86 [00:03<00:03, 14.77it/s]Loading dataset:  38%|███▊      | 33/86 [00:03<00:03, 13.54it/s]Loading dataset:  37%|███▋      | 32/86 [00:04<00:04, 11.40it/s]Loading dataset:  40%|███▉      | 34/86 [00:03<00:03, 13.06it/s]Loading dataset:  38%|███▊      | 33/86 [00:03<00:04, 11.48it/s]Loading dataset:  42%|████▏     | 36/86 [00:03<00:03, 13.29it/s]Loading dataset:  35%|███▍      | 30/86 [00:04<00:05, 10.95it/s]Loading dataset:  42%|████▏     | 36/86 [00:04<00:03, 14.90it/s]Loading dataset:  40%|███▉      | 34/86 [00:04<00:04, 12.85it/s]Loading dataset:  36%|███▌      | 31/86 [00:04<00:05, 10.11it/s]Loading dataset:  42%|████▏     | 36/86 [00:03<00:03, 13.07it/s]Loading dataset:  47%|████▋     | 40/86 [00:04<00:02, 16.76it/s]Loading dataset:  47%|████▋     | 40/86 [00:04<00:02, 18.42it/s]Loading dataset:  41%|████      | 35/86 [00:04<00:04, 12.52it/s]Loading dataset:  41%|████      | 35/86 [00:04<00:03, 13.68it/s]Loading dataset:  37%|███▋      | 32/86 [00:04<00:05,  9.96it/s]Loading dataset:  47%|████▋     | 40/86 [00:04<00:02, 16.15it/s]Loading dataset:  43%|████▎     | 37/86 [00:04<00:03, 13.03it/s]Loading dataset:  42%|████▏     | 36/86 [00:04<00:04, 10.86it/s]Loading dataset:  48%|████▊     | 41/86 [00:04<00:02, 18.69it/s]Loading dataset:  52%|█████▏    | 45/86 [00:04<00:02, 18.62it/s]Loading dataset:  43%|████▎     | 37/86 [00:04<00:03, 13.40it/s]Loading dataset:  50%|█████     | 43/86 [00:04<00:02, 18.80it/s]Loading dataset:  41%|████      | 35/86 [00:04<00:04, 11.92it/s]Loading dataset:  51%|█████     | 44/86 [00:04<00:02, 16.99it/s]Loading dataset:  51%|█████     | 44/86 [00:04<00:02, 17.70it/s]Loading dataset:  50%|█████     | 43/86 [00:04<00:02, 18.04it/s]Loading dataset:  48%|████▊     | 41/86 [00:04<00:02, 17.77it/s]Loading dataset:  51%|█████     | 44/86 [00:04<00:02, 17.44it/s]Loading dataset:  58%|█████▊    | 50/86 [00:04<00:01, 21.36it/s]Loading dataset:  53%|█████▎    | 46/86 [00:04<00:02, 19.04it/s]Loading dataset:  56%|█████▌    | 48/86 [00:04<00:01, 19.81it/s]Loading dataset:  43%|████▎     | 37/86 [00:04<00:04, 12.23it/s]Loading dataset:  55%|█████▍    | 47/86 [00:04<00:02, 19.47it/s]Loading dataset:  53%|█████▎    | 46/86 [00:04<00:02, 19.09it/s]Loading dataset:  58%|█████▊    | 50/86 [00:04<00:01, 23.34it/s]Loading dataset:  48%|████▊     | 41/86 [00:04<00:03, 14.61it/s]Loading dataset:  59%|█████▉    | 51/86 [00:04<00:01, 18.05it/s]Loading dataset:  52%|█████▏    | 45/86 [00:04<00:02, 16.33it/s]Loading dataset:  63%|██████▎   | 54/86 [00:04<00:01, 18.72it/s]Loading dataset:  62%|██████▏   | 53/86 [00:04<00:01, 21.89it/s]Loading dataset:  58%|█████▊    | 50/86 [00:04<00:02, 16.37it/s]Loading dataset:  57%|█████▋    | 49/86 [00:04<00:02, 15.62it/s]Loading dataset:  58%|█████▊    | 50/86 [00:04<00:01, 18.39it/s]Loading dataset:  58%|█████▊    | 50/86 [00:04<00:01, 21.99it/s]Loading dataset:  66%|██████▋   | 57/86 [00:04<00:01, 19.64it/s]Loading dataset:  63%|██████▎   | 54/86 [00:04<00:01, 17.94it/s]Loading dataset:  62%|██████▏   | 53/86 [00:05<00:02, 16.44it/s]Loading dataset:  63%|██████▎   | 54/86 [00:04<00:01, 16.32it/s]Loading dataset:  55%|█████▍    | 47/86 [00:05<00:02, 16.05it/s]Loading dataset:  65%|██████▌   | 56/86 [00:05<00:01, 17.33it/s]Loading dataset:  62%|██████▏   | 53/86 [00:05<00:01, 19.28it/s]Loading dataset:  63%|██████▎   | 54/86 [00:05<00:01, 17.18it/s]Loading dataset:  65%|██████▌   | 56/86 [00:05<00:01, 16.73it/s]Loading dataset:  65%|██████▌   | 56/86 [00:05<00:02, 12.66it/s]Loading dataset:  66%|██████▋   | 57/86 [00:05<00:01, 17.50it/s]Loading dataset:  70%|██████▉   | 60/86 [00:05<00:01, 13.69it/s]Loading dataset:  62%|██████▏   | 53/86 [00:05<00:01, 18.08it/s]Loading dataset:  67%|██████▋   | 58/86 [00:05<00:01, 15.26it/s]Loading dataset:  69%|██████▊   | 59/86 [00:05<00:01, 14.69it/s]Loading dataset:  67%|██████▋   | 58/86 [00:05<00:02, 13.29it/s]Loading dataset:  67%|██████▋   | 58/86 [00:05<00:01, 14.17it/s]Loading dataset:  65%|██████▌   | 56/86 [00:05<00:02, 14.21it/s]Loading dataset:  64%|██████▍   | 55/86 [00:05<00:01, 17.95it/s]Loading dataset:  77%|███████▋  | 66/86 [00:05<00:01, 17.93it/s]Loading dataset:  69%|██████▊   | 59/86 [00:05<00:01, 13.90it/s]Loading dataset:  71%|███████   | 61/86 [00:05<00:01, 13.86it/s]Loading dataset:  70%|██████▉   | 60/86 [00:05<00:02, 12.55it/s]Loading dataset:  81%|████████▏ | 70/86 [00:05<00:00, 20.97it/s]Loading dataset:  72%|███████▏  | 62/86 [00:05<00:01, 14.66it/s]Loading dataset:  70%|██████▉   | 60/86 [00:05<00:02, 12.58it/s]Loading dataset:  77%|███████▋  | 66/86 [00:05<00:01, 18.54it/s]Loading dataset:  66%|██████▋   | 57/86 [00:05<00:01, 14.93it/s]Loading dataset:  69%|██████▊   | 59/86 [00:05<00:02, 13.44it/s]Loading dataset:  71%|███████   | 61/86 [00:05<00:01, 12.79it/s]Loading dataset:  80%|████████  | 69/86 [00:05<00:00, 22.57it/s]Loading dataset:  72%|███████▏  | 62/86 [00:05<00:02, 11.81it/s]Loading dataset:  83%|████████▎ | 71/86 [00:05<00:00, 22.54it/s]Loading dataset:  73%|███████▎  | 63/86 [00:05<00:01, 13.74it/s]Loading dataset:  71%|███████   | 61/86 [00:05<00:01, 13.28it/s]Loading dataset:  85%|████████▍ | 73/86 [00:05<00:00, 25.15it/s]Loading dataset:  78%|███████▊  | 67/86 [00:05<00:01, 17.59it/s]Loading dataset:  69%|██████▊   | 59/86 [00:05<00:02, 12.61it/s]Loading dataset:  77%|███████▋  | 66/86 [00:05<00:01, 15.71it/s]Loading dataset:  79%|███████▉  | 68/86 [00:05<00:00, 19.54it/s]Loading dataset:  86%|████████▌ | 74/86 [00:06<00:00, 16.14it/s]Loading dataset:  83%|████████▎ | 71/86 [00:06<00:00, 20.73it/s]Loading dataset:  83%|████████▎ | 71/86 [00:06<00:00, 21.51it/s]Loading dataset:  83%|████████▎ | 71/86 [00:06<00:00, 20.79it/s]Loading dataset:  86%|████████▌ | 74/86 [00:06<00:00, 18.77it/s]Loading dataset:  90%|████████▉ | 77/86 [00:05<00:00, 23.06it/s]Loading dataset:  77%|███████▋  | 66/86 [00:06<00:01, 16.06it/s]Loading dataset:  71%|███████   | 61/86 [00:06<00:02, 12.24it/s]Loading dataset:  94%|█████████▍| 81/86 [00:06<00:00, 25.67it/s]Loading dataset:  92%|█████████▏| 79/86 [00:06<00:00, 18.29it/s]Loading dataset:  77%|███████▋  | 66/86 [00:06<00:01, 17.82it/s]Loading dataset:  87%|████████▋ | 75/86 [00:06<00:00, 17.79it/s]Loading dataset:  91%|█████████ | 78/86 [00:06<00:00, 17.88it/s]Loading dataset:  81%|████████▏ | 70/86 [00:06<00:00, 21.41it/s]Loading dataset:  99%|█████████▉| 85/86 [00:06<00:00, 21.91it/s]Loading dataset:  99%|█████████▉| 85/86 [00:06<00:00, 23.19it/s]Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 13.41it/s]
+Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 13.67it/s]
+Loading dataset:  87%|████████▋ | 75/86 [00:06<00:00, 16.12it/s]Loading dataset:  87%|████████▋ | 75/86 [00:06<00:00, 15.79it/s]Loading dataset:  94%|█████████▍| 81/86 [00:06<00:00, 23.87it/s]Loading dataset:  97%|█████████▋| 83/86 [00:06<00:00, 20.36it/s]Loading dataset:  86%|████████▌ | 74/86 [00:06<00:00, 17.39it/s]Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 21.50it/s]Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 12.82it/s]
+Loading dataset:  88%|████████▊ | 76/86 [00:06<00:00, 17.03it/s]Loading dataset:  93%|█████████▎| 80/86 [00:06<00:00, 17.81it/s]Loading dataset:  99%|█████████▉| 85/86 [00:06<00:00, 21.60it/s]Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 12.74it/s]
+Loading dataset:  93%|█████████▎| 80/86 [00:06<00:00, 17.16it/s]Loading dataset:  92%|█████████▏| 79/86 [00:06<00:00, 18.23it/s]Loading dataset:  98%|█████████▊| 84/86 [00:06<00:00, 20.59it/s]Loading dataset:  86%|████████▌ | 74/86 [00:06<00:00, 14.81it/s]Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 12.53it/s]
+Loading dataset:  95%|█████████▌| 82/86 [00:06<00:00, 19.67it/s]Loading dataset:  98%|█████████▊| 84/86 [00:06<00:00, 17.85it/s]Loading dataset: 100%|██████████| 86/86 [00:06<00:00, 12.56it/s]
+Loading dataset:  92%|█████████▏| 79/86 [00:06<00:00, 18.01it/s]Loading dataset:  99%|█████████▉| 85/86 [00:07<00:00, 19.96it/s]Loading dataset: 100%|██████████| 86/86 [00:07<00:00, 12.10it/s]
+Loading dataset:  95%|█████████▌| 82/86 [00:07<00:00, 18.26it/s]Loading dataset: 100%|██████████| 86/86 [00:07<00:00, 21.22it/s]Loading dataset: 100%|██████████| 86/86 [00:07<00:00, 11.82it/s]
+2023-03-14 14:20:06,651 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:06,651 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:06,651 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:06,651 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:06,657 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:06,657 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:06,726 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:06,726 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:06,829 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:06,829 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:06,851 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:06,852 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:07,016 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:07,016 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+2023-03-14 14:20:07,224 - INFO - Expected md5 is None, skip md5 check for file /home/hju/.cache/torch/hub/preact-resnet50.pth.
+2023-03-14 14:20:07,225 - INFO - File exists: /home/hju/.cache/torch/hub/preact-resnet50.pth, skipped downloading.
+stage0 start!
+stage0 start!
+stage0 start!
+stage0 start!
+stage0 start!
+stage0 start!
+stage0 start!
+stage0 start!
+NCCL version 2.15.5+cuda11.8
+2023-03-14 14:20:20,039 - Added key: store_based_barrier_key:2 to store for rank: 0
+2023-03-14 14:20:20,050 - Added key: store_based_barrier_key:2 to store for rank: 1
+2023-03-14 14:20:20,060 - Added key: store_based_barrier_key:2 to store for rank: 2
+2023-03-14 14:20:20,070 - Added key: store_based_barrier_key:2 to store for rank: 3
+2023-03-14 14:20:20,080 - Added key: store_based_barrier_key:2 to store for rank: 4
+2023-03-14 14:20:20,090 - Added key: store_based_barrier_key:2 to store for rank: 6
+2023-03-14 14:20:20,090 - Added key: store_based_barrier_key:2 to store for rank: 5
+2023-03-14 14:20:20,090 - Added key: store_based_barrier_key:2 to store for rank: 7
+2023-03-14 14:20:20,090 - Rank 6: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 5: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 2: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 7: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 0: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 4: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,090 - Rank 3: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+2023-03-14 14:20:20,135 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,137 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,140 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,142 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,144 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,147 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,149 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+2023-03-14 14:20:20,151 - Engine run resuming from iteration 0, epoch 0 until 3 epochs
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+2023-03-14 14:20:57,640 - Epoch: 1/3, Iter: 1/11 -- train_loss: 12.0548 
+2023-03-14 14:20:57,685 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,685 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,685 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,685 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,686 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,685 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,686 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:57,686 - Reducer buckets have been rebuilt in this iteration.
+2023-03-14 14:20:58,453 - Epoch: 1/3, Iter: 2/11 -- train_loss: 12.2598 
+2023-03-14 14:20:58,988 - Epoch: 1/3, Iter: 3/11 -- train_loss: 11.3386 
+2023-03-14 14:20:59,502 - Epoch: 1/3, Iter: 4/11 -- train_loss: 10.5977 
+2023-03-14 14:21:00,015 - Epoch: 1/3, Iter: 5/11 -- train_loss: 10.1304 
+2023-03-14 14:21:00,527 - Epoch: 1/3, Iter: 6/11 -- train_loss: 9.5301 
+2023-03-14 14:21:01,034 - Epoch: 1/3, Iter: 7/11 -- train_loss: 9.3384 
+2023-03-14 14:21:01,544 - Epoch: 1/3, Iter: 8/11 -- train_loss: 8.7634 
+2023-03-14 14:21:02,052 - Epoch: 1/3, Iter: 9/11 -- train_loss: 8.6295 
+2023-03-14 14:21:02,571 - Epoch: 1/3, Iter: 10/11 -- train_loss: 8.4403 
+2023-03-14 14:21:03,119 - Epoch: 1/3, Iter: 11/11 -- train_loss: 7.7564 
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Current learning rate: 0.0001
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Current learning rate: 0.0001
+2023-03-14 14:21:03,338 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,338 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,338 - Current learning rate: 0.0001
+2023-03-14 14:21:03,338 - Current learning rate: 0.0001
+2023-03-14 14:21:03,338 - Current learning rate: 0.0001
+2023-03-14 14:21:03,338 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,338 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,338 - Got new best metric of train_dice: 0.34724271297454834
+2023-03-14 14:21:03,339 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,339 - Current learning rate: 0.0001
+2023-03-14 14:21:03,339 - Current learning rate: 0.0001
+2023-03-14 14:21:03,339 - Current learning rate: 0.0001
+2023-03-14 14:21:03,339 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,339 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:03,339 - Engine run resuming from iteration 0, epoch 0 until 1 epochs
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.207
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.599
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.173
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.599
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.210
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.153
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.599
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.599
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.179
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.600
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.146
+2023-03-14 14:21:04,938 - Got new best metric of val_dice: 0.3609250783920288
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.599
+2023-03-14 14:21:04,938 - Epoch[1] Complete. Time taken: 00:00:01.103
+2023-03-14 14:21:04,938 - Engine run complete. Time taken: 00:00:01.600
+2023-03-14 14:21:05,059 - Epoch[1] Complete. Time taken: 00:00:43.974
+2023-03-14 14:21:05,067 - Epoch[1] Complete. Time taken: 00:00:43.981
+2023-03-14 14:21:05,068 - Epoch[1] Complete. Time taken: 00:00:43.982
+2023-03-14 14:21:05,070 - Epoch[1] Complete. Time taken: 00:00:43.984
+2023-03-14 14:21:05,080 - Epoch[1] Complete. Time taken: 00:00:43.995
+2023-03-14 14:21:05,081 - Epoch[1] Complete. Time taken: 00:00:43.994
+2023-03-14 14:21:05,087 - Epoch[1] Complete. Time taken: 00:00:44.001
+2023-03-14 14:21:05,419 - Epoch[1] Metrics -- val_dice: 0.3609 
+2023-03-14 14:21:05,419 - Key metric: val_dice best value: 0.3609250783920288 at epoch: 1
+2023-03-14 14:21:05,422 - Epoch[1] Complete. Time taken: 00:00:01.502
+2023-03-14 14:21:05,422 - Engine run complete. Time taken: 00:00:02.084
+2023-03-14 14:21:05,527 - Epoch[1] Metrics -- train_dice: 0.3472 
+2023-03-14 14:21:05,527 - Key metric: train_dice best value: 0.34724271297454834 at epoch: 1
+2023-03-14 14:21:05,529 - Epoch[1] Complete. Time taken: 00:00:44.444
+2023-03-14 14:21:09,570 - Epoch: 2/3, Iter: 1/11 -- train_loss: 7.6520 
+2023-03-14 14:21:10,083 - Epoch: 2/3, Iter: 2/11 -- train_loss: 8.1930 
+2023-03-14 14:21:10,592 - Epoch: 2/3, Iter: 3/11 -- train_loss: 7.4024 
+2023-03-14 14:21:11,106 - Epoch: 2/3, Iter: 4/11 -- train_loss: 7.0842 
+2023-03-14 14:21:11,616 - Epoch: 2/3, Iter: 5/11 -- train_loss: 6.9844 
+2023-03-14 14:21:12,132 - Epoch: 2/3, Iter: 6/11 -- train_loss: 7.2592 
+2023-03-14 14:21:12,644 - Epoch: 2/3, Iter: 7/11 -- train_loss: 6.9724 
+2023-03-14 14:21:13,156 - Epoch: 2/3, Iter: 8/11 -- train_loss: 6.4984 
+2023-03-14 14:21:13,667 - Epoch: 2/3, Iter: 9/11 -- train_loss: 6.5483 
+2023-03-14 14:21:14,176 - Epoch: 2/3, Iter: 10/11 -- train_loss: 6.1866 
+2023-03-14 14:21:14,410 - Epoch: 2/3, Iter: 11/11 -- train_loss: 7.0243 
+2023-03-14 14:21:14,417 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,417 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,417 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,417 - Current learning rate: 0.0001
+2023-03-14 14:21:14,417 - Current learning rate: 0.0001
+2023-03-14 14:21:14,417 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Current learning rate: 0.0001
+2023-03-14 14:21:14,417 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,418 - Current learning rate: 0.0001
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Current learning rate: 0.0001
+2023-03-14 14:21:14,418 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,418 - Got new best metric of train_dice: 0.5122829675674438
+2023-03-14 14:21:14,418 - Current learning rate: 0.0001
+2023-03-14 14:21:14,418 - Current learning rate: 0.0001
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Current learning rate: 0.0001
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:14,418 - Engine run resuming from iteration 0, epoch 1 until 2 epochs
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,726 - Epoch[2] Complete. Time taken: 00:00:00.910
+2023-03-14 14:21:15,726 - Epoch[2] Complete. Time taken: 00:00:00.927
+2023-03-14 14:21:15,726 - Engine run complete. Time taken: 00:00:01.309
+2023-03-14 14:21:15,726 - Engine run complete. Time taken: 00:00:01.309
+2023-03-14 14:21:15,726 - Epoch[2] Complete. Time taken: 00:00:00.883
+2023-03-14 14:21:15,726 - Engine run complete. Time taken: 00:00:01.308
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,726 - Epoch[2] Complete. Time taken: 00:00:00.851
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,726 - Engine run complete. Time taken: 00:00:01.308
+2023-03-14 14:21:15,726 - Epoch[2] Complete. Time taken: 00:00:00.872
+2023-03-14 14:21:15,726 - Engine run complete. Time taken: 00:00:01.309
+2023-03-14 14:21:15,727 - Epoch[2] Complete. Time taken: 00:00:00.917
+2023-03-14 14:21:15,727 - Engine run complete. Time taken: 00:00:01.308
+2023-03-14 14:21:15,726 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,728 - Got new best metric of val_dice: 0.4823189675807953
+2023-03-14 14:21:15,728 - Epoch[2] Complete. Time taken: 00:00:00.900
+2023-03-14 14:21:15,728 - Engine run complete. Time taken: 00:00:01.310
+2023-03-14 14:21:15,840 - Epoch[2] Complete. Time taken: 00:00:10.781
+2023-03-14 14:21:15,858 - Epoch[2] Complete. Time taken: 00:00:10.777
+2023-03-14 14:21:15,858 - Epoch[2] Complete. Time taken: 00:00:10.771
+2023-03-14 14:21:15,861 - Epoch[2] Complete. Time taken: 00:00:10.793
+2023-03-14 14:21:15,863 - Epoch[2] Complete. Time taken: 00:00:10.795
+2023-03-14 14:21:15,870 - Epoch[2] Complete. Time taken: 00:00:10.789
+2023-03-14 14:21:15,874 - Epoch[2] Complete. Time taken: 00:00:10.803
+2023-03-14 14:21:16,196 - Epoch[2] Metrics -- val_dice: 0.4823 
+2023-03-14 14:21:16,196 - Key metric: val_dice best value: 0.4823189675807953 at epoch: 2
+2023-03-14 14:21:16,199 - Epoch[2] Complete. Time taken: 00:00:01.352
+2023-03-14 14:21:16,199 - Engine run complete. Time taken: 00:00:01.782
+2023-03-14 14:21:16,304 - Epoch[2] Metrics -- train_dice: 0.5123 
+2023-03-14 14:21:16,304 - Key metric: train_dice best value: 0.5122829675674438 at epoch: 2
+2023-03-14 14:21:16,306 - Epoch[2] Complete. Time taken: 00:00:10.777
+2023-03-14 14:21:19,976 - Epoch: 3/3, Iter: 1/11 -- train_loss: 6.0172 
+2023-03-14 14:21:20,486 - Epoch: 3/3, Iter: 2/11 -- train_loss: 5.8942 
+2023-03-14 14:21:21,000 - Epoch: 3/3, Iter: 3/11 -- train_loss: 6.0380 
+2023-03-14 14:21:21,517 - Epoch: 3/3, Iter: 4/11 -- train_loss: 5.7048 
+2023-03-14 14:21:22,035 - Epoch: 3/3, Iter: 5/11 -- train_loss: 6.0674 
+2023-03-14 14:21:22,546 - Epoch: 3/3, Iter: 6/11 -- train_loss: 5.9139 
+2023-03-14 14:21:23,053 - Epoch: 3/3, Iter: 7/11 -- train_loss: 6.0292 
+2023-03-14 14:21:23,562 - Epoch: 3/3, Iter: 8/11 -- train_loss: 5.7859 
+2023-03-14 14:21:24,073 - Epoch: 3/3, Iter: 9/11 -- train_loss: 5.6535 
+2023-03-14 14:21:24,579 - Epoch: 3/3, Iter: 10/11 -- train_loss: 5.9222 
+2023-03-14 14:21:24,815 - Epoch: 3/3, Iter: 11/11 -- train_loss: 5.4774 
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,823 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,823 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,823 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,824 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,824 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,824 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,824 - Current learning rate: 0.0001
+2023-03-14 14:21:24,823 - Got new best metric of train_dice: 0.5876489281654358
+2023-03-14 14:21:24,824 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:24,824 - Current learning rate: 0.0001
+2023-03-14 14:21:24,824 - Engine run resuming from iteration 0, epoch 2 until 3 epochs
+2023-03-14 14:21:26,152 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.893
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,153 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,152 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.907
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.899
+2023-03-14 14:21:26,153 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,153 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,153 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.944
+2023-03-14 14:21:26,153 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.952
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.878
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,153 - Got new best metric of val_dice: 0.558987557888031
+2023-03-14 14:21:26,153 - Epoch[3] Complete. Time taken: 00:00:00.898
+2023-03-14 14:21:26,153 - Engine run complete. Time taken: 00:00:01.329
+2023-03-14 14:21:26,284 - Epoch[3] Complete. Time taken: 00:00:10.426
+2023-03-14 14:21:26,285 - Engine run complete. Time taken: 00:01:06.147
+2023-03-14 14:21:26,289 - Epoch[3] Complete. Time taken: 00:00:10.431
+2023-03-14 14:21:26,289 - Engine run complete. Time taken: 00:01:06.145
+2023-03-14 14:21:26,292 - Epoch[3] Complete. Time taken: 00:00:10.451
+2023-03-14 14:21:26,292 - Engine run complete. Time taken: 00:01:06.157
+2023-03-14 14:21:26,293 - Epoch[3] Complete. Time taken: 00:00:10.429
+2023-03-14 14:21:26,293 - Engine run complete. Time taken: 00:01:06.144
+2023-03-14 14:21:26,296 - Epoch[3] Complete. Time taken: 00:00:10.426
+2023-03-14 14:21:26,296 - Engine run complete. Time taken: 00:01:06.149
+2023-03-14 14:21:26,304 - Epoch[3] Complete. Time taken: 00:00:10.443
+2023-03-14 14:21:26,305 - Engine run complete. Time taken: 00:01:06.163
+2023-03-14 14:21:26,306 - Epoch[3] Complete. Time taken: 00:00:10.432
+2023-03-14 14:21:26,306 - Engine run complete. Time taken: 00:01:06.155
+2023-03-14 14:21:26,619 - Epoch[3] Metrics -- val_dice: 0.5590 
+2023-03-14 14:21:26,620 - Key metric: val_dice best value: 0.558987557888031 at epoch: 3
+2023-03-14 14:21:26,623 - Epoch[3] Complete. Time taken: 00:00:01.351
+2023-03-14 14:21:26,623 - Engine run complete. Time taken: 00:00:01.799
+2023-03-14 14:21:26,742 - Epoch[3] Metrics -- train_dice: 0.5876 
+2023-03-14 14:21:26,742 - Key metric: train_dice best value: 0.5876489281654358 at epoch: 3
+2023-03-14 14:21:26,744 - Epoch[3] Complete. Time taken: 00:00:10.438
+2023-03-14 14:21:27,381 - Train completed, saved final checkpoint: logs/stage0/checkpoint_final_iteration=33.pt
+2023-03-14 14:21:27,381 - Engine run complete. Time taken: 00:01:07.242
