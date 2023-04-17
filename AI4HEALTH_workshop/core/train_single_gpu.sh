@@ -16,7 +16,7 @@ module load singularity
 cd /home/hju/monai_uf_tutorials/AI4HEALTH_workshop/core
 
 # For debug purpose, check if CUDA is currently available for torch. If available, will return `True`.
-python -c "import torch; print(torch.cuda.is_available())"
+singularity exec --nv /apps/nvidia/containers/monai/core/1.0.1 python -c "import torch; print(torch.cuda.is_available())"
 
 # Start jupyter lab within the MONAI Core container 
 singularity exec --nv /apps/nvidia/containers/monai/core/1.0.1 python unet_training_single_gpu.py
