@@ -1,0 +1,51 @@
+Fri Apr  7 19:59:28 EDT 2023
+c0705a-s2.ufhpc
+/home/hju/AI4HEALTH_workshop/label
+monailabel --help
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 
+Using PYTHONPATH=/opt:
+
+usage: monailabel [-h] [-v] {start_server,apps,datasets,plugins} ...
+
+positional arguments:
+  {start_server,apps,datasets,plugins}
+                        sub-command help
+    start_server        Start Application Server
+    apps                list or download sample apps
+    datasets            list or download sample datasets
+    plugins             list or download viewer plugins
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         print version
+monailabel apps
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 
+Using PYTHONPATH=/opt:
+
+Available Apps are:
+----------------------------------------------------
+  endoscopy                     : /opt/conda/monailabel/sample-apps/endoscopy
+  monaibundle                   : /opt/conda/monailabel/sample-apps/monaibundle
+  pathology                     : /opt/conda/monailabel/sample-apps/pathology
+  radiology                     : /opt/conda/monailabel/sample-apps/radiology
+
+monailabel datasets
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 
+Using PYTHONPATH=/opt:
+
+Available Datasets are:
+----------------------------------------------------
+  Task01_BrainTumour            : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task01_BrainTumour.tar
+  Task02_Heart                  : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task02_Heart.tar
+  Task03_Liver                  : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task03_Liver.tar
+  Task04_Hippocampus            : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task04_Hippocampus.tar
+  Task05_Prostate               : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task05_Prostate.tar
+  Task06_Lung                   : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task06_Lung.tar
+  Task07_Pancreas               : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task07_Pancreas.tar
+  Task08_HepaticVessel          : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task08_HepaticVessel.tar
+  Task09_Spleen                 : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task09_Spleen.tar
+  Task10_Colon                  : https://msd-for-monai.s3-us-west-2.amazonaws.com/Task10_Colon.tar
+

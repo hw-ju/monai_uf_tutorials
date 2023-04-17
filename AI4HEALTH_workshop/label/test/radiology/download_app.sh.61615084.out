@@ -1,0 +1,8 @@
+Tue Apr 11 21:48:00 EDT 2023
+c0703a-s2.ufhpc
+/home/hju/AI4HEALTH_workshop/label/test/radiology
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 
+Using PYTHONPATH=/opt:
+
+radiology is copied at: /workspace/apps/radiology
