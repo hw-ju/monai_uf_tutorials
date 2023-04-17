@@ -43,7 +43,11 @@ sbatch launch_jupyter_lab.sh
 
 Check the SLURM output file, file name in format `launch_jupyter_lab.sh.job_id.out`. It might take a while until you see the **hostname** (e.g., c38a-s5) and **http://hostname:8888/?token=** in the [sample output file](launch_jupyter_lab.sh.job_id.out), which we will use in next steps.
 ```
-cat launch_jupyter_lab.sh.job_id.out
+cat launch_jupyter_lab.sh.job_id.out  # print out the output once
+```
+or
+```
+tail -f launch_jupyter_lab.sh.job_id.out  # monitor the output along the way
 ```
 
 Open another local terminal window, SSH to the jupyter lab. In the command below, you need to alter the **hostname** (e.g., `c38a-s5` between the 2 colons) according to the SLURM output above, alter the remote port number (e.g., `8888` following `c38a-s5:`) according to the SLURM output above (e.g., `8888` in **http://hostname:8888/?token=**), and alter `hju` to your username. 
@@ -53,7 +57,7 @@ ssh -NL 8888:c38a-s5:8888 hju@hpg.rc.ufl.edu
 
 You will be prompted to enter your password. If the password is correct, there will be no console output; if wrong, you will be prompted to enter it again.
 
-In a local web browser, go to `http://localhost:8888/`. You might be prompted to authenticate as shown in the screenshot below. Copy & paste token from the SLURM output above in the prompt box. Note: if you do not want to go through copying/pasting the token for every jupyter job, you can set a default password, see [remote jupyter notebook on HiperGator](https://help.rc.ufl.edu/doc/Remote_Jupyter_Notebook).
+In a local web browser, go to `http://localhost:8888/`. If you're prompted to authenticate, copy & paste token from the SLURM output above in the top prompt box. Note: if you do not want to go through copying/pasting the token for every jupyter job, you can set a default password, see [remote jupyter notebook on HiperGator](https://help.rc.ufl.edu/doc/Remote_Jupyter_Notebook).
 
 Open any jupyter notebook in the directory `/core` on the left pane and you're ready to run it.
 
