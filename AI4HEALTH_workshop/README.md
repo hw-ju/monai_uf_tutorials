@@ -129,6 +129,13 @@ Download the sample pathology applications
 ```
 sbatch download_app.sh
 ```
+See sample output [/label/pathology/download_app.job_id.out](./label/pathology/download_app.job_id.out).
+
+Download the sample pathology dataset
+```
+sbatch download_dataset.sh
+```
+See sample output [/label/pathology/download_dataset.job_id.out](./label/pathology/download_dataset.job_id.out).
 
 Schedule an interactive session on HiperGator. 
 If your client will run on `partition=hwgui` on HiperGator, before running the `srun` command below, run command `sinfo -p hwgui` to find any idle hwgui node and use it to set `--nodelist` in the `srun` command. Also, set `--partition=hwgui` in the `srun` command.
