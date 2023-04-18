@@ -1,0 +1,97 @@
+Mon Apr 17 19:34:45 EDT 2023
+c1100a-s11.ufhpc
+/home/hju/monai_uf_tutorials/AI4HEALTH_workshop/end2end
+[WARN  tini (43161)] Tini is not running as PID 1 .
+Zombie processes will not be re-parented to Tini, so zombie reaping won't work.
+To fix the problem, run Tini as PID 1.
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.download.nvidia.com/licenses/NVIDIA_Deep_Learning_Container_License.pdf
+
+[I 2023-04-17 19:34:58.479 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-04-17 19:35:03.918 ServerApp] Package dask_labextension took 5.4389s to import
+[W 2023-04-17 19:35:03.919 ServerApp] A `_jupyter_server_extension_points` function was not found in dask_labextension. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-04-17 19:35:03.932 ServerApp] Package jupyter_server_fileid took 0.0127s to import
+[I 2023-04-17 19:35:03.932 ServerApp] Package jupyter_server_proxy took 0.0000s to import
+[I 2023-04-17 19:35:04.007 ServerApp] Package jupyter_server_terminals took 0.0745s to import
+[I 2023-04-17 19:35:04.201 ServerApp] Package jupyter_server_ydoc took 0.1941s to import
+[I 2023-04-17 19:35:04.206 ServerApp] Package jupyterlab_nvdashboard took 0.0046s to import
+[I 2023-04-17 19:35:04.206 ServerApp] Package nbclassic took 0.0000s to import
+[W 2023-04-17 19:35:04.217 ServerApp] A `_jupyter_server_extension_points` function was not found in nbclassic. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-04-17 19:35:04.217 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-04-17 19:35:04.217 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-04-17 19:35:12.631 ServerApp] Package panel.io.jupyter_server_extension took 8.4114s to import
+[I 2023-04-17 19:35:12.633 ServerApp] dask_labextension | extension was successfully linked.
+[I 2023-04-17 19:35:12.643 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-04-17 19:35:12.643 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[I 2023-04-17 19:35:12.648 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-04-17 19:35:12.653 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[W 2023-04-17 19:35:12.657 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-17 19:35:12.657 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-17 19:35:12.657 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-04-17 19:35:12.660 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2023-04-17 19:35:12.660 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-04-17 19:35:12.660 ServerApp] jupyterlab_nvdashboard | extension was successfully linked.
+[I 2023-04-17 19:35:12.665 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-17 19:35:12.691 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-04-17 19:35:12.691 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[W 2023-04-17 19:35:13.343 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2023-04-17 19:35:13.344 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-04-17 19:35:13.344 ServerApp] dask_labextension | extension was successfully loaded.
+[I 2023-04-17 19:35:13.344 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-04-17 19:35:13.344 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/hju/monai_uf_tutorials/AI4HEALTH_workshop/end2end
+[I 2023-04-17 19:35:13.345 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/hju/.local/share/jupyter/file_id_manager.db
+[I 2023-04-17 19:35:13.363 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-04-17 19:35:13.363 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices.
+[I 2023-04-17 19:35:13.469 FileIdExtension] Attached event listeners.
+[I 2023-04-17 19:35:13.469 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[W 2023-04-17 19:35:14.157 ServerApp] jupyter_server_proxy | extension failed loading with message: DistributionNotFound(Requirement.parse('webcolors>=1.11; extra == "format-nongpl"'), {'jsonschema'})
+    Traceback (most recent call last):
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 356, in load_extension
+        extension.load_all_points(self.serverapp)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 228, in load_all_points
+        return [self.load_point(point_name, serverapp) for point_name in self.extension_points]
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 228, in <listcomp>
+        return [self.load_point(point_name, serverapp) for point_name in self.extension_points]
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 219, in load_point
+        return point.load(serverapp)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 147, in load
+        return loader(serverapp)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server_proxy/__init__.py", line 30, in _load_jupyter_server_extension
+        server_processes += get_entrypoint_server_processes(serverproxy_config)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server_proxy/config.py", line 83, in get_entrypoint_server_processes
+        server_process_config = entry_point.load()()
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/pkg_resources/__init__.py", line 2467, in load
+        self.require(*args, **kwargs)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/pkg_resources/__init__.py", line 2490, in require
+        items = working_set.resolve(reqs, env, installer, extras=self.extras)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/pkg_resources/__init__.py", line 815, in resolve
+        dist = self._resolve_dist(
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/pkg_resources/__init__.py", line 856, in _resolve_dist
+        raise DistributionNotFound(req, requirers)
+    pkg_resources.DistributionNotFound: The 'webcolors>=1.11; extra == "format-nongpl"' distribution was not found and is required by jsonschema
+[I 2023-04-17 19:35:14.193 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-04-17 19:35:14.194 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2023-04-17 19:35:14.194 LabApp] JupyterLab extension loaded from /opt/conda/envs/rapids/lib/python3.8/site-packages/jupyterlab
+[I 2023-04-17 19:35:14.194 LabApp] JupyterLab application directory is /opt/conda/envs/rapids/share/jupyter/lab
+[I 2023-04-17 19:35:14.198 ServerApp] jupyterlab | extension was successfully loaded.
+[W 2023-04-17 19:35:14.198 ServerApp] jupyterlab_nvdashboard | extension failed loading with message: TypeError("'NoneType' object is not callable")
+    Traceback (most recent call last):
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 356, in load_extension
+        extension.load_all_points(self.serverapp)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 228, in load_all_points
+        return [self.load_point(point_name, serverapp) for point_name in self.extension_points]
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 228, in <listcomp>
+        return [self.load_point(point_name, serverapp) for point_name in self.extension_points]
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 219, in load_point
+        return point.load(serverapp)
+      File "/opt/conda/envs/rapids/lib/python3.8/site-packages/jupyter_server/extension/manager.py", line 147, in load
+        return loader(serverapp)
+    TypeError: 'NoneType' object is not callable
+[I 2023-04-17 19:35:14.225 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-17 19:35:14.226 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2023-04-17 19:35:14.226 ServerApp] Serving notebooks from local directory: /home/hju/monai_uf_tutorials/AI4HEALTH_workshop/end2end
+[I 2023-04-17 19:35:14.226 ServerApp] Jupyter Server 2.2.1 is running at:
+[I 2023-04-17 19:35:14.226 ServerApp] http://c1100a-s11.ufhpc:8888/lab
+[I 2023-04-17 19:35:14.226 ServerApp]     http://127.0.0.1:8888/lab
+[I 2023-04-17 19:35:14.226 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).

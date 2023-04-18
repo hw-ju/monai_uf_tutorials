@@ -10,12 +10,12 @@ date;hostname;pwd
 
 module load singularity
 
-# Show all monailabel commands
+# List all monailabel commands
 echo "****************** monailabel --help"
-singularity exec /blue/vendor-nvidia/hju/workshop_monailabel0.6.0 monailabel --help 
+singularity exec /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel --help 
 # List sample apps
 echo "****************** monailabel apps"
-singularity exec /blue/vendor-nvidia/hju/workshop_monailabel0.6.0 monailabel apps 
+singularity exec /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel apps 
 # List sample datasets
 echo "****************** monailabel datasets"
-singularity exec /blue/vendor-nvidia/hju/workshop_monailabel0.6.0 monailabel datasets
+singularity exec /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel datasets
