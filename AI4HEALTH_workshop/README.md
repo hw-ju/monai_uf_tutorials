@@ -1,6 +1,7 @@
 # AI4HEALTH Train the Trainer Workshop
 **NOTE**: `pip install` any package directly on a supercomputer like HiperGator (**including within Jupyter Notebook cells**) is bad practice, see the HiperGator doc on this https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels. If a package is both `pip install`ed directly in your local environment and is available within a container, you might end up using the `pip install`ed one when you run the container. Please remove any previous directly `pip install`ed MONAI Core before proceeding to use the containers prebuilt for this workshop.
 
+add sbatch reservation??? how to check idle hwgui node in reservation??
 ## 0. Download this repository to HiperGator
 Log in to HiperGator, change `hju` to your HiperGator username
 
@@ -114,12 +115,97 @@ sbatch list.sh
 See sample output [/label/list.sh.job_id.out](./label/list.sh.job_id.out).
 
 ### 2.2 Radiology applications
+In this sub-section, we will see demo and then do a hands-on following the hello-world tutorial [MONAI Label Radiology App with 3DSlicer](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_HelloWorld_radiology_3dslicer.ipynb) with some HiperGator-specific modifications.
 
+#### Set up server
+Go to directory `/monai_uf_tutorials/AI4HEALTH_workshop/label/radiology` 
+```
+cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label/radiology
+```
+
+Download the sample radiology applications
+```
+sbatch download_app.sh
+```
+See sample output [/label/radiology/download_app.sh.job_id.out](./label/radiology/download_app.sh.job_id.out).
+
+Get the sample pathology dataset. To save time, instead of using command `monailabel datasets --download` to download a large dataset as commented out in [/label/radiology/download_dataset.sh](./label/radiology/download_dataset.sh), we will copy some images from a pre-downloaded dataset on HiperGator to set up a smaller dataset.
+```
+sbatch download_dataset.sh
+```
+See sample output [/label/radiology/download_dataset.job_id.out](./label/radiology/download_dataset.job_id.out).
+
+
+As running 3DSlicer on `partition=hwgui` on HiperGator gives us GPU-accelerated visualization, we'll run both MONAI Label server and 3DSlicer on the same node in `partition=hwgui` to minimize server-client communication latency. 
+
+**NOTE**: For a hwgui node, sum of the compute resources for server and client can’t exceed:
+32 CPU cores, 8 gpus, 186 mem
+
+
+Find any idle hwgui node
+```
+sinfo -p hwgui
+```
+Copy an idle node name somewhere as we will use it later.
+
+Schedule an interactive session on HiperGator. 
+    Set `--partition=hwgui` in the `srun` command below.
+    Use the idle node name from above to set `--nodelist` in the `srun` command below.
+```
+srun --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=hwgui --nodelist=c0308a-s9 --gpus=1 --time=01:00:00 --pty -u bash -i
+```
+You should see output similar to below
+```
+srun: job 62051871 queued and waiting for resources
+srun: job 62051871 has been allocated resources
+```
+and the prompt is changed, e.g., from `hju@login1` to `hju@c0801a-s35`, which means that you left a login node and jumped on a compute node.
+
+Load Singularity module
+```
+module load singularity
+```
+
+**Start a server**
+Edit the configuration file of your chosen application to e.g., set label names, whether use pre-trained model, choose active learning strategies. The configuration file is in directory `/apps` where you downloaded the sample app.
+
+??? remove model.pt
+
+1. demo: Stage 1 -cold start (no labels/pretrained models available), manual from-scratch annotation
+```
+singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app /workspace/apps/radiology --studies /workspace/datasets/radiology --conf models deepedit --conf skip_scoring false --conf skip_strategies false --conf epistemic_enabled true
+```
+2. demo: Stage 2 - decent model, faster annotation
+```
+singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app /workspace/apps/radiology --studies /workspace/datasets/radiology --conf models deepedit
+```
+3. hello-world tutorial [MONAI Label Radiology App with 3DSlicer](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_HelloWorld_radiology_3dslicer.ipynb)
+```
+singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app apps/radiology --studies datasets/Task09_Spleen/imagesTr --conf models segmentation_spleen
+```
+
+
+Now, the server will keep outputing, which is easy to see what's going on on the server and to debug.
+
+#### Set up client
+Go to https://ood.rc.ufl.edu, launch a OOD session for application `Console` with `--partition=hwgui`, `--gpus=1`, and `--nodelist=the_node_server_runs_on`(e.g. `--nodelist=c0308a-s9`) in `Additional SLURM Options.
+
+Load 3DSlicer module
+```
+module load slicer/5.2.1
+```
+
+Start 3DSlicer
+```
+Slicer
+```
+
+In 3DSlicer, switch to MONAI Label module, and connect with the server by putting the correct node name in field `MONAI Label server:` and then clicking the right button.
 
 ### 2.3 Pathology applicaitons
 In this sub-section, we will follow [the MONAI Label with QuPath tutorial](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_pathology_nuclei_segmentation_QuPath.ipynb) with some HiperGator-specific modifications.
 
-**Set up server**
+#### Set up server
 Go to directory `/monai_uf_tutorials/AI4HEALTH_workshop/label/pathology` 
 ```
 cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label/pathology
@@ -143,6 +229,12 @@ If your client will run locally, the above setting is not needed.
 ```
 srun --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=gpu --gpus=a100:1 --time=01:00:00 --pty -u bash -i
 ```
+You should see output similar to below
+```
+srun: job 62051871 queued and waiting for resources
+srun: job 62051871 has been allocated resources
+```
+and the prompt is changed, e.g., from `hju@login1` to `hju@c0801a-s35`, which means that you left a login node and jumped on a compute node. Copy the hostname (e.g., `c0801a-s35`) somewhere, we'll use it for SSH tunneling later.
 
 Load Singularity module
 ```
@@ -155,18 +247,19 @@ singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /
 ```
 Now, the server will keep outputing, which is easy to see what's going on on the server and to debug.
 
-**Set up client**
+#### Set up client
+
 Since the installation of QuPath and the latest MONAI Label plugin for QuPath on HiperGator is still in progress, we will run QuPath on a local machine, and then SSH tunnel to the server running on HiperGator. 
 
 To install QuPath and the MONAI Label plugin on your local machine, refer to section "2. Install QuPath and MONAI Label Plugin" in [the MONAI Label with QuPath tutorial](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_pathology_nuclei_segmentation_QuPath.ipynb).
 
-Open a new local terminal window, SSH tunnel to the server. In the command below, you need to alter the **hostname** (e.g., `c38a-s5` between the 2 colons) according to the server-side output, and alter `hju` to your username. 
+Open a new local terminal window, SSH tunnel to the server. In the command below, you need to alter the **hostname** (e.g., `c38a-s5` between the 2 colons) accordingly (you can find it in the prompt, e.g., `hju@c0801a-s35`), and alter `hju` to your username. 
 ```
 ssh -NL 8000:c0308a-s9:8000 hju@hpg.rc.ufl.edu
 ```
 
-In QuPath, make sure MONAILabel Server URL (Host+Port) is correct through `Preferences`. You need to alter the **hostname** (e.g., `c0308a-s9`) in the `http` below:
-Edit -> Preferences -> MONAI Label  http://c0308a-s9:8000
+In QuPath, make sure MONAILabel Server URL (Host+Port) is correct through `Preferences`:
+Edit -> Preferences -> MONAI Label  http://127.0.0.1:8000
 
 **Use MONAI Label with QuPath**
 Follow [the MONAI Label with QuPath tutorial](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_pathology_nuclei_segmentation_QuPath.ipynb) from section "3. Nuclei Auto Segmentation with QuPath" to the bottom.
