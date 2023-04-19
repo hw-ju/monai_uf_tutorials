@@ -217,10 +217,12 @@ To remove the history from the Stage 1 applicaiton above and start this applicat
 rm -r /blue/vendor-nvidia/hju/monailabel_samples/apps/radiology
 ```
 
-rm dataset labels
 ```
 cd /blue/vendor-nvidia/hju/monailabel_samples/datasets/radiology
+```
+```
 rm datastore_v2.json
+```
 rm -r labels
 ```
 
