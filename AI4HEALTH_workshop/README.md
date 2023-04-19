@@ -219,16 +219,12 @@ rm -r /blue/vendor-nvidia/hju/monailabel_samples/apps/radiology
 
 ```
 cd /blue/vendor-nvidia/hju/monailabel_samples/datasets/radiology
-```
-```
 rm datastore_v2.json
-```
-```
 rm -r labels
 ```
 
 ```
-sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_app.sh
+sbatch --account=ai-workshop --qos=ai-workshop download_app.sh
 ```
 
 ```
