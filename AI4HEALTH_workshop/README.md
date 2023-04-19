@@ -13,10 +13,20 @@
     $ cd /blue/ai-workshop
     $ mkdir YOUR-USER-NAME
     ```
+- *All commands and scripts in this directory assumes that you donwload the repo to your home directory, which will take 3.2G in total to run all the hands-ons in this workshop.*  
 
 **2. Computer resource reservation for AI4Health workshop:** 
 - We have reserved 16 A100 nodes. The reservation name is "ai4health".
 - We have reserved 2 HWGUI nodes. The reservation name is "ai4health-hwgui".
+- *All sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health/srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui commands in this `README.md` assume using the above reservations, i.e., sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health and srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui commands have flags `--account=ai-workshop --qos=ai-workshop --reservation=ai4health`.*
+- *In the form for scheduling an OOD session, we put `ai-workshop` in both `SLURM Account` box and `QoS` box, and put `ai4health` in `reservation` box to use the reservation.*
+    ```
+    sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health --account=ai-workshop --qos=ai-workshop --reservation=ai4health my_script.sh
+    ```
+    ```
+    srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui my_script.sh
+    ```
+
 
 **3. NOTE:** `pip install` any package directly on a supercomputer like HiperGator (**including within Jupyter Notebook cells**) is bad practice, see the HiperGator doc on this https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels. If a package is both `pip install`ed directly in your local environment and is available within a container, you might end up using the `pip install`ed one when you run the container. Please remove any previous directly `pip install`ed MONAI Core before proceeding to use the containers prebuilt for this workshop.
 
@@ -59,7 +69,7 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/core
 
 Start a jupyter lab within the MONAI Core container
 ```
-sbatch launch_jupyter_lab.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health launch_jupyter_lab.sh
 ```
 
 Check the SLURM output file, file name in format `launch_jupyter_lab.sh.job_id.out`. It might take a while until you see the **hostname** (e.g., c38a-s5) and **http://hostname:8888/?token=** in the sample output file [/core/launch_jupyter_lab.sh.job_id.out](./core/launch_jupyter_lab.sh.job_id.out), which we will use in next steps.
@@ -103,14 +113,14 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/core
 
 Train a Unet on a single gpu 
 ```
-sbatch train_single_gpu.sh 
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health train_single_gpu.sh 
 ```
 See sample output [/core/train_single_gpu.sh.job_id.out](./core/train_single_gpu.sh.job_id.out).
 
 
 Train a Unet on multiple gpus 
 ```
-sbatch train_ddp_torchrun.sh 
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health train_ddp_torchrun.sh 
 ```
 See sample output [/core/train_ddp_torchrun.sh.job_id.out](./core/train_ddp_torchrun.sh.job_id.out).
 
@@ -129,7 +139,7 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label
 
 List
 ```
-sbatch list.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health list.sh
 ```
 See sample output [/label/list.sh.job_id.out](./label/list.sh.job_id.out).
 
@@ -144,13 +154,13 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label/radiology
 
 Download the sample radiology applications
 ```
-sbatch download_app.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_app.sh
 ```
 See sample output [/label/radiology/download_app.sh.job_id.out](./label/radiology/download_app.sh.job_id.out).
 
 Get the sample radiology dataset. To save time, instead of using command `monailabel datasets --download` to download a large dataset as commented out in [/label/radiology/download_dataset.sh](./label/radiology/download_dataset.sh), we will copy some images from a pre-downloaded dataset on HiperGator to set up a smaller dataset.
 ```
-sbatch download_dataset.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_dataset.sh
 ```
 See sample output [/label/radiology/download_dataset.job_id.out](./label/radiology/download_dataset.job_id.out).
 
@@ -168,15 +178,15 @@ sinfo -p hwgui
 Copy an idle node name somewhere as we will use it later.
 
 Schedule an interactive session on HiperGator. 
-    Set `--partition=hwgui` in the `srun` command below.
-    Use the idle node name from above to set `--nodelist` in the `srun` command below.
+    Set `--partition=hwgui` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command below.
+    Use the idle node name from above to set `--nodelist` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command below.
 ```
-srun --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=hwgui --nodelist=c0308a-s9 --gpus=1 --time=01:00:00 --pty -u bash -i
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=hwgui --nodelist=c0308a-s9 --gpus=1 --time=01:00:00 --pty -u bash -i
 ```
 You should see output similar to below
 ```
-srun: job 62051871 queued and waiting for resources
-srun: job 62051871 has been allocated resources
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 queued and waiting for resources
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 has been allocated resources
 ```
 and the prompt is changed, e.g., from `hju@login1` to `hju@c0801a-s35`, which means that you left a login node and jumped on a compute node.
 
@@ -215,14 +225,14 @@ rm -r labels
 ```
 
 ```
-sbatch download_app.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_app.sh
 ```
 
 ```
 singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app /workspace/apps/radiology --studies /workspace/datasets/radiology --conf models deepedit
 ```
 
-Now, the server will keep outputing, which is easy to see what's going on on the server and to debug. We don't recommend to start the server using `sbatch` as it might give you long latency to see the server output.
+Now, the server will keep outputing, which is easy to see what's going on on the server and to debug. We don't recommend to start the server using `sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health` as it might give you long latency to see the server output.
 
 #### Set up client
 Go to https://ood.rc.ufl.edu, launch a OOD session for application `Console` with `--partition=hwgui`, `--gpus=1`, and `--nodelist=the_node_server_runs_on`(e.g. `--nodelist=c0308a-s9`) in `Additional SLURM Options.
@@ -250,26 +260,26 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label/pathology
 
 Download the sample pathology applications
 ```
-sbatch download_app.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_app.sh
 ```
 See sample output [/label/pathology/download_app.job_id.out](./label/pathology/download_app.job_id.out).
 
 Download the sample pathology dataset
 ```
-sbatch download_dataset.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_dataset.sh
 ```
 See sample output [/label/pathology/download_dataset.job_id.out](./label/pathology/download_dataset.job_id.out).
 
 Schedule an interactive session on HiperGator. 
-If your client will run on `partition=hwgui` on HiperGator, before running the `srun` command below, run command `sinfo -p hwgui` to find any idle hwgui node and use it to set `--nodelist` in the `srun` command. Also, set `--partition=hwgui` in the `srun` command.
+If your client will run on `partition=hwgui` on HiperGator, before running the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command below, run command `sinfo -p hwgui` to find any idle hwgui node and use it to set `--nodelist` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command. Also, set `--partition=hwgui` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command.
 If your client will run locally, the above setting is not needed.
 ```
-srun --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=gpu --gpus=a100:1 --time=01:00:00 --pty -u bash -i
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=gpu --gpus=a100:1 --time=01:00:00 --pty -u bash -i
 ```
 You should see output similar to below
 ```
-srun: job 62051871 queued and waiting for resources
-srun: job 62051871 has been allocated resources
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 queued and waiting for resources
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 has been allocated resources
 ```
 and the prompt is changed, e.g., from `hju@login1` to `hju@c0801a-s35`, which means that you left a login node and jumped on a compute node. Copy the hostname (e.g., `c0801a-s35`) somewhere, we'll use it for SSH tunneling later.
 
@@ -301,18 +311,10 @@ Edit -> Preferences -> MONAI Label  http://127.0.0.1:8000
 **Use MONAI Label with QuPath**
 Follow [the MONAI Label with QuPath tutorial](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_pathology_nuclei_segmentation_QuPath.ipynb) from section "3. Nuclei Auto Segmentation with QuPath" to the bottom.
 
-
-
-
-
-
-
-
-
-## 3. Build end-to-end AI pipeline on GPU with RAPIDS & CuPy
+## 3. Build end-to-end AI pipeline on GPU with RAPIDS, CuPy & Numba
 In this section, we will run a **read-only** RAPIDS container (on the start of the container, a jupyter lab will run by default) prebuilt by UF Research Computing on HiperGator. This container has MONAI Core pre-installed. If you're interested in building the same but **writable** container on your own after the workshop, you can use bash script [/end2end/build_container.sh](./end2end/build_container.sh) and refer to [use MONAI Core for single-GPU training](./monaicore_singlegpu/) for more details about building container on HiperGator.
 
-We'll go through the tutorial jupyter notebook [interop_blog_adapted.ipynb](./end2end/interop_blog_adapted.ipynb) which was "stolen" from [here](https://gist.github.com/gravitino/0fd27d841c37cc25fe2032eafdc8feb2) with some modifications to run with newer version of RAPIDS.
+We'll go through the tutorial jupyter notebook [interop_blog_adapted.ipynb](./end2end/interop_blog_adapted.ipynb) which was "stolen" from [here](https://gist.github.com/gravitino/0fd27d841c37cc25fe2032eafdc8feb2) with some modifications to run with newer version of RAPIDS. There'a [variant version] of this jupyter notebook (https://github.com/nvahmadi/NVIDIA_IKIM_Workshop/blob/main/exercise4_zerocopy/interoperability_zerocopy.ipynb) used at another workshop (including code for plotting heartbeats sampled from latent space, link to a **cheat sheet for data converting between frameworks**, etc.).
 
 Go to directory `/monai_uf_tutorials/AI4HEALTH_workshop/end2end` 
 ```
@@ -321,7 +323,7 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/end2end
 
 Run the RAPIDS container (on the start of the container, a jupyter lab will run by default)
 ```
-sbatch run_container.sh
+sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health run_container.sh
 ```
 See sample SLURM output [/end2end/run_container.sh.job_id.out](./end2end/run_container.sh.job_id.out).
 
