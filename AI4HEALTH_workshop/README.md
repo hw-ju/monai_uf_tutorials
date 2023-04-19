@@ -286,14 +286,16 @@ singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /
 ```
 Now, the server will keep outputing, which is easy to see what's going on on the server and to debug.
 
+To finish the interactive session, `Ctrl + D`. The prompt will be changed, e.g., from `hju@c0801a-s35` to `hju@login1`.
+
 #### Set up client
 Since the installation of QuPath and the latest MONAI Label plugin for QuPath on HiperGator is still in progress, we will run QuPath on a local machine, and then SSH tunnel to the server running on HiperGator. 
 
 To install QuPath and the MONAI Label plugin on your local machine, refer to section "2. Install QuPath and MONAI Label Plugin" in [the MONAI Label with QuPath tutorial](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_pathology_nuclei_segmentation_QuPath.ipynb).
 
-Open a new local terminal window, SSH tunnel to the server. In the command below, you need to alter the **hostname** (e.g., `c38a-s5` between the 2 colons) accordingly (you can find it in the prompt, e.g., `hju@c0801a-s35`), and alter `hju` to your username. 
+Open a new local terminal window, SSH tunnel to the server. In the command below, you need to alter the **hostname** (e.g., `c1000a-s17` between the 2 colons) accordingly (you can find it in the prompt, e.g., `hju@c1000a-s17`), and alter `hju` to your username. 
 ```
-ssh -NL 8000:c0308a-s9:8000 hju@hpg.rc.ufl.edu
+ssh -NL 8000:c1000a-s17:8000 hju@hpg.rc.ufl.edu
 ```
 
 In QuPath, make sure MONAILabel Server URL (Host+Port) is correct through `Preferences`:
