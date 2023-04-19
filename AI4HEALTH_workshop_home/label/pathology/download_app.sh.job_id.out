@@ -1,0 +1,8 @@
+Mon Apr 17 22:42:33 EDT 2023
+c0706a-s3.ufhpc
+/home/hju/monai_uf_tutorials/AI4HEALTH_workshop/label/pathology
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 
+Using PYTHONPATH=/opt:
+
+pathology is copied at: /workspace/apps/pathology

@@ -1,0 +1,242 @@
+/home/hju/monai_uf_tutorials/AI4HEALTH_workshop/core
+c0900a-s29.ufhpc
+Mon Apr 17 19:28:24 EDT 2023
+Primary node: c0900a-s29
+Primary TCP port: 9945
+Secondary nodes: 
+Running "/home/hju/monai_uf_tutorials/AI4HEALTH_workshop/core/unet_training_ddp_torchrun.py" on each node...
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (479) bind mounts
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+2023-04-17 19:29:27,943 - Added key: store_based_barrier_key:1 to store for rank: 0
+2023-04-17 19:29:27,953 - Added key: store_based_barrier_key:1 to store for rank: 1
+2023-04-17 19:29:27,963 - Added key: store_based_barrier_key:1 to store for rank: 3
+2023-04-17 19:29:27,963 - Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+2023-04-17 19:29:27,963 - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+2023-04-17 19:29:27,963 - Added key: store_based_barrier_key:1 to store for rank: 2
+2023-04-17 19:29:27,963 - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+2023-04-17 19:29:27,963 - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[0] generating synthetic data to ./testdata (this may take a while)
+NCCL version 2.15.1+cuda11.8
+<class 'monai.transforms.utility.array.AsChannelFirst'>: Class `AsChannelFirst` has been deprecated since version 0.8. please use MetaTensor data type and monai.transforms.EnsureChannelFirst instead.
+<class 'monai.transforms.utility.array.AsChannelFirst'>: Class `AsChannelFirst` has been deprecated since version 0.8. please use MetaTensor data type and monai.transforms.EnsureChannelFirst instead.
+<class 'monai.transforms.utility.array.AsChannelFirst'>: Class `AsChannelFirst` has been deprecated since version 0.8. please use MetaTensor data type and monai.transforms.EnsureChannelFirst instead.
+<class 'monai.transforms.utility.array.AsChannelFirst'>: Class `AsChannelFirst` has been deprecated since version 0.8. please use MetaTensor data type and monai.transforms.EnsureChannelFirst instead.
+monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+[3] cuda:3 ---------- epoch 1/5
+[0] cuda:0 ---------- epoch 1/5
+[1] cuda:1 ---------- epoch 1/5
+[2] cuda:2 ---------- epoch 1/5
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+is_namedtuple is deprecated, please use the python checks instead
+[3] 1/32, train_loss: 0.6279
+[2] 1/32, train_loss: 0.7419
+[1] 1/32, train_loss: 0.6244
+[0] 1/32, train_loss: 0.6502
+2023-04-17 19:29:42,863 - Reducer buckets have been rebuilt in this iteration.
+2023-04-17 19:29:42,863 - Reducer buckets have been rebuilt in this iteration.
+2023-04-17 19:29:42,863 - Reducer buckets have been rebuilt in this iteration.
+2023-04-17 19:29:42,863 - Reducer buckets have been rebuilt in this iteration.
+[2] 2/32, train_loss: 0.6823
+[0] 2/32, train_loss: 0.5643
+[3] 2/32, train_loss: 0.5359
+[1] 2/32, train_loss: 0.5816
+[2] 3/32, train_loss: 0.5555[1] 3/32, train_loss: 0.5236
+
+[3] 3/32, train_loss: 0.5558[0] 3/32, train_loss: 0.5050
+
+[2] 4/32, train_loss: 0.5479
+[1] 4/32, train_loss: 0.5375
+[3] 4/32, train_loss: 0.5221
+[0] 4/32, train_loss: 0.5388
+[2] 5/32, train_loss: 0.4731
+[1] 5/32, train_loss: 0.5663
+[3] 5/32, train_loss: 0.6255
+[0] 5/32, train_loss: 0.5329
+[0] 6/32, train_loss: 0.4781
+[3] 6/32, train_loss: 0.5165
+[2] 6/32, train_loss: 0.4778
+[1] 6/32, train_loss: 0.5125
+[3] 7/32, train_loss: 0.4960
+[1] 7/32, train_loss: 0.5070
+[0] 7/32, train_loss: 0.4885
+[2] 7/32, train_loss: 0.4876
+[0] 8/32, train_loss: 0.4764
+[1] 8/32, train_loss: 0.5112
+[3] 8/32, train_loss: 0.4909
+[2] 8/32, train_loss: 0.5565
+[0] epoch 1, average loss: 0.5293
+[0] cuda:0 ---------- epoch 2/5
+[1] epoch 1, average loss: 0.5455
+[1] cuda:1 ---------- epoch 2/5
+[3] epoch 1, average loss: 0.5463
+[3] cuda:3 ---------- epoch 2/5
+[2] epoch 1, average loss: 0.5653
+[2] cuda:2 ---------- epoch 2/5
+[0] 1/32, train_loss: 0.5161
+[1] 1/32, train_loss: 0.5152
+[3] 1/32, train_loss: 0.5745
+[2] 1/32, train_loss: 0.5270
+[0] 2/32, train_loss: 0.4520
+[1] 2/32, train_loss: 0.5006
+[2] 2/32, train_loss: 0.5230
+[3] 2/32, train_loss: 0.5206
+[0] 3/32, train_loss: 0.4935
+[1] 3/32, train_loss: 0.4415
+[3] 3/32, train_loss: 0.5349
+[2] 3/32, train_loss: 0.4721
+[0] 4/32, train_loss: 0.4611
+[1] 4/32, train_loss: 0.4880
+[3] 4/32, train_loss: 0.4704
+[2] 4/32, train_loss: 0.5671
+[0] 5/32, train_loss: 0.4733
+[1] 5/32, train_loss: 0.4865
+[3] 5/32, train_loss: 0.6011
+[2] 5/32, train_loss: 0.4712
+[1] 6/32, train_loss: 0.4980
+[2] 6/32, train_loss: 0.4691
+[3] 6/32, train_loss: 0.4280
+[0] 6/32, train_loss: 0.5098
+[0] 7/32, train_loss: 0.4578
+[1] 7/32, train_loss: 0.4300
+[3] 7/32, train_loss: 0.4219
+[2] 7/32, train_loss: 0.5218
+[0] 8/32, train_loss: 0.4586
+[1] 8/32, train_loss: 0.4231
+[2] 8/32, train_loss: 0.4781
+[3] 8/32, train_loss: 0.4102
+[1] epoch 2, average loss: 0.4729
+[1] cuda:1 ---------- epoch 3/5
+[3] epoch 2, average loss: 0.4952
+[3] cuda:3 ---------- epoch 3/5
+[0] epoch 2, average loss: 0.4778
+[0] cuda:0 ---------- epoch 3/5
+[2] epoch 2, average loss: 0.5037
+[2] cuda:2 ---------- epoch 3/5
+[0] 1/32, train_loss: 0.4480
+[1] 1/32, train_loss: 0.4830
+[3] 1/32, train_loss: 0.5107
+[2] 1/32, train_loss: 0.4989
+[0] 2/32, train_loss: 0.4939
+[1] 2/32, train_loss: 0.4037
+[3] 2/32, train_loss: 0.4470
+[2] 2/32, train_loss: 0.5382
+[0] 3/32, train_loss: 0.4789
+[3] 3/32, train_loss: 0.4031
+[2] 3/32, train_loss: 0.4616
+[1] 3/32, train_loss: 0.5155
+[0] 4/32, train_loss: 0.4618
+[2] 4/32, train_loss: 0.4853
+[1] 4/32, train_loss: 0.4463
+[3] 4/32, train_loss: 0.4345
+[1] 5/32, train_loss: 0.5029
+[3] 5/32, train_loss: 0.4268
+[0] 5/32, train_loss: 0.4446
+[2] 5/32, train_loss: 0.5277
+[3] 6/32, train_loss: 0.4593
+[1] 6/32, train_loss: 0.4248
+[2] 6/32, train_loss: 0.4042
+[0] 6/32, train_loss: 0.4349
+[0] 7/32, train_loss: 0.3907
+[1] 7/32, train_loss: 0.5401
+[2] 7/32, train_loss: 0.4400
+[3] 7/32, train_loss: 0.4265
+[0] 8/32, train_loss: 0.4335
+[1] 8/32, train_loss: 0.5333
+[3] 8/32, train_loss: 0.4638
+[2] 8/32, train_loss: 0.4737
+[2] epoch 3, average loss: 0.4787
+[2] cuda:2 ---------- epoch 4/5
+[0] epoch 3, average loss: 0.4483
+[0] cuda:0 ---------- epoch 4/5
+[3] epoch 3, average loss: 0.4465
+[3] cuda:3 ---------- epoch 4/5
+[1] epoch 3, average loss: 0.4812
+[1] cuda:1 ---------- epoch 4/5
+[0] 1/32, train_loss: 0.4537
+[3] 1/32, train_loss: 0.4080
+[2] 1/32, train_loss: 0.5963
+[1] 1/32, train_loss: 0.4383
+[0] 2/32, train_loss: 0.5602
+[2] 2/32, train_loss: 0.3702
+[3] 2/32, train_loss: 0.4377
+[1] 2/32, train_loss: 0.4247
+[0] 3/32, train_loss: 0.4317
+[1] 3/32, train_loss: 0.4163
+[2] 3/32, train_loss: 0.3867
+[3] 3/32, train_loss: 0.6159
+[1] 4/32, train_loss: 0.4231
+[0] 4/32, train_loss: 0.3628
+[2] 4/32, train_loss: 0.4284
+[3] 4/32, train_loss: 0.4431
+[0] 5/32, train_loss: 0.4346
+[3] 5/32, train_loss: 0.3876
+[2] 5/32, train_loss: 0.4319
+[1] 5/32, train_loss: 0.4812
+[1] 6/32, train_loss: 0.4878
+[0] 6/32, train_loss: 0.4347
+[3] 6/32, train_loss: 0.3857
+[2] 6/32, train_loss: 0.4406
+[1] 7/32, train_loss: 0.4725
+[3] 7/32, train_loss: 0.4430
+[2] 7/32, train_loss: 0.3695
+[0] 7/32, train_loss: 0.4039
+[0] 8/32, train_loss: 0.5225
+[2] 8/32, train_loss: 0.4483
+[3] 8/32, train_loss: 0.4581
+[1] 8/32, train_loss: 0.4281
+[0] epoch 4, average loss: 0.4505
+[0] cuda:0 ---------- epoch 5/5
+[3] epoch 4, average loss: 0.4474
+[3] cuda:3 ---------- epoch 5/5
+[2] epoch 4, average loss: 0.4340
+[2] cuda:2 ---------- epoch 5/5
+[1] epoch 4, average loss: 0.4465
+[1] cuda:1 ---------- epoch 5/5
+[0] 1/32, train_loss: 0.5040
+[1] 1/32, train_loss: 0.5245
+[3] 1/32, train_loss: 0.4283
+[2] 1/32, train_loss: 0.4190
+[0] 2/32, train_loss: 0.3621
+[1] 2/32, train_loss: 0.4288
+[3] 2/32, train_loss: 0.5692
+[2] 2/32, train_loss: 0.4084
+[0] 3/32, train_loss: 0.4501
+[1] 3/32, train_loss: 0.3822
+[3] 3/32, train_loss: 0.3727
+[2] 3/32, train_loss: 0.4152
+[1] 4/32, train_loss: 0.4193
+[3] 4/32, train_loss: 0.4275
+[2] 4/32, train_loss: 0.4047
+[0] 4/32, train_loss: 0.3916
+[0] 5/32, train_loss: 0.3969
+[1] 5/32, train_loss: 0.4883
+[3] 5/32, train_loss: 0.4276
+[2] 5/32, train_loss: 0.4443
+[1] 6/32, train_loss: 0.5193
+[3] 6/32, train_loss: 0.3861
+[2] 6/32, train_loss: 0.4140
+[0] 6/32, train_loss: 0.4192
+[1] 7/32, train_loss: 0.3973
+[0] 7/32, train_loss: 0.3878
+[3] 7/32, train_loss: 0.4335
+[2] 7/32, train_loss: 0.4841
+[0] 8/32, train_loss: 0.4420[1] 8/32, train_loss: 0.4276
+
+[3] 8/32, train_loss: 0.3870
+[2] 8/32, train_loss: 0.4625
+[2] epoch 5, average loss: 0.4315
+[2] train completed, epoch losses: [0.5653311386704445, 0.5036774836480618, 0.4787084683775902, 0.4339925944805145, 0.43152179941534996]
+[3] epoch 5, average loss: 0.4290
+[3] train completed, epoch losses: [0.5463310889899731, 0.495196346193552, 0.44647597521543503, 0.4473908580839634, 0.4289855696260929]
+[1] epoch 5, average loss: 0.4484
+[1] train completed, epoch losses: [0.5455037355422974, 0.4728781618177891, 0.4812045879662037, 0.4465028904378414, 0.4484063945710659]
+[0] epoch 5, average loss: 0.4192
+[0] train completed, epoch losses: [0.5292574428021908, 0.4777728281915188, 0.4482971057295799, 0.45051737502217293, 0.41923097893595695]

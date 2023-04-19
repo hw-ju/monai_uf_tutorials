@@ -1,7 +1,26 @@
 # AI4HEALTH Train the Trainer Workshop
-**NOTE**: `pip install` any package directly on a supercomputer like HiperGator (**including within Jupyter Notebook cells**) is bad practice, see the HiperGator doc on this https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels. If a package is both `pip install`ed directly in your local environment and is available within a container, you might end up using the `pip install`ed one when you run the container. Please remove any previous directly `pip install`ed MONAI Core before proceeding to use the containers prebuilt for this workshop.
+**1. HiPerGator access for AI4Health workshop:**
+- For new users: 
+    - Please review the [New User Guide](https://help.rc.ufl.edu/doc/New_user_training) and get yourself familiar with the environment. 
+    - Your user group is “ai-workshop”. 
+    - Please do not run jobs from your home directory under /home/YOUR-USER-NAME. Please use the space under /blue/ai-workshop/YOUR-USER-NAME to run jobs. 
 
-add sbatch reservation??? how to check idle hwgui node in reservation??
+- For existing users:
+    - You have been added to group “ai-workshop” as your secondary group. 
+    - Please see [instructions](https://help.rc.ufl.edu/doc/Checking_and_Using_Secondary_Resources) on using secondary group’s resources to run jobs. 
+    - If you would like to use ai-workshop group’s storage space for the workshop, please create your own sub-folders using the following command:
+    ```
+    $ cd /blue/ai-workshop
+    $ mkdir YOUR-USER-NAME
+    ```
+
+**2. Computer resource reservation for AI4Health workshop:** 
+- We have reserved 16 A100 nodes. The reservation name is "ai4health".
+- We have reserved 2 HWGUI nodes. The reservation name is "ai4health-hwgui".
+
+**3. NOTE:** `pip install` any package directly on a supercomputer like HiperGator (**including within Jupyter Notebook cells**) is bad practice, see the HiperGator doc on this https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels. If a package is both `pip install`ed directly in your local environment and is available within a container, you might end up using the `pip install`ed one when you run the container. Please remove any previous directly `pip install`ed MONAI Core before proceeding to use the containers prebuilt for this workshop.
+
+
 ## 0. Download this repository to HiperGator
 Log in to HiperGator, change `hju` to your HiperGator username
 
@@ -115,7 +134,7 @@ sbatch list.sh
 See sample output [/label/list.sh.job_id.out](./label/list.sh.job_id.out).
 
 ### 2.2 Radiology applications
-In this sub-section, we will see demo and then do a hands-on following the hello-world tutorial [MONAI Label Radiology App with 3DSlicer](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_HelloWorld_radiology_3dslicer.ipynb) with some HiperGator-specific modifications.
+In this sub-section, we will do two applications showing how to use MONAI Label server + 3DSlicer  for annotation at stage 1 (cold start) and stage 2 (start from a decent pretrained model).
 
 #### Set up server
 Go to directory `/monai_uf_tutorials/AI4HEALTH_workshop/label/radiology` 
@@ -129,7 +148,7 @@ sbatch download_app.sh
 ```
 See sample output [/label/radiology/download_app.sh.job_id.out](./label/radiology/download_app.sh.job_id.out).
 
-Get the sample pathology dataset. To save time, instead of using command `monailabel datasets --download` to download a large dataset as commented out in [/label/radiology/download_dataset.sh](./label/radiology/download_dataset.sh), we will copy some images from a pre-downloaded dataset on HiperGator to set up a smaller dataset.
+Get the sample radiology dataset. To save time, instead of using command `monailabel datasets --download` to download a large dataset as commented out in [/label/radiology/download_dataset.sh](./label/radiology/download_dataset.sh), we will copy some images from a pre-downloaded dataset on HiperGator to set up a smaller dataset.
 ```
 sbatch download_dataset.sh
 ```
@@ -139,7 +158,7 @@ See sample output [/label/radiology/download_dataset.job_id.out](./label/radiolo
 As running 3DSlicer on `partition=hwgui` on HiperGator gives us GPU-accelerated visualization, we'll run both MONAI Label server and 3DSlicer on the same node in `partition=hwgui` to minimize server-client communication latency. 
 
 **NOTE**: For a hwgui node, sum of the compute resources for server and client can’t exceed:
-32 CPU cores, 8 gpus, 186 mem
+32 CPU cores, 8 gpus, 186 mem.
 
 
 Find any idle hwgui node
@@ -169,23 +188,41 @@ module load singularity
 **Start a server**
 Edit the configuration file of your chosen application to e.g., set label names, whether use pre-trained model, choose active learning strategies. The configuration file is in directory `/apps` where you downloaded the sample app.
 
-??? remove model.pt
+1. Stage 1 - cold start (no labels/pretrained models available), manual from-scratch annotation.
 
-1. demo: Stage 1 -cold start (no labels/pretrained models available), manual from-scratch annotation
+Modify `apps/radiology/lib/configs/deepedit.py`:
+    1. set single-label instead of multi-label
+    2. not use pretrained model 
+```
+vi /blue/vendor-nvidia/hju/monailabel_samples/apps/radiology/lib/configs/deepedit.py
+```
+
 ```
 singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app /workspace/apps/radiology --studies /workspace/datasets/radiology --conf models deepedit --conf skip_scoring false --conf skip_strategies false --conf epistemic_enabled true
 ```
-2. demo: Stage 2 - decent model, faster annotation
+
+2. Stage 2 - decent pretrained model, faster annotation
+To remove the history from the Stage 1 applicaiton above and start this application from a fresh setting, you can do the following three steps before start a MONAI Label server.
+```
+rm -r /blue/vendor-nvidia/hju/monailabel_samples/apps/radiology
+```
+
+rm dataset labels
+```
+cd /blue/vendor-nvidia/hju/monailabel_samples/datasets/radiology
+rm datastore_v2.json
+rm -r labels
+```
+
+```
+sbatch download_app.sh
+```
+
 ```
 singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app /workspace/apps/radiology --studies /workspace/datasets/radiology --conf models deepedit
 ```
-3. hello-world tutorial [MONAI Label Radiology App with 3DSlicer](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_HelloWorld_radiology_3dslicer.ipynb)
-```
-singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app apps/radiology --studies datasets/Task09_Spleen/imagesTr --conf models segmentation_spleen
-```
 
-
-Now, the server will keep outputing, which is easy to see what's going on on the server and to debug.
+Now, the server will keep outputing, which is easy to see what's going on on the server and to debug. We don't recommend to start the server using `sbatch` as it might give you long latency to see the server output.
 
 #### Set up client
 Go to https://ood.rc.ufl.edu, launch a OOD session for application `Console` with `--partition=hwgui`, `--gpus=1`, and `--nodelist=the_node_server_runs_on`(e.g. `--nodelist=c0308a-s9`) in `Additional SLURM Options.
