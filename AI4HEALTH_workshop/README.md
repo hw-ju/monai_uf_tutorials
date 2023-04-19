@@ -223,6 +223,7 @@ cd /blue/vendor-nvidia/hju/monailabel_samples/datasets/radiology
 ```
 rm datastore_v2.json
 ```
+```
 rm -r labels
 ```
 
