@@ -13,12 +13,12 @@
     $ cd /blue/ai-workshop
     $ mkdir YOUR-USER-NAME
     ```
-- *All commands and scripts in this directory assumes that you donwload the repo to your home directory, which will take 3.2G in total to run all the hands-ons in this workshop.*  
+- *All commands and scripts in this directory assumes that you donwload this monai_uf_tutorials repo to your home directory, which will take 3.2G in total to run all the hands-ons in this workshop.*  
 
 **2. Computer resource reservation for AI4Health workshop:** 
 - We have reserved 16 A100 nodes. The reservation name is "ai4health".
 - We have reserved 2 HWGUI nodes. The reservation name is "ai4health-hwgui".
-- *All sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health/srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui commands in this `README.md` assume using the above reservations, i.e., sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health and srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui commands have flags `--account=ai-workshop --qos=ai-workshop --reservation=ai4health`.*
+- *All sbatch and srun commands in this `README.md` assume using the above reservations, i.e., sbatch and srun commands have flags `--account=ai-workshop --qos=ai-workshop --reservation=ai4health`.*
 - *In the form for scheduling an OOD session, we put `ai-workshop` in both `SLURM Account` box and `QoS` box, and put `ai4health` in `reservation` box to use the reservation.*
     ```
     sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health --account=ai-workshop --qos=ai-workshop --reservation=ai4health my_script.sh
@@ -185,8 +185,8 @@ srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --nta
 ```
 You should see output similar to below
 ```
-srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 queued and waiting for resources
-srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 has been allocated resources
+srun: job 62051871 queued and waiting for resources
+srun: job 62051871 has been allocated resources
 ```
 and the prompt is changed, e.g., from `hju@login1` to `hju@c0801a-s35`, which means that you left a login node and jumped on a compute node.
 
@@ -278,8 +278,8 @@ srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --nta
 ```
 You should see output similar to below
 ```
-srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 queued and waiting for resources
-srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui: job 62051871 has been allocated resources
+srun: job 62051871 queued and waiting for resources
+srun: job 62051871 has been allocated resources
 ```
 and the prompt is changed, e.g., from `hju@login1` to `hju@c0801a-s35`, which means that you left a login node and jumped on a compute node. Copy the hostname (e.g., `c0801a-s35`) somewhere, we'll use it for SSH tunneling later.
 
