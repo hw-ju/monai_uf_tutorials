@@ -19,14 +19,7 @@
 - We have reserved 16 A100 nodes. The reservation name is "ai4health".
 - We have reserved 2 HWGUI nodes. The reservation name is "ai4health-hwgui".
 - *All sbatch and srun commands in this `README.md` assume using the above reservations and user group, i.e., all sbatch and srun commands have flags `--account=ai-workshop --qos=ai-workshop`, some have `--reservation=ai4health` or `--reservation=ai4health-hwgui`.*
-- *In the form for scheduling an OOD session, we put `ai-workshop` in both `SLURM Account` box and `QoS` box, and put `ai4health` in `reservation` box to use the reservation.*
-    ```
-    sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health --account=ai-workshop --qos=ai-workshop --reservation=ai4health my_script.sh
-    ```
-    ```
-    srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui my_script.sh
-    ```
-
+- *In the form for scheduling an OOD session, we put `ai-workshop` in both `SLURM Account` box and `QoS` box, and put `--reservation=ai4health-hwgui` in `Additional SLURM Options` box.*
 
 **3. NOTE:** `pip install` any package directly on a supercomputer like HiperGator (**including within Jupyter Notebook cells**) is bad practice, see the HiperGator doc on this https://help.rc.ufl.edu/doc/Managing_Python_environments_and_Jupyter_kernels. If a package is both `pip install`ed directly in your local environment and is available within a container, you might end up using the `pip install`ed one when you run the container. Please remove any previous directly `pip install`ed MONAI Core before proceeding to use the containers prebuilt for this workshop.
 
@@ -175,7 +168,7 @@ Find any idle hwgui node
 ```
 sinfo -p hwgui
 ```
-Copy an idle node name somewhere as we will use it later.
+Copy an idle node name somewhere as we will use it later. *For workshop today, copy a node name under the state `resv`.*
 
 Schedule an interactive session on HiperGator. 
     Set `--partition=hwgui` in the `srun` command below.
@@ -231,10 +224,10 @@ sbatch --account=ai-workshop --qos=ai-workshop download_app.sh
 singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /apps/nvidia/containers/monai/monailabel.0.6.0/0.6.0 monailabel start_server --app /workspace/apps/radiology --studies /workspace/datasets/radiology --conf models deepedit
 ```
 
-Now, the server will keep outputing, which is easy to see what's going on on the server and to debug. We don't recommend to start the server using `sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health` as it might give you long latency to see the server output.
+Now, the server will keep outputing, which is easy to see what's going on on the server and to debug. We don't recommend to start the server using sbatch as it might give you long latency to see the server output.
 
 #### Set up client
-Go to https://ood.rc.ufl.edu, launch a OOD session for application `Console` with `--partition=hwgui`, `--gpus=1`, and `--nodelist=the_node_server_runs_on`(e.g. `--nodelist=c0308a-s9`) in `Additional SLURM Options.
+Go to https://ood.rc.ufl.edu, launch a OOD session for application `Console` with `--partition=hwgui`, `--gpus=1`, and `--nodelist=the_node_server_runs_on`(e.g. `--nodelist=c0308a-s9`) in `Additional SLURM Options`. *For workshop today, we put `ai-workshop` in both `SLURM Account` box and `QoS` box, and put `--reservation=ai4health-hwgui` in `Additional SLURM Options` box*.
 
 Load 3DSlicer module
 ```
@@ -259,21 +252,21 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label/pathology
 
 Download the sample pathology applications
 ```
-sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_app.sh
+sbatch --account=ai-workshop --qos=ai-workshop download_app.sh
 ```
 See sample output [/label/pathology/download_app.job_id.out](./label/pathology/download_app.job_id.out).
 
 Download the sample pathology dataset
 ```
-sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_dataset.sh
+sbatch --account=ai-workshop --qos=ai-workshop download_dataset.sh
 ```
 See sample output [/label/pathology/download_dataset.job_id.out](./label/pathology/download_dataset.job_id.out).
 
 Schedule an interactive session on HiperGator. 
-If your client will run on `partition=hwgui` on HiperGator, before running the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command below, run command `sinfo -p hwgui` to find any idle hwgui node and use it to set `--nodelist` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command. Also, set `--partition=hwgui` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command.
+If your client will run on `partition=hwgui` on HiperGator, before running the `srun` command below, run command `sinfo -p hwgui` to find any idle hwgui node and use it to set `--nodelist` in the `srun` command. Also, set `--partition=hwgui` in the `srun` command.
 If your client will run locally, the above setting is not needed.
 ```
-srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=gpu --gpus=a100:1 --time=01:00:00 --pty -u bash -i
+srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=gpu --gpus=a100:1 --time=01:00:00 --pty -u bash -i
 ```
 You should see output similar to below
 ```
@@ -294,7 +287,6 @@ singularity exec --nv -B /blue/vendor-nvidia/hju/monailabel_samples:/workspace /
 Now, the server will keep outputing, which is easy to see what's going on on the server and to debug.
 
 #### Set up client
-
 Since the installation of QuPath and the latest MONAI Label plugin for QuPath on HiperGator is still in progress, we will run QuPath on a local machine, and then SSH tunnel to the server running on HiperGator. 
 
 To install QuPath and the MONAI Label plugin on your local machine, refer to section "2. Install QuPath and MONAI Label Plugin" in [the MONAI Label with QuPath tutorial](https://github.com/Project-MONAI/tutorials/blob/main/monailabel/monailabel_pathology_nuclei_segmentation_QuPath.ipynb).
