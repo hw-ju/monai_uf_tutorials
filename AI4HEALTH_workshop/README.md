@@ -18,7 +18,7 @@
 **2. Computer resource reservation for AI4Health workshop:** 
 - We have reserved 16 A100 nodes. The reservation name is "ai4health".
 - We have reserved 2 HWGUI nodes. The reservation name is "ai4health-hwgui".
-- *All sbatch and srun commands in this `README.md` assume using the above reservations, i.e., sbatch and srun commands have flags `--account=ai-workshop --qos=ai-workshop --reservation=ai4health`.*
+- *All sbatch and srun commands in this `README.md` assume using the above reservations and user group, i.e., all sbatch and srun commands have flags `--account=ai-workshop --qos=ai-workshop`, some have `--reservation=ai4health` or `--reservation=ai4health-hwgui`.*
 - *In the form for scheduling an OOD session, we put `ai-workshop` in both `SLURM Account` box and `QoS` box, and put `ai4health` in `reservation` box to use the reservation.*
     ```
     sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health --account=ai-workshop --qos=ai-workshop --reservation=ai4health my_script.sh
@@ -139,7 +139,7 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label
 
 List
 ```
-sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health list.sh
+sbatch --account=ai-workshop --qos=ai-workshop list.sh
 ```
 See sample output [/label/list.sh.job_id.out](./label/list.sh.job_id.out).
 
@@ -154,13 +154,13 @@ cd ~/monai_uf_tutorials/AI4HEALTH_workshop/label/radiology
 
 Download the sample radiology applications
 ```
-sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_app.sh
+sbatch --account=ai-workshop --qos=ai-workshop download_app.sh
 ```
 See sample output [/label/radiology/download_app.sh.job_id.out](./label/radiology/download_app.sh.job_id.out).
 
 Get the sample radiology dataset. To save time, instead of using command `monailabel datasets --download` to download a large dataset as commented out in [/label/radiology/download_dataset.sh](./label/radiology/download_dataset.sh), we will copy some images from a pre-downloaded dataset on HiperGator to set up a smaller dataset.
 ```
-sbatch --account=ai-workshop --qos=ai-workshop --reservation=ai4health download_dataset.sh
+sbatch --account=ai-workshop --qos=ai-workshop download_dataset.sh
 ```
 See sample output [/label/radiology/download_dataset.job_id.out](./label/radiology/download_dataset.job_id.out).
 
@@ -178,8 +178,8 @@ sinfo -p hwgui
 Copy an idle node name somewhere as we will use it later.
 
 Schedule an interactive session on HiperGator. 
-    Set `--partition=hwgui` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command below.
-    Use the idle node name from above to set `--nodelist` in the `srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui` command below.
+    Set `--partition=hwgui` in the `srun` command below.
+    Use the idle node name from above to set `--nodelist` in the `srun` command below.
 ```
 srun --account=ai-workshop --qos=ai-workshop --reservation=ai4health-hwgui --ntasks=1 --nodes=1 --cpus-per-task=4 --mem=64gb --partition=hwgui --nodelist=c0308a-s9 --gpus=1 --time=01:00:00 --pty -u bash -i
 ```
