@@ -35,7 +35,7 @@ This directory is a tutorial on how to use tools provided by Clara Parabricks on
     ```
     If the container was built successfully, there should be no error in the output file and the output file should look similar to [`build_container.sh.job_id.out`](./build_container.sh.job_id.out).
     
-    **Update on 04/23/2023: the latest Parabricks v4.0.1 is pre-installed on HiperGator, you can use that!**
+    **Update on 04/23/2023: the latest Parabricks v4.0.1 is pre-installed on HiperGator, you can use that instead of building your own container!**
 
 4. Download sample data by [`download_sample_data.sh`](./download_sample_data.sh)    
     ```
