@@ -1,4 +1,4 @@
-# **Use Clara Parabricks on HiperGator**
+# **Use NVIDIA Parabricks on HiperGator**
 
 This directory is a tutorial on how to use tools provided by Clara Parabricks on HiperGator, adapted from [the tutorial in Clara Parabricks v4.0.1 documentation](https://docs.nvidia.com/clara/parabricks/4.0.1/Tutorials.html).  
 
