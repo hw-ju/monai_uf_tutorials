@@ -12,6 +12,8 @@
 #SBATCH --time=1:00:00
 #SBATCH --output=%x.%j.out
 
+module load singularity
+
 export NCCL_DEBUG=INFO
 # can be set to either OFF (default), INFO, or DETAIL
 export TORCH_DISTRIBUTED_DEBUG=DETAIL
