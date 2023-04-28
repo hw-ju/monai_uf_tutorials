@@ -1,5 +1,7 @@
-# **Use Clara Parabricks on HiperGator**
+# **Use NVIDIA Parabricks on HiperGator**
 
+**Update on 04/23/2023: the latest Parabricks v4.0.1 is pre-installed on HiperGator, refer to the doc [here](https://help.rc.ufl.edu/doc/Parabricks) on how to use Parabricks on HiperGator instead of following this tutorial!**
+    
 This directory is a tutorial on how to use tools provided by Clara Parabricks on HiperGator, adapted from [the tutorial in Clara Parabricks v4.0.1 documentation](https://docs.nvidia.com/clara/parabricks/4.0.1/Tutorials.html).  
 
 ## **Note**
@@ -33,7 +35,7 @@ This directory is a tutorial on how to use tools provided by Clara Parabricks on
     ```
     cat build_container.sh.job_id.output
     ```
-    If the container was built successfully, there should be no error in the output file and the output file should look similar to [`build_container.sh.job_id.out`](./build_container.sh.job_id.out) .
+    If the container was built successfully, there should be no error in the output file and the output file should look similar to [`build_container.sh.job_id.out`](./build_container.sh.job_id.out).
 
 4. Download sample data by [`download_sample_data.sh`](./download_sample_data.sh)    
     ```
