@@ -35,7 +35,6 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=200gb
 #SBATCH --partition=hpg-ai
-#SBATCH --exclude=c0906a-s29,c1101a-s29,c1101a-s23,c1004a-s23,c1103a-s17
 #SBATCH --exclusive
 #SBATCH --time=4:00:00
 #SBATCH --output=%x.%j.out
