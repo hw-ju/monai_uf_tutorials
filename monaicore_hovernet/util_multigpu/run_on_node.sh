@@ -24,6 +24,8 @@ fi
 #         --nproc_per_node=$SLURM_GPUS_PER_TASK \
 #              $TRAINING_CMD"
 
+# Below is bad practice, when multiple DDP applications running on the same node -> port in use. don't use! 
+# https://pytorch.org/docs/stable/elastic/run.html#stacked-single-node-multi-worker
 LAUNCH_CMD="$PYTHON_PATH \
     torchrun \
     --standalone \
