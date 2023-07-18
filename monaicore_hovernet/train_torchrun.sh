@@ -47,7 +47,7 @@ echo "Primary node: $PRIMARY"
 echo "Primary TCP port: $PRIMARY_PORT"
 echo "Secondary nodes: $SECONDARIES"
 
-PT_LAUNCH_SCRIPT=$(realpath "${PT_LAUNCH_UTILS_PATH}/run_on_node.sh")
+PT_LAUNCH_SCRIPT=$(realpath "${PT_LAUNCH_UTILS_PATH}/run_on_multinode.sh")
 echo "Running \"$TRAINING_CMD\" on each node..."
 
 srun --unbuffered "$PT_LAUNCH_SCRIPT" "$(realpath $PT_LAUNCH_UTILS_PATH)" \
