@@ -1,5 +1,8 @@
 # **use RayTune on HiperGator**
 
+## ** RayTune **
+RayTune doc https://docs.ray.io/en/master/tune/index.html
+
 ## **Build conda env**
 ```
 srun --nodes=1 --ntasks=1 --partition=gpu --gpus=a100:1 --cpus-per-task=4 --mem-per-cpu 64gb --time=08:00:00 --pty -u bash -i
