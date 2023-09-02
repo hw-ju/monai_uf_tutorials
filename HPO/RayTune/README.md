@@ -1,6 +1,6 @@
 # **use RayTune on HiperGator**
 
-## ** RayTune **
+## **RayTune**
 RayTune doc https://docs.ray.io/en/master/tune/index.html
 
 ## **Build conda env**
