@@ -19,7 +19,7 @@ wget -P /blue/vendor-nvidia/hju/single_cell_data https://rapids-single-cell-exam
 # wget -P /blue/vendor-nvidia/hju/single_cell_data https://rapids-single-cell-examples.s3.us-east-2.amazonaws.com/dsci_resting_peaknames_nonzero.npy
 # wget -P /blue/vendor-nvidia/hju/single_cell_data https://rapids-single-cell-examples.s3.us-east-2.amazonaws.com/dsci_resting_cell_metadata.csv
 
-# download dataset for example 4
+# download dataset for example 5
 # wget -P /blue/vendor-nvidia/hju/single_cell_data https://rapids-single-cell-examples.s3.us-east-2.amazonaws.com/5k_pbmcs_10X.sparse.h5ad
 # wget -P /blue/vendor-nvidia/hju/single_cell_data https://rapids-single-cell-examples.s3.us-east-2.amazonaws.com/5k_pbmcs_10X_fragments.tsv.gz
 # wget -P /blue/vendor-nvidia/hju/single_cell_data https://rapids-single-cell-examples.s3.us-east-2.amazonaws.com/5k_pbmcs_10X_fragments.tsv.gz.tbi
