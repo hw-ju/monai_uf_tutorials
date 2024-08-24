@@ -1,0 +1,414 @@
+Fri Aug 23 21:16:04 EDT 2024
+c1101a-s11.ufhpc
+/blue/vendor-nvidia/hju/PB_training_Dungan
+INFO:    underlay of /etc/localtime required more than 50 (79) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (373) bind mounts
+
+[Parabricks Options Mesg]: Checking argument compatibility
+[Parabricks Options Mesg]: Read group created for /blue/vendor-nvidia/hju/PB_training_Dungan/SRR7890827_1.fastq.gz and
+/blue/vendor-nvidia/hju/PB_training_Dungan/SRR7890827_2.fastq.gz
+[Parabricks Options Mesg]: @RG\tID:id_SRR7890827_rg1\tLB:lib1\tPL:bar\tSM:sm_SRR7890827\tPU:pu_SRR7890827_rg1
+[Parabricks Options Mesg]: Note: fq2bam will become an alias fq2bamfast in the next major release
+[PB Info 2024-Aug-23 21:16:06] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:16:06] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2024-Aug-23 21:16:06] ||                              Version 4.3.1-1                             ||
+[PB Info 2024-Aug-23 21:16:06] ||                       GPU-BWA mem, Sorting Phase-I                       ||
+[PB Info 2024-Aug-23 21:16:06] ------------------------------------------------------------------------------
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[PB Info 2024-Aug-23 21:16:13] GPU-BWA mem
+[PB Info 2024-Aug-23 21:16:13] ProgressMeter	Reads		Base Pairs Aligned
+[PB Info 2024-Aug-23 21:16:28] 5000100		680000000
+[PB Info 2024-Aug-23 21:16:33] 10000200	1520000000
+[PB Info 2024-Aug-23 21:16:37] 15000300	2260000000
+[PB Info 2024-Aug-23 21:16:42] 20000400	2970000000
+[PB Info 2024-Aug-23 21:16:46] 25000500	3750000000
+[PB Info 2024-Aug-23 21:16:51] 30000600	4490000000
+[PB Info 2024-Aug-23 21:16:55] 35000700	5250000000
+[PB Info 2024-Aug-23 21:17:00] 40000800	6000000000
+[PB Info 2024-Aug-23 21:17:04] 45000900	6740000000
+[PB Info 2024-Aug-23 21:17:09] 50001000	7520000000
+[PB Info 2024-Aug-23 21:17:14] 55001100	8240000000
+[PB Info 2024-Aug-23 21:17:18] 60001200	9000000000
+[PB Info 2024-Aug-23 21:17:23] 65001300	9770000000
+[PB Info 2024-Aug-23 21:17:27] 70001400	10500000000
+[PB Info 2024-Aug-23 21:17:32] 75001500	11260000000
+[PB Info 2024-Aug-23 21:17:37] 80001600	11960000000
+[PB Info 2024-Aug-23 21:17:41] 85001700	12760000000
+[PB Info 2024-Aug-23 21:17:46] 90001800	13490000000
+[PB Info 2024-Aug-23 21:17:51] 95001900	14260000000
+[PB Info 2024-Aug-23 21:17:55] 100002000	15020000000
+[PB Info 2024-Aug-23 21:18:00] 105002100	15720000000
+[PB Info 2024-Aug-23 21:18:05] 110002200	16490000000
+[PB Info 2024-Aug-23 21:18:11] 115002300	17250000000
+[PB Info 2024-Aug-23 21:18:15] 120002400	18000000000
+[PB Info 2024-Aug-23 21:18:20] 125002500	18750000000
+[PB Info 2024-Aug-23 21:18:26] 130002600	19500000000
+[PB Info 2024-Aug-23 21:18:31] 135002700	20270000000
+[PB Info 2024-Aug-23 21:18:36] 140002800	21030000000
+[PB Info 2024-Aug-23 21:18:40] 145002900	21760000000
+[PB Info 2024-Aug-23 21:18:45] 150003000	22500000000
+[PB Info 2024-Aug-23 21:18:50] 155003100	23290000000
+[PB Info 2024-Aug-23 21:18:55] 160003200	24000000000
+[PB Info 2024-Aug-23 21:18:59] 165003300	24750000000
+[PB Info 2024-Aug-23 21:19:04] 170003400	25500000000
+[PB Info 2024-Aug-23 21:19:09] 175003500	26270000000
+[PB Info 2024-Aug-23 21:19:14] 180003600	27030000000
+[PB Info 2024-Aug-23 21:19:19] 185003700	27750000000
+[PB Info 2024-Aug-23 21:19:23] 190003800	28500000000
+[PB Info 2024-Aug-23 21:19:28] 195003900	29240000000
+[PB Info 2024-Aug-23 21:19:32] 200004000	30020000000
+[PB Info 2024-Aug-23 21:19:32] 200004000	30010000000
+[PB Info 2024-Aug-23 21:19:32] 200004000	30040000000
+[PB Info 2024-Aug-23 21:19:32] 200004000	29990000000
+[PB Info 2024-Aug-23 21:19:37] 205204104	30770000000
+[PB Info 2024-Aug-23 21:19:37] 205204104	30820000000
+[PB Info 2024-Aug-23 21:19:37] 205204104	30790000000
+[PB Info 2024-Aug-23 21:19:37] 205204104	30800000000
+[PB Info 2024-Aug-23 21:19:42] 210404208	31560000000
+[PB Info 2024-Aug-23 21:19:42] 210404208	31580000000
+[PB Info 2024-Aug-23 21:19:42] 210404208	31600000000
+[PB Info 2024-Aug-23 21:19:42] 210404208	31590000000
+[PB Info 2024-Aug-23 21:19:47] [PB Info 2024-Aug-23 21:19:47] 215604312	32350000000
+[PB Info 2024-Aug-23 21:19:47] 215604312	32370000000
+215604312	32360000000
+[PB Info 2024-Aug-23 21:19:47] 215604312	32330000000
+[PB Info 2024-Aug-23 21:19:52] 220804416	33080000000
+[PB Info 2024-Aug-23 21:19:52] 220804416	33150000000
+[PB Info 2024-Aug-23 21:19:52] 220804416	33160000000
+[PB Info 2024-Aug-23 21:19:52] 220804416	33140000000
+[PB Info 2024-Aug-23 21:19:57] 226004520	33890000000
+[PB Info 2024-Aug-23 21:20:02] 231004620	34660000000
+[PB Info 2024-Aug-23 21:20:06] 236004720	35390000000
+[PB Info 2024-Aug-23 21:20:11] 241004820	36150000000
+[PB Info 2024-Aug-23 21:20:16] 246004920	36900000000
+[PB Info 2024-Aug-23 21:20:20] 251005020	37630000000
+[PB Info 2024-Aug-23 21:20:25] 256005120	38410000000
+[PB Info 2024-Aug-23 21:20:29] 261005220	39150000000
+[PB Info 2024-Aug-23 21:20:34] 266005320	39880000000
+[PB Info 2024-Aug-23 21:20:39] 271005420	40670000000
+[PB Info 2024-Aug-23 21:20:43] 276005520	41380000000
+[PB Info 2024-Aug-23 21:20:48] 281005620	42180000000
+[PB Info 2024-Aug-23 21:20:53] 286005720	42900000000
+[PB Info 2024-Aug-23 21:20:58] 291005820	43670000000
+[PB Info 2024-Aug-23 21:21:02] 296005920	44380000000
+[PB Info 2024-Aug-23 21:21:07] 301006020	45150000000
+[PB Info 2024-Aug-23 21:21:12] 306006120	45900000000
+[PB Info 2024-Aug-23 21:21:17] 311006220	46670000000
+[PB Info 2024-Aug-23 21:21:22] 316006320	47400000000
+[PB Info 2024-Aug-23 21:21:27] 321006420	48140000000
+[PB Info 2024-Aug-23 21:21:31] 326006520	48930000000
+[PB Info 2024-Aug-23 21:21:36] 331006620	49640000000
+[PB Info 2024-Aug-23 21:21:41] 336006720	50390000000
+[PB Info 2024-Aug-23 21:21:46] 341006820	51170000000
+[PB Info 2024-Aug-23 21:21:52] 346006920	51910000000
+[PB Info 2024-Aug-23 21:21:52] 346006920	51900000000
+[PB Info 2024-Aug-23 21:21:57] 351073688	52610000000
+[PB Info 2024-Aug-23 21:22:02] 356073788	53450000000
+[PB Info 2024-Aug-23 21:22:07] 361073888	54160000000
+[PB Info 2024-Aug-23 21:22:13] 366073988	54900000000
+[PB Info 2024-Aug-23 21:22:13] 366073988	54930000000
+[PB Info 2024-Aug-23 21:22:18] 371140756	55630000000
+[PB Info 2024-Aug-23 21:22:22] 376140856	56430000000
+[PB Info 2024-Aug-23 21:22:27] 381140956	57140000000
+[PB Info 2024-Aug-23 21:22:31] 386141056	57950000000
+[PB Info 2024-Aug-23 21:22:36] 391141156	58700000000
+[PB Info 2024-Aug-23 21:22:41] 396141256	59380000000
+[PB Info 2024-Aug-23 21:22:45] 401141356	60180000000
+[PB Info 2024-Aug-23 21:22:50] 406141456	60900000000
+[PB Info 2024-Aug-23 21:22:55] 411141556	61670000000
+[PB Info 2024-Aug-23 21:23:00] 416141656	62440000000
+[PB Info 2024-Aug-23 21:23:05] 421141756	63160000000
+[PB Info 2024-Aug-23 21:23:09] 426141856	63960000000
+[PB Info 2024-Aug-23 21:23:14] 431141956	64670000000
+[PB Info 2024-Aug-23 21:23:19] 436142056	65410000000
+[PB Info 2024-Aug-23 21:23:24] 441142156	66130000000
+[PB Info 2024-Aug-23 21:23:29] 446142256	66910000000
+[PB Info 2024-Aug-23 21:23:34] 451142356	67660000000
+[PB Info 2024-Aug-23 21:23:39] 456142456	68390000000
+[PB Info 2024-Aug-23 21:23:43] 461142556	69180000000
+[PB Info 2024-Aug-23 21:23:48] 466142656	69910000000
+[PB Info 2024-Aug-23 21:23:54] 471142756	70650000000
+[PB Info 2024-Aug-23 21:23:58] 476142856	71400000000
+[PB Info 2024-Aug-23 21:24:03] 481142956	72180000000
+[PB Info 2024-Aug-23 21:24:08] 486143056	72960000000
+[PB Info 2024-Aug-23 21:24:12] 491143156	73670000000
+[PB Info 2024-Aug-23 21:24:17] 496143256	74410000000
+[PB Info 2024-Aug-23 21:24:22] 501143356	75150000000
+[PB Info 2024-Aug-23 21:24:27] 506143456	75900000000
+[PB Info 2024-Aug-23 21:24:31] 511143556	76680000000
+[PB Info 2024-Aug-23 21:24:36] 516143656	77410000000
+[PB Info 2024-Aug-23 21:24:41] 521143756	78160000000
+[PB Info 2024-Aug-23 21:24:46] 526143856	78900000000
+[PB Info 2024-Aug-23 21:24:51] 531143956	79670000000
+[PB Info 2024-Aug-23 21:24:56] 536144056	80440000000
+[PB Info 2024-Aug-23 21:25:01] 541144156	81140000000
+[PB Info 2024-Aug-23 21:25:06] 546144256	81940000000
+[PB Info 2024-Aug-23 21:25:11] 551144356	82670000000
+[PB Info 2024-Aug-23 21:25:16] 556144456	83400000000
+[PB Info 2024-Aug-23 21:25:21] 561144556	84170000000
+[PB Info 2024-Aug-23 21:25:25] 566144656	84910000000
+[PB Info 2024-Aug-23 21:25:31] 571144756	85660000000
+[PB Info 2024-Aug-23 21:25:33] [M::runCPUThreads] read 66668 sequences (10000200 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 26600, 2, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (317, 367, 420)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (111, 626)
+[M::mem_pestat] mean and std.dev: (368.82, 79.67)
+[M::mem_pestat] low and high boundaries for proper pairs: (8, 729)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[PB Info 2024-Aug-23 21:25:37] 576144856	86420000000
+[PB Info 2024-Aug-23 21:25:37] [M::mem_process_seqs_cpp] Processed 66668 reads in 252.962 CPU sec, 4.329 real sec
+[PB Info 2024-Aug-23 21:25:37] [M::runCPUThreads] read 66668 sequences (20000400 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 28061, 2, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (316, 366, 418)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (112, 622)
+[M::mem_pestat] mean and std.dev: (367.12, 79.75)
+[M::mem_pestat] low and high boundaries for proper pairs: (10, 724)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[PB Info 2024-Aug-23 21:25:39] [M::mem_process_seqs_cpp] Processed 66668 reads in 131.472 CPU sec, 2.280 real sec
+[PB Info 2024-Aug-23 21:25:42] 581144956	87170000000
+[PB Info 2024-Aug-23 21:25:47] 586145056	87920000000
+[PB Info 2024-Aug-23 21:25:52] 591145156	88660000000
+[PB Info 2024-Aug-23 21:25:57] 596145256	89430000000
+[PB Info 2024-Aug-23 21:26:01] 601145356	90180000000
+[PB Info 2024-Aug-23 21:26:06] 606145456	90940000000
+[PB Info 2024-Aug-23 21:26:11] 611145556	91660000000
+[PB Info 2024-Aug-23 21:26:16] 616145656	92400000000
+[PB Info 2024-Aug-23 21:26:20] 621145756	93170000000
+[PB Info 2024-Aug-23 21:26:25] 626145856	93940000000
+[PB Info 2024-Aug-23 21:26:30] 631145956	94660000000
+[PB Info 2024-Aug-23 21:26:35] 636146056	95400000000
+[PB Info 2024-Aug-23 21:26:40] 641146156	96150000000
+[PB Info 2024-Aug-23 21:26:45] 646146256	96900000000
+[PB Info 2024-Aug-23 21:26:49] 651146356	97670000000
+[PB Info 2024-Aug-23 21:26:54] 656146456	98460000000
+[PB Info 2024-Aug-23 21:26:59] 661146556	99170000000
+[PB Info 2024-Aug-23 21:27:04] 666146656	99890000000
+[PB Info 2024-Aug-23 21:27:09] 671146756	100650000000
+[PB Info 2024-Aug-23 21:27:14] 676146856	101380000000
+[PB Info 2024-Aug-23 21:27:19] 681146956	102140000000
+[PB Info 2024-Aug-23 21:27:24] 686147056	102890000000
+[PB Info 2024-Aug-23 21:27:29] 691147156	103690000000
+[PB Info 2024-Aug-23 21:27:34] 696147256	104450000000
+[PB Info 2024-Aug-23 21:27:38] 701147356	105200000000
+[PB Info 2024-Aug-23 21:27:43] 706147456	105930000000
+[PB Info 2024-Aug-23 21:27:48] 711147556	106640000000
+[PB Info 2024-Aug-23 21:27:53] 716147656	107400000000
+[PB Info 2024-Aug-23 21:27:58] 721147756	108150000000
+[PB Info 2024-Aug-23 21:28:03] 726147856	108920000000
+[PB Info 2024-Aug-23 21:28:08] 731147956	109690000000
+[PB Info 2024-Aug-23 21:28:13] 736148056	110440000000
+[PB Info 2024-Aug-23 21:28:18] 741148156	111170000000
+[PB Info 2024-Aug-23 21:28:23] 746148256	111900000000
+[PB Info 2024-Aug-23 21:28:28] 751148356	112680000000
+[PB Info 2024-Aug-23 21:28:33] 756148456	113410000000
+[PB Info 2024-Aug-23 21:28:38] 761148556	114170000000
+[PB Info 2024-Aug-23 21:28:43] 766148656	114910000000
+[PB Info 2024-Aug-23 21:28:47] 771148756	115690000000
+[PB Info 2024-Aug-23 21:28:47] 771148756	115680000000
+[PB Info 2024-Aug-23 21:28:47] 771148756	115670000000
+[PB Info 2024-Aug-23 21:28:53] 776282192	116430000000
+[PB Info 2024-Aug-23 21:28:58] 781282292	117150000000
+[PB Info 2024-Aug-23 21:29:03] 786282392	117950000000
+[PB Info 2024-Aug-23 21:29:07] 791282492	118660000000
+[PB Info 2024-Aug-23 21:29:12] 796282592	119430000000
+[PB Info 2024-Aug-23 21:29:17] 801282692	120200000000
+[PB Info 2024-Aug-23 21:29:22] 806282792	120960000000
+[PB Info 2024-Aug-23 21:29:26] 811282892	121710000000
+[PB Info 2024-Aug-23 21:29:31] 816282992	122450000000
+[PB Info 2024-Aug-23 21:29:36] 821283092	123210000000
+[PB Info 2024-Aug-23 21:29:41] 826283192	123980000000
+[PB Info 2024-Aug-23 21:29:45] 831283292	124690000000
+[PB Info 2024-Aug-23 21:29:50] 836283392	125460000000
+[PB Info 2024-Aug-23 21:29:55] [PB Info 2024-Aug-23 21:29:55] 841283492	126230000000
+[PB Info 2024-Aug-23 21:29:55] 841283492	126170000000
+841283492	126220000000
+[PB Info 2024-Aug-23 21:30:00] 846416928	126950000000
+[PB Info 2024-Aug-23 21:30:05] 851417028	127720000000
+[PB Info 2024-Aug-23 21:30:10] 856417128	128480000000
+[PB Info 2024-Aug-23 21:30:15] 861417228	129210000000
+[PB Info 2024-Aug-23 21:30:20] 866417328	129940000000
+[PB Info 2024-Aug-23 21:30:24] 871417428	130710000000
+[PB Info 2024-Aug-23 21:30:29] 876417528	131450000000
+[PB Info 2024-Aug-23 21:30:35] 881417628	132170000000
+[PB Info 2024-Aug-23 21:30:40] 886417728	132910000000
+[PB Info 2024-Aug-23 21:30:45] 891417828	133700000000
+[PB Info 2024-Aug-23 21:30:49] 896417928	134440000000
+[PB Info 2024-Aug-23 21:30:54] 901418028	135210000000
+[PB Info 2024-Aug-23 21:30:59] 906418128	135960000000
+[PB Info 2024-Aug-23 21:31:04] 911418228	136680000000
+[PB Info 2024-Aug-23 21:31:09] 916418328	137450000000
+[PB Info 2024-Aug-23 21:31:09] 916418328	137440000000
+[PB Info 2024-Aug-23 21:31:14] 921485096	138220000000
+[PB Info 2024-Aug-23 21:31:19] 926485196	138970000000
+[PB Info 2024-Aug-23 21:31:24] 931485296	139680000000
+[PB Info 2024-Aug-23 21:31:28] 936485396	140470000000
+[PB Info 2024-Aug-23 21:31:33] 941485496	141220000000
+[PB Info 2024-Aug-23 21:31:38] 946485596	142000000000
+[PB Info 2024-Aug-23 21:31:44] 951485696	142760000000
+[PB Info 2024-Aug-23 21:31:49] 956485796	143460000000
+[PB Info 2024-Aug-23 21:31:54] 961485896	144230000000
+[PB Info 2024-Aug-23 21:31:59] 966485996	144950000000
+[PB Info 2024-Aug-23 21:32:03] 971486096	145740000000
+[PB Info 2024-Aug-23 21:32:08] 976486196	146470000000
+[PB Info 2024-Aug-23 21:32:13] 981486296	147250000000
+[PB Info 2024-Aug-23 21:32:19] 986486396	147940000000
+[PB Info 2024-Aug-23 21:32:23] 991486496	148710000000
+[PB Info 2024-Aug-23 21:32:28] 996486596	149420000000
+[PB Info 2024-Aug-23 21:32:33] 1001486696	150230000000
+[PB Info 2024-Aug-23 21:32:37] 1006486796	150980000000
+[PB Info 2024-Aug-23 21:32:42] 1011486896	151720000000
+[PB Info 2024-Aug-23 21:32:47] 1016486996	152460000000
+[PB Info 2024-Aug-23 21:32:51] 1021487096	153200000000
+[PB Info 2024-Aug-23 21:32:57] 1026487196	153970000000
+[PB Info 2024-Aug-23 21:33:02] 1031487296	154690000000
+[PB Info 2024-Aug-23 21:33:07] 1036487396	155450000000
+[PB Info 2024-Aug-23 21:33:13] 1041487496	156250000000
+[PB Info 2024-Aug-23 21:33:13] 1041487496	156220000000
+[PB Info 2024-Aug-23 21:33:19] 1046554264	156990000000
+[PB Info 2024-Aug-23 21:33:24] 1051554364	157720000000
+[PB Info 2024-Aug-23 21:33:29] 1056554464	158450000000
+[PB Info 2024-Aug-23 21:33:35] 1061554564	159220000000
+[PB Info 2024-Aug-23 21:33:40] 1066554664	159990000000
+[PB Info 2024-Aug-23 21:33:45] 1071554764	160720000000
+[PB Info 2024-Aug-23 21:33:50] 1076554864	161490000000
+[PB Info 2024-Aug-23 21:33:55] 1081554964	162230000000
+[PB Info 2024-Aug-23 21:34:02] 1086555064	162980000000
+[PB Info 2024-Aug-23 21:34:08] 1091555164	163760000000
+[PB Info 2024-Aug-23 21:34:13] 1096555264	164470000000
+[PB Info 2024-Aug-23 21:34:18] 1101555364	165240000000
+[PB Info 2024-Aug-23 21:34:23] 1106555464	165970000000
+[PB Info 2024-Aug-23 21:34:28] 1111555564	166730000000
+[PB Info 2024-Aug-23 21:34:33] 1116555664	167500000000
+[PB Info 2024-Aug-23 21:34:38] 1121555764	168220000000
+[PB Info 2024-Aug-23 21:34:44] 1126555864	168980000000
+[PB Info 2024-Aug-23 21:34:49] 1131555964	169750000000
+[PB Info 2024-Aug-23 21:34:54] 1136556064	170510000000
+[PB Info 2024-Aug-23 21:35:00] 1141556164	171230000000
+[PB Info 2024-Aug-23 21:35:05] 1146556264	171990000000
+[PB Info 2024-Aug-23 21:35:11] 1151556364	172750000000
+[PB Info 2024-Aug-23 21:35:16] 1156556464	173470000000
+[PB Info 2024-Aug-23 21:35:21] 1161556564	174230000000
+[PB Info 2024-Aug-23 21:35:26] 1166556664	174970000000
+[PB Info 2024-Aug-23 21:35:31] 1171556764	175730000000
+[PB Info 2024-Aug-23 21:35:36] 1176556864	176450000000
+[PB Info 2024-Aug-23 21:35:41] 1181556964	177230000000
+[PB Info 2024-Aug-23 21:35:41] 1181556964	177240000000
+[PB Info 2024-Aug-23 21:35:41] [PB Info 2024-Aug-23 21:35:41] 1181556964	177250000000
+1181556964	177260000000
+[PB Info 2024-Aug-23 21:35:46] 1186757068	178000000000
+[PB Info 2024-Aug-23 21:35:52] 1191757168	178770000000
+[PB Info 2024-Aug-23 21:35:57] 1196757268	179510000000
+[PB Info 2024-Aug-23 21:36:07] 
+GPU-BWA Mem time: 1193.991351 seconds
+[PB Info 2024-Aug-23 21:36:07] GPU-BWA Mem is finished.
+
+[main] CMD: /usr/local/parabricks/binaries/bin/bwa mem -Z ./pbOpts.txt -Y -F 0 /blue/vendor-nvidia/hju/PB_training_Dungan/GRCh38.d1.vd1.fa /blue/vendor-nvidia/hju/PB_training_Dungan/SRR7890827_1.fastq.gz /blue/vendor-nvidia/hju/PB_training_Dungan/SRR7890827_2.fastq.gz @RG\tID:id_SRR7890827_rg1\tLB:lib1\tPL:bar\tSM:sm_SRR7890827\tPU:pu_SRR7890827_rg1
+[main] Real time: 1200.890 sec; CPU: 53718.822 sec
+[PB Info 2024-Aug-23 21:36:07] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:36:07] ||        Program:                      GPU-BWA mem, Sorting Phase-I        ||
+[PB Info 2024-Aug-23 21:36:07] ||        Version:                                           4.3.1-1        ||
+[PB Info 2024-Aug-23 21:36:07] ||        Start Time:                       Fri Aug 23 21:16:06 2024        ||
+[PB Info 2024-Aug-23 21:36:07] ||        End Time:                         Fri Aug 23 21:36:07 2024        ||
+[PB Info 2024-Aug-23 21:36:07] ||        Total Time:                            20 minutes 1 second        ||
+[PB Info 2024-Aug-23 21:36:07] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:36:11] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:36:11] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2024-Aug-23 21:36:11] ||                              Version 4.3.1-1                             ||
+[PB Info 2024-Aug-23 21:36:11] ||                             Sorting Phase-II                             ||
+[PB Info 2024-Aug-23 21:36:11] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:36:11] progressMeter - Percentage
+[PB Info 2024-Aug-23 21:36:11] 0.0
+[PB Info 2024-Aug-23 21:36:16] 4.4
+[PB Info 2024-Aug-23 21:36:21] 9.0
+[PB Info 2024-Aug-23 21:36:26] 14.0
+[PB Info 2024-Aug-23 21:36:31] 19.3
+[PB Info 2024-Aug-23 21:36:36] 24.1
+[PB Info 2024-Aug-23 21:36:41] 28.9
+[PB Info 2024-Aug-23 21:36:46] 35.4
+[PB Info 2024-Aug-23 21:36:51] 40.3
+[PB Info 2024-Aug-23 21:36:56] 45.4
+[PB Info 2024-Aug-23 21:37:01] 51.3
+[PB Info 2024-Aug-23 21:37:06] 56.1
+[PB Info 2024-Aug-23 21:37:11] 61.3
+[PB Info 2024-Aug-23 21:37:16] 66.2
+[PB Info 2024-Aug-23 21:37:21] 71.8
+[PB Info 2024-Aug-23 21:37:26] 78.7
+[PB Info 2024-Aug-23 21:37:31] 83.8
+[PB Info 2024-Aug-23 21:37:36] 89.6
+[PB Info 2024-Aug-23 21:37:41] 99.6
+[PB Info 2024-Aug-23 21:37:46] 99.9
+[PB Info 2024-Aug-23 21:37:51] Sorting and Marking: 100.025 seconds
+[PB Info 2024-Aug-23 21:37:51] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:37:51] ||        Program:                                  Sorting Phase-II        ||
+[PB Info 2024-Aug-23 21:37:51] ||        Version:                                           4.3.1-1        ||
+[PB Info 2024-Aug-23 21:37:51] ||        Start Time:                       Fri Aug 23 21:36:11 2024        ||
+[PB Info 2024-Aug-23 21:37:51] ||        End Time:                         Fri Aug 23 21:37:51 2024        ||
+[PB Info 2024-Aug-23 21:37:51] ||        Total Time:                            1 minute 40 seconds        ||
+[PB Info 2024-Aug-23 21:37:51] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:37:51] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:37:51] ||                 Parabricks accelerated Genomics Pipeline                 ||
+[PB Info 2024-Aug-23 21:37:51] ||                              Version 4.3.1-1                             ||
+[PB Info 2024-Aug-23 21:37:51] ||                         Marking Duplicates, BQSR                         ||
+[PB Info 2024-Aug-23 21:37:51] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:37:51] BQSR using CUDA device(s): { 0 1 2 3 }
+[PB Info 2024-Aug-23 21:37:53] Using PBBinBamFile for BAM writing
+[PB Info 2024-Aug-23 21:38:00] progressMeter -	Percentage
+[PB Info 2024-Aug-23 21:38:10] 0.0
+[PB Info 2024-Aug-23 21:38:12] Checking if the index file exists for the input compressed file:/blue/vendor-nvidia/hju/PB_training_Dungan/Mills_and_1000G_gold_standard.indels.b38.primary_assembly.vcf.gz for better performance
+[PB Info 2024-Aug-23 21:38:13] Checking if the index file exists for the input compressed file:/blue/vendor-nvidia/hju/PB_training_Dungan/GCF_000001405.39.vcf.gz for better performance
+[PB Warning 2024-Aug-23 21:38:13][src/PBLocalFile.cpp:54] Could not find index file /blue/vendor-nvidia/hju/PB_training_Dungan/GCF_000001405.39.vcf.gz.tbi
+[PB Warning 2024-Aug-23 21:38:13][src/PBLocalFile.cpp:54] Could not find index file /blue/vendor-nvidia/hju/PB_training_Dungan/GCF_000001405.39.vcf.tbi
+[PB Warning 2024-Aug-23 21:38:13][src/PBLocalFile.cpp:54] Could not find index file /blue/vendor-nvidia/hju/PB_training_Dungan/GCF_000001405.39.vcf.gz.csi
+[PB Warning 2024-Aug-23 21:38:13][src/PBLocalFile.cpp:54] Could not find index file /blue/vendor-nvidia/hju/PB_training_Dungan/GCF_000001405.39.vcf.csi
+[PB Info 2024-Aug-23 21:38:13] Checking if the index file exists for the input compressed file:/blue/vendor-nvidia/hju/PB_training_Dungan/ALL.wgs.1000G_phase3.GRCh38.ncbi_remapper.20150424.shapeit2_indels.vcf.gz for better performance
+[PB Info 2024-Aug-23 21:38:20] 0.3
+[PB Info 2024-Aug-23 21:38:30] 2.9
+[PB Info 2024-Aug-23 21:38:40] 6.0
+[PB Info 2024-Aug-23 21:38:50] 8.8
+[PB Info 2024-Aug-23 21:39:00] 11.8
+[PB Info 2024-Aug-23 21:39:10] 14.7
+[PB Info 2024-Aug-23 21:39:20] 17.6
+[PB Info 2024-Aug-23 21:39:30] 20.6
+[PB Info 2024-Aug-23 21:39:40] 23.7
+[PB Info 2024-Aug-23 21:39:50] 26.8
+[PB Info 2024-Aug-23 21:40:00] 30.1
+[PB Info 2024-Aug-23 21:40:10] 33.2
+[PB Info 2024-Aug-23 21:40:20] 37.5
+[PB Info 2024-Aug-23 21:40:30] 40.7
+[PB Info 2024-Aug-23 21:40:40] 44.1
+[PB Info 2024-Aug-23 21:40:50] 47.5
+[PB Info 2024-Aug-23 21:41:00] 51.3
+[PB Info 2024-Aug-23 21:41:10] 54.5
+[PB Info 2024-Aug-23 21:41:20] 58.0
+[PB Info 2024-Aug-23 21:41:30] 61.5
+[PB Info 2024-Aug-23 21:41:40] 64.6
+[PB Info 2024-Aug-23 21:41:50] 67.9
+[PB Info 2024-Aug-23 21:42:00] 71.8
+[PB Info 2024-Aug-23 21:42:10] 75.6
+[PB Info 2024-Aug-23 21:42:20] 79.7
+[PB Info 2024-Aug-23 21:42:30] 83.0
+[PB Info 2024-Aug-23 21:42:40] 86.5
+[PB Info 2024-Aug-23 21:42:50] 90.2
+[PB Info 2024-Aug-23 21:43:00] 33784816 reads are filtered
+[PB Info 2024-Aug-23 21:43:00] 34734381 reads are filtered
+[PB Info 2024-Aug-23 21:43:00] 34286967 reads are filtered
+[PB Info 2024-Aug-23 21:43:00] 33655904 reads are filtered
+[PB Info 2024-Aug-23 21:43:00] 95.6
+[PB Info 2024-Aug-23 21:43:10] 100.0
+[PB Info 2024-Aug-23 21:43:10] BQSR and writing final BAM:  310.168 seconds
+[PB Info 2024-Aug-23 21:43:10] ------------------------------------------------------------------------------
+[PB Info 2024-Aug-23 21:43:10] ||        Program:                          Marking Duplicates, BQSR        ||
+[PB Info 2024-Aug-23 21:43:10] ||        Version:                                           4.3.1-1        ||
+[PB Info 2024-Aug-23 21:43:10] ||        Start Time:                       Fri Aug 23 21:37:51 2024        ||
+[PB Info 2024-Aug-23 21:43:10] ||        End Time:                         Fri Aug 23 21:43:10 2024        ||
+[PB Info 2024-Aug-23 21:43:10] ||        Total Time:                           5 minutes 19 seconds        ||
+[PB Info 2024-Aug-23 21:43:10] ------------------------------------------------------------------------------
+Please visit https://docs.nvidia.com/clara/#parabricks for detailed documentation
+
+

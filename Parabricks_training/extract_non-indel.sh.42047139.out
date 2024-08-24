@@ -1,0 +1,59 @@
+Fri Aug 23 23:03:17 EDT 2024
+c0702a-s14.ufhpc
+/blue/vendor-nvidia/hju/PB_training_Dungan
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch/local/42047139
+23:03:20.204 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/apps/gatk/4.4.0.0/gatk-package-4.4.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+23:03:20.231 INFO  FilterMutectCalls - ------------------------------------------------------------
+23:03:20.234 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.4.0.0
+23:03:20.234 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+23:03:20.234 INFO  FilterMutectCalls - Executing as hju@c0702a-s14.ufhpc on Linux v4.18.0-513.24.1.el8_9.x86_64 amd64
+23:03:20.234 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v20.0.1+9-29
+23:03:20.234 INFO  FilterMutectCalls - Start Date/Time: August 23, 2024, 11:03:20 PM EDT
+23:03:20.234 INFO  FilterMutectCalls - ------------------------------------------------------------
+23:03:20.234 INFO  FilterMutectCalls - ------------------------------------------------------------
+23:03:20.235 INFO  FilterMutectCalls - HTSJDK Version: 3.0.5
+23:03:20.235 INFO  FilterMutectCalls - Picard Version: 3.0.0
+23:03:20.235 INFO  FilterMutectCalls - Built for Spark Version: 3.3.1
+23:03:20.235 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+23:03:20.236 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+23:03:20.236 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+23:03:20.236 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+23:03:20.236 INFO  FilterMutectCalls - Deflater: IntelDeflater
+23:03:20.236 INFO  FilterMutectCalls - Inflater: IntelInflater
+23:03:20.236 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+23:03:20.236 INFO  FilterMutectCalls - Requester pays: disabled
+23:03:20.237 INFO  FilterMutectCalls - Initializing engine
+23:03:20.408 INFO  FeatureManager - Using codec VCFCodec to read file file:///blue/vendor-nvidia/hju/PB_training_Dungan/SRR7890824-SRR7890827-WGS_FD_mutect2.vcf
+23:03:20.474 INFO  FilterMutectCalls - Done initializing engine
+23:03:20.557 INFO  ProgressMeter - Starting traversal
+23:03:20.558 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+23:03:20.558 INFO  FilterMutectCalls - Starting pass 0 through the variants
+23:03:30.630 INFO  ProgressMeter -        chr8:22552742              0.2                118000         703148.3
+23:03:40.666 INFO  ProgressMeter -        chrX:77841965              0.3                249000         742987.9
+23:03:45.233 INFO  FilterMutectCalls - Finished pass 0 through the variants
+23:04:51.666 INFO  FilterMutectCalls - Starting pass 1 through the variants
+23:04:51.715 INFO  ProgressMeter -         chr1:2675430              1.5                307000         202071.2
+23:05:01.733 INFO  ProgressMeter -       chr7:132267202              1.7                421000         249666.4
+23:05:11.781 INFO  ProgressMeter -       chr22:42924055              1.9                534000         288069.9
+23:05:18.635 INFO  FilterMutectCalls - Finished pass 1 through the variants
+23:05:31.389 INFO  FilterMutectCalls - Starting pass 2 through the variants
+23:05:31.437 INFO  ProgressMeter -         chr1:8344316              2.2                614000         281481.4
+23:05:41.528 INFO  ProgressMeter -       chr7:143810159              2.3                729000         310278.8
+23:05:51.604 INFO  ProgressMeter -         chrX:2420541              2.5                844000         335262.1
+23:05:58.319 INFO  FilterMutectCalls - Finished pass 2 through the variants
+23:05:58.365 INFO  FilterMutectCalls - Starting pass 3 through the variants
+23:06:01.689 INFO  ProgressMeter -        chr2:50219922              2.7                948000         353004.7
+23:06:11.784 INFO  ProgressMeter -           chr9:72369              2.9               1043000         365484.0
+23:06:21.847 INFO  ProgressMeter -        chr21:9333162              3.0               1137000         376307.3
+23:06:31.491 INFO  FilterMutectCalls - Finished pass 3 through the variants
+23:06:31.500 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+23:06:31.500 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+23:06:31.500 INFO  ProgressMeter - chrUn_JTFH01001899v1_decoy:1986              3.2               1226964         385550.8
+23:06:31.500 INFO  ProgressMeter - Traversal complete. Processed 1226964 total variants in 3.2 minutes.
+23:06:31.754 INFO  FilterMutectCalls - Shutting down engine
+[August 23, 2024, 11:06:31 PM EDT] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 3.19 minutes.
+Runtime.totalMemory()=2147483648
+Using GATK jar /apps/gatk/4.4.0.0/gatk-package-4.4.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /apps/gatk/4.4.0.0/gatk-package-4.4.0.0-local.jar FilterMutectCalls -O SRR7890824-SRR7890827-WGS_FD.FilterMutectCalls.vcf -R GRCh38.d1.vd1.fa -V SRR7890824-SRR7890827-WGS_FD_mutect2.vcf
