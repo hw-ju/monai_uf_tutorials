@@ -111,6 +111,8 @@ Sample console output:
 
 <img src="./screenshots/console_start_3DSlicer.png" width="400">
 
+Note: For issues regarding 3D Slicer, please refer to Slicer UFRC wiki page (https://help.rc.ufl.edu/doc/Slicer).
+
 Once `3DSlicer` opens up, switch back to the console tab. We'll come back after setting up the MONAI Label server.
 <img src="./screenshots/switch_to_console.png" width="400">
 
